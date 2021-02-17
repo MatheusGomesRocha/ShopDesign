@@ -1,15 +1,44 @@
+/** As classes que "clonei" como centerText e centerText2, significa que precisei fazer 2 animações diferentes para
+    cada uma, assim me obrigando a criar 2 classes pra cada uma pegar uma animação
+ */
+
 .header {
     background-color: #ccc;
     width: 100%;
     height: 500px;
     display: grid;
     align-items: center;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 50% 50%;
     font-family: Candara;
 }
 
+.header .btnCarousel {
+    position: absolute;
+    top: 450px;
+    right: 55%;
+    width: 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.header .btnCarousel .ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+}
+
+
+/** Dentro do Header à esquerda (onde contém os textos com o button) */
 .header .left {
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     margin-left: 50px;
@@ -24,14 +53,80 @@
     margin-top: 15px;
     font-size: 45px;
     font-weight: bold;
+    animation: fadeToLeft 1s;
 }
+.header .left .centerText2 {
+    margin-top: 15px;
+    font-size: 45px;
+    font-weight: bold;
+    animation: fadeToLeft2 1s;
+}
+
 
 .header .left .bottomText {
     margin-top: 15px;
     color: #666;
     font-size: 20px;
+    animation: fadeToRight 1s;
 }
+.header .left .bottomText2 {
+    margin-top: 15px;
+    color: #666;
+    font-size: 20px;
+    animation: fadeToRight2 1s;
+}
+
 
 .header .img {
     height: 500px;
+    width: 100%;
+    animation: fade 2s;
+    background-image: url("../img/header.png");
+    background-size: cover;
 }
+.header .img2 {
+    height: 500px;
+    width: 100%;
+    animation: fade2 2s;
+    background-image: url("../img/header2.png");
+    background-size: cover;
+}
+
+
+.header .btnCarousel .ball:hover {
+    cursor: pointer;
+}
+
+
+/** Animação BottomText **/
+@keyframes fadeToRight {
+    from{opacity: 0; transform: translateX(-50%)}
+    to{opacity: 1}
+}
+@keyframes fadeToRight2 {
+    from{opacity: 0; transform: translateX(-50%)}
+    to{opacity: 1}
+}
+/** **/
+
+/** Animação TopText **/
+@keyframes fadeToLeft {
+    from{opacity: 0; transform: translateX(50%)}
+    to{opacity: 1}
+}
+@keyframes fadeToLeft2 {
+    from{opacity: 0; transform: translateX(50%)}
+    to{opacity: 1}
+}
+/** **/
+
+/** Animação Imagens **/
+@keyframes fade {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@keyframes fade2 {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+/** **/
