@@ -1,7 +1,13 @@
 import Header from './components/Header';
+import Category from "./components/Category";
 
 export default () => {
   return(
-      <Header />
+      <div>
+        <Header />
+
+        <Category />
+      </div>
+
   )
 }
