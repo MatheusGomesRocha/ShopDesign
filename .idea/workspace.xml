@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/svg/heart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/menu-circle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/shopping-basket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +61,8 @@
       <updated>1613582586396</updated>
       <workItem from="1613582609206" duration="1339000" />
       <workItem from="1613599161652" duration="4524000" />
-      <workItem from="1613645407948" duration="7307000" />
+      <workItem from="1613645407948" duration="7469000" />
+      <workItem from="1613659142120" duration="371000" />
     </task>
     <servers />
   </component>
