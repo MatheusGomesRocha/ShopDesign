@@ -1,6 +1,6 @@
 export default (props) => {
     return(
-    <svg fill={props.fill} width={"70px"} height={"70px"} version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512">
+    <svg fill={props.fill} width={"90px"} height={"90px"} version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512">
         <g>
         <g>
         <path d="M343.913,166.816l-24-160C319.326,2.899,315.962,0,312.001,0h-112c-3.961,0-7.326,2.899-7.912,6.816l-24,160

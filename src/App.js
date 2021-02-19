@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Category from "./components/Category";
+import New from "./components/New";
 
 export default () => {
   return(
@@ -7,6 +8,8 @@ export default () => {
         <Header />
 
         <Category />
+
+        <New />
       </div>
 
   )

@@ -1,6 +1,6 @@
 export default (props) => {
     return (
-        <svg fill={props.fill} width={"70px"} height={"70px"} id="Capa_1" enable-background="new 0 0 512.004 512.004" viewBox="0 0 512.004 512.004"
+        <svg fill={props.fill} width={"90px"} height={"90px"} id="Capa_1" enable-background="new 0 0 512.004 512.004" viewBox="0 0 512.004 512.004"
              xmlns="http://www.w3.org/2000/svg">
             <g>
                 <g>

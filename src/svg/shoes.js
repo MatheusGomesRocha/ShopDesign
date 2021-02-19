@@ -1,6 +1,6 @@
 export default (props) => {
     return (
-        <svg fill={props.fill} width={"80px"} height={"80px"} id="Layer_1" enable-background="new 0 0 511.998 511.998" viewBox="0 0 511.998 511.998"
+        <svg fill={props.fill} width={"90px"} height={"90px"} id="Layer_1" enable-background="new 0 0 511.998 511.998" viewBox="0 0 511.998 511.998"
              width="512" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="m97.097 297.684c-4.765-.61-8.572 2.685-9.111 6.899-.538 4.202 2.3 8.36 7.08 8.972 4.392.56 8.39-2.544 8.951-6.92.56-4.382-2.537-8.39-6.92-8.951z"/>

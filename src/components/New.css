@@ -1,0 +1,89 @@
+.new {
+    padding: 50px;
+    font-family: Candara;
+}
+
+.new .left, .new .right {
+    display: flex;
+}
+
+.new .left .leftImg, .new .right .rightImg {
+    background-image: url("../img/new1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 500px;
+    box-shadow: 35px 35px 0px 0px #FAEEEB;
+    position: relative;
+    cursor: pointer;
+}
+
+.new .left .leftImg .divHidden, .new .right .rightImg .divHidden{
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    animation: fadeFromCenter 500ms;
+}
+
+.new .left .leftContent, .new .right .rightContent {
+    width: 80%;
+    height: 150px;
+    margin: 0 0 0 70px;
+    display: flex;
+    align-items: center;
+}
+
+.new .left .leftContent .line, .new .right .rightContent .line {
+    width: 20%;
+    height: 1px;
+    background-color: #999;
+}
+
+.new .left .leftContent .divText, .new .right .rightContent .divText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.new .left .leftContent .divText .title, .new .right .rightContent .divText .title  {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.new .left .leftContent .divText .subTitle, .new .right .rightContent .divText .subTitle {
+    color: #999;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+
+.new .right {
+    margin-top: -250px;
+}
+
+.new .right .rightImg {
+    background-image: url("../img/new2.jpg");
+    box-shadow: -35px -35px 0px 0px #FAEEEB;
+}
+
+.new .right .rightContent {
+    width: 80%;
+    margin: 350px 70px 0 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.new .right .rightContent .divText {
+    margin-left: 0;
+    margin-right: -80px;
+}
+
+
+.new .left .leftImg:hover .divHidden, .new .right .rightImg:hover .divHidden{
+    display: block;
+}
+
+@keyframes fadeFromCenter {
+    from{opacity: 0; transform: scale(0)}
+    to{opacity: 1; transform: scale(1)}
+}
