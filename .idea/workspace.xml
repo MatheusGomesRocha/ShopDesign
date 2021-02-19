@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Category.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/lamp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/lamp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/oculos.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/oculos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/shopping-bag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/shopping-bag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/sofa.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/sofa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/watch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/watch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +70,8 @@
       <workItem from="1613582609206" duration="1339000" />
       <workItem from="1613599161652" duration="4524000" />
       <workItem from="1613645407948" duration="7469000" />
-      <workItem from="1613659142120" duration="4659000" />
+      <workItem from="1613659142120" duration="4743000" />
+      <workItem from="1613742643691" duration="2781000" />
     </task>
     <servers />
   </component>
@@ -79,5 +89,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/svg/sofa.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
