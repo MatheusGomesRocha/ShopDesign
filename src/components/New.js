@@ -1,14 +1,20 @@
+import {useState} from "react";
 import './New.css';
+import ArrowIcon from '../svg/right-arrow';
+
 import {withStyles} from "@material-ui/core/styles";
 import {Button} from "@material-ui/core";
 
 export default () => {
+    const [hover, setHover] = useState(false);
+    const [hover2, setHover2] = useState(false);
+
     const DefaultBtn = withStyles(() => ({
         root: {
             padding: 20,
             fontSize: 16,
             height: 40,
-            width: 150,
+            width: 180,
             marginTop: 30,
             borderRadius: 5,
             backgroundColor: 'transparent',
@@ -17,7 +23,7 @@ export default () => {
             fontWeight: 'bold',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
+            justifyContent: 'space-between',
             transition: '500ms',
 
             '&:hover': {
@@ -39,7 +45,10 @@ export default () => {
                     <div className={"divText"}>
                         <span className={"title"}>New Collection</span>
                         <span className={"subTitle"}>New Womens Fashion</span>
-                        <DefaultBtn>Shop Now</DefaultBtn>
+                        <DefaultBtn onMouseOver={() => setHover(true)} onMouseOut={() => setHover(false)}>
+                            <span>Shop Now</span>
+                            <ArrowIcon fill={hover ? '#fff' : "#000"} />
+                        </DefaultBtn>
                     </div>
                 </div>
             </div>
@@ -49,7 +58,10 @@ export default () => {
                     <div className={"divText"}>
                         <span className={"title"}>New Collection</span>
                         <span className={"subTitle"}>New Mens Fashion</span>
-                        <DefaultBtn>Shop Now</DefaultBtn>
+                        <DefaultBtn onMouseOver={() => setHover2(true)} onMouseOut={() => setHover2(false)}>
+                            <span>Shop Now</span>
+                            <ArrowIcon fill={hover2 ? '#fff' : "#000"} />
+                        </DefaultBtn>
                     </div>
                     <div className={"line"}></div>
                 </div>

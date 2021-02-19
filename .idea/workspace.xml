@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/New.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/New.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/new1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/new2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg/right-arrow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/camera.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/camera.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/lamp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/lamp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/oculos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/oculos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/shirts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/shirts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/shoes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/shoes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/shopping-bag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/shopping-bag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/sofa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/sofa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/watch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/New.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/New.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/New.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/New.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/svg" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,8 +49,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mathe\Documents\shop\src\img" />
       <recent name="C:\Users\mathe\Documents\shop\src\svg" />
+      <recent name="C:\Users\mathe\Documents\shop\src\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -75,7 +65,8 @@
       <workItem from="1613599161652" duration="4524000" />
       <workItem from="1613645407948" duration="7469000" />
       <workItem from="1613659142120" duration="4743000" />
-      <workItem from="1613742643691" duration="7608000" />
+      <workItem from="1613742643691" duration="7755000" />
+      <workItem from="1613768586675" duration="466000" />
     </task>
     <servers />
   </component>
@@ -99,13 +90,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/svg/sofa.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/New.js</url>
-          <line>33</line>
-          <properties lambdaOrdinal="-1" />
+          <line>39</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
