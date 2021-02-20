@@ -24,6 +24,7 @@
     color: #999;
     margin: 25px;
     cursor: pointer;
+    transition: 300ms;
 }
 
 .trending .arrayDiv {
@@ -35,6 +36,7 @@
     display: flex;
     flex-direction: column;
     margin: 30px;
+    animation: fadeItem 1s;
 }
 
 .trending .arrayDiv .itemDiv .itemImg {
@@ -71,4 +73,10 @@
 .trending .arrayDiv .itemDiv .itemText .price {
     font-size: 22px;
     font-weight: bold;
+}
+
+
+@keyframes fadeItem {
+    from{opacity: 0}
+    to{opacity: 1}
 }
