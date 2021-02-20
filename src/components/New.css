@@ -16,13 +16,17 @@
     box-shadow: 35px 35px 0px 0px #FAEEEB;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .new .left .leftImg .divHidden, .new .right .rightImg .divHidden{
-    height: 500px;
+    height: 93%;
+    width: 93%;
     background-color: rgba(0, 0, 0, 0.2);
     display: none;
-    margin: 15px;
     animation: fadeFromCenter 500ms;
 }
 
