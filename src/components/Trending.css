@@ -1,82 +1,115 @@
-.trending {
+.trending {         /** Div Father */
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Candara;
 }
-
-.trending .topText {
+/** 1 -- Div Top com textos */
+.trending .topText {        /** Div com texto do topo */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.trending .topText .title {
+.trending .topText .title {     /** Texto grande, título */
     font-size: 40px;
 }
-
-.trending .topText .rowDiv {
+.trending .topText .rowDiv {    /** Div para alinhar os botões de filtro */
     display: flex;
 }
-
-.trending .topText .rowDiv .textBtn {
+.trending .topText .rowDiv .textBtn {   /** Botões de filtros */
     font-size: 25px;
     color: #999;
     margin: 25px;
     cursor: pointer;
     transition: 300ms;
 }
+/** -- 1 -- */
 
-.trending .arrayDiv {
+/** 2 -- Div do array */
+.trending .arrayDiv {       /** Div father do array */
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 23% 23% 23% 23%;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 30px;
 }
-
-.trending .arrayDiv .itemDiv {
+.trending .arrayDiv .itemDiv {      /** Div singular do item */
     display: flex;
     flex-direction: column;
-    margin: 30px;
     animation: fadeItem 1s;
 }
-
-.trending .arrayDiv .itemDiv .itemImg {
+.trending .arrayDiv .itemDiv .itemImg {     /** Div com Imagem e uns botões escondidos que mostrar ao dar um hover */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    position: relative;
+}
+.trending .arrayDiv .itemDiv .itemImg .saleText {       /** Texto para saber se o produto já está esgotado */
+    background-color: #CD553F;
+    color: #fff;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 280px;
-    height: 280px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
 }
-
-.trending .arrayDiv .itemDiv .img {
-    width: 200px;
-    height: 200px;
+.trending .arrayDiv .itemDiv .img {         /** Imagem (em PNG) dentro da div */
+    width: 180px;
+    height: 180px;
     cursor: pointer;
 }
-
-.trending .arrayDiv .itemDiv .itemText {
+.trending .arrayDiv .itemDiv .itemImg .rowBtnHidden {       /** Div escondida com 4 botões */
+    display: none;
+    position: absolute;
+    bottom: 20px;
+}
+.trending .arrayDiv .itemDiv .itemImg .rowBtnHidden .btnHidden {        /** Botão dentro da div escondida */
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trending .arrayDiv .itemDiv .itemText {        /** Div com textos (name e price) abaixo das imagens */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
 }
-
-.trending .arrayDiv .itemDiv .itemText .name {
+.trending .arrayDiv .itemDiv .itemText .name {      /** Nome do produto */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 270px;
     text-align: center;
 }
-
-.trending .arrayDiv .itemDiv .itemText .price {
+.trending .arrayDiv .itemDiv .itemText .price {     /** Preço do produto */
     font-size: 22px;
     font-weight: bold;
 }
+/** -- 2 -- */
 
 
-@keyframes fadeItem {
+.trending .arrayDiv .itemDiv:hover .itemImg .rowBtnHidden{      /** Passar o mouse em cima do item do array, mostra a div escondida com os botões */
+    display: flex;
+    animation: fadeItem 500ms;
+}
+
+/** Animations */
+@keyframes fadeItem {   /** Animação de fade ao trocar o filtro de items */
     from{opacity: 0}
     to{opacity: 1}
 }

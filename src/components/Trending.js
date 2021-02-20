@@ -19,37 +19,37 @@ export default () => {
     const [array, setArray] = useState(1);
 
     let arrayFeatured = [
-        {id: 1, img: img1, name: 'Printed Women Kurti (Multicolor)', price: '602,00'},
+        {id: 1, img: img1, sale: true, name: 'Printed Women Kurti (Multicolor)', price: '602,00'},
         {id: 2, img: img2, name: 'Crepe Checkered Salwar Suit Material (Unstitched)', price: '120,99'},
-        {id: 3, img: img3, name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material', price: '125,80'},
-        {id: 4, img: img4, name: 'Embroidered Satin Blend Stitched Anarkali', price: '170,99'},
+        {id: 3, img: img3, sale: true, name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material', price: '125,80'},
+        {id: 4, img: img4, sale: true, name: 'Embroidered Satin Blend Stitched Anarkali', price: '170,99'},
         {id: 5, img: img5, name: 'Canvas Slip On Sneakers For Women', price: '231,50'},
         {id: 6, img: img6, name: 'Date Unique New Analog Watch - For Men', price: '80,00'},
         {id: 7, img: img7, name: 'Embroidered Orange Women Dupatta', price: '57,05'},
-        {id: 8, img: img8, name: 'Applique Satin Blend Semi Stitched Anarkali Gown', price: '348,12'},
+        {id: 8, img: img8, sale: true, name: 'Applique Satin Blend Semi Stitched Anarkali Gown', price: '348,12'},
     ];
 
     let arrayBestseller = [
         {id: 8, img: img2, name: 'Applique Satin Blend Semi Stitched Anarkali Gown', price: '348,12'},
         {id: 4, img: img7, name: 'Embroidered Satin Blend Stitched Anarkali', price: '170,99'},
-        {id: 7, img: img13, name: 'Embroidered Orange Women Dupatta', price: '57,05'},
-        {id: 2, img: img1, name: 'Crepe Checkered Salwar Suit Material (Unstitched)', price: '120,99'},
+        {id: 7, img: img13, sale: true, name: 'Embroidered Orange Women Dupatta', price: '57,05'},
+        {id: 2, img: img1, sale: true,  name: 'Crepe Checkered Salwar Suit Material (Unstitched)', price: '120,99'},
         {id: 1, img: img5, name: 'Printed Women Kurti (Multicolor)', price: '602,00'},
-        {id: 3, img: img10, name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material', price: '125,80'},
+        {id: 3, img: img10, sale: true, name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material', price: '125,80'},
         {id: 6, img: img3, name: 'Date Unique New Analog Watch - For Men', price: '80,00'},
         {id: 5, img: img12, name: 'Canvas Slip On Sneakers For Women', price: '231,50'},
 
     ];
 
     let arrayLatest = [
-        {id: 3, img: img1, name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material', price: '125,80'},
-        {id: 1, img: img8, name: 'Printed Women Kurti (Multicolor)', price: '602,00'},
-        {id: 5, img: img4, name: 'Canvas Slip On Sneakers For Women', price: '231,50'},
+        {id: 3, img: img1, sale: true, name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material', price: '125,80'},
+        {id: 1, img: img8, sale: true, name: 'Printed Women Kurti (Multicolor)', price: '602,00'},
+        {id: 5, img: img4, sale: true, name: 'Canvas Slip On Sneakers For Women', price: '231,50'},
         {id: 8, img: img5, name: 'Applique Satin Blend Semi Stitched Anarkali Gown', price: '348,12'},
-        {id: 2, img: img11, name: 'Crepe Checkered Salwar Suit Material (Unstitched)', price: '120,99'},
+        {id: 2, img: img11, sale: true, name: 'Crepe Checkered Salwar Suit Material (Unstitched)', price: '120,99'},
         {id: 4, img: img9, name: 'Embroidered Satin Blend Stitched Anarkali', price: '170,99'},
         {id: 7, img: img2, name: 'Embroidered Orange Women Dupatta', price: '57,05'},
-        {id: 6, img: img7, name: 'Date Unique New Analog Watch - For Men', price: '80,00'},
+        {id: 6, img: img7, sale: true, name: 'Date Unique New Analog Watch - For Men', price: '80,00'},
     ];
 
     return(
@@ -68,7 +68,14 @@ export default () => {
                     arrayFeatured.map((item, k) => (
                         <div className={"itemDiv"}>
                             <div className={"itemImg"}>
+                                <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale</div>
                                 <img src={item.img} className={"img"} />
+                                <div className={"rowBtnHidden"}>
+                                    <div className={"btnHidden"}>A</div>
+                                    <div className={"btnHidden"}>A</div>
+                                    <div className={"btnHidden"}>A</div>
+                                    <div className={"btnHidden"}>A</div>
+                                </div>
                             </div>
                             <div className={"itemText"}>
                                 <span className={"name"}>{item.name}</span>
@@ -82,7 +89,14 @@ export default () => {
                     arrayBestseller.map((item, k) => (
                         <div className={"itemDiv"}>
                             <div className={"itemImg"}>
+                                <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale</div>
                                 <img src={item.img} className={"img"} />
+                                <div className={"rowBtnHidden"}>
+                                    <div className={"btnHidden"}>A</div>
+                                    <div className={"btnHidden"}>A</div>
+                                    <div className={"btnHidden"}>A</div>
+                                    <div className={"btnHidden"}>A</div>
+                                </div>
                             </div>
                             <div className={"itemText"}>
                                 <span className={"name"}>{item.name}</span>
@@ -96,7 +110,14 @@ export default () => {
                     arrayLatest.map((item, k) => (
                         <div className={"itemDiv"}>
                             <div className={"itemImg"}>
+                                <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale</div>
                                 <img src={item.img} className={"img"} />
+                                <div className={"rowBtnHidden"}>
+                                    <div className={"btnHidden"}>A</div>
+                                    <div className={"btnHidden"}>A</div>
+                                    <div className={"btnHidden"}>A</div>
+                                    <div className={"btnHidden"}>A</div>
+                                </div>
                             </div>
                             <div className={"itemText"}>
                                 <span className={"name"}>{item.name}</span>
