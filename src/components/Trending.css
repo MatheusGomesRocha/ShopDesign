@@ -104,19 +104,19 @@
 }
 /** -- 2 -- */
 
-.trending .arrayDiv .itemDiv:hover .itemImg .img{
+/** Hovers */
+.trending .arrayDiv .itemDiv:hover .itemImg .img{   /** Efeito de zoom na imagem ao passar mouse em cima do ItemDiv */
     transform: scale(1.1);
 }
-
 .trending .arrayDiv .itemDiv:hover .itemImg .rowBtnHidden{      /** Passar o mouse em cima do item do array, mostra a div escondida com os botões */
     display: flex;
     animation: fadeItem 500ms;
 }
-
-.trending .arrayDiv .itemDiv .itemImg .rowBtnHidden .btnHidden:hover {
+.trending .arrayDiv .itemDiv .itemImg .rowBtnHidden .btnHidden:hover {      /** Mudar cor do botão ao passar mouse em cima dos botões */
     cursor: pointer;
     background-color: #CD553F;
 }
+/** **/
 
 /** Animations */
 @keyframes fadeItem {   /** Animação de fade ao trocar o filtro de items */
