@@ -67,6 +67,7 @@
     width: 180px;
     height: 180px;
     cursor: pointer;
+    transition: 500ms;
 }
 .trending .arrayDiv .itemDiv .itemImg .rowBtnHidden {       /** Div escondida com 4 botões */
     display: none;
@@ -103,6 +104,9 @@
 }
 /** -- 2 -- */
 
+.trending .arrayDiv .itemDiv:hover .itemImg .img{
+    transform: scale(1.1);
+}
 
 .trending .arrayDiv .itemDiv:hover .itemImg .rowBtnHidden{      /** Passar o mouse em cima do item do array, mostra a div escondida com os botões */
     display: flex;
