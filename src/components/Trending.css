@@ -82,6 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 500ms;
 }
 .trending .arrayDiv .itemDiv .itemText {        /** Div com textos (name e price) abaixo das imagens */
     display: flex;
@@ -106,6 +107,11 @@
 .trending .arrayDiv .itemDiv:hover .itemImg .rowBtnHidden{      /** Passar o mouse em cima do item do array, mostra a div escondida com os botões */
     display: flex;
     animation: fadeItem 500ms;
+}
+
+.trending .arrayDiv .itemDiv .itemImg .rowBtnHidden .btnHidden:hover {
+    cursor: pointer;
+    background-color: #CD553F;
 }
 
 /** Animations */

@@ -1,6 +1,6 @@
 import {useState} from "react";
-
 import './Trending.css';
+
 import img1 from '../img/img1.png';
 import img2 from '../img/img2.png';
 import img3 from '../img/img3.png';
@@ -15,8 +15,20 @@ import img11 from '../img/img11.png';
 import img12 from '../img/img12.png';
 import img13 from '../img/img13.png';
 
+import Icon1 from '../svg/shopping-cart';
+import Icon2 from '../svg/open-window';
+import Icon3 from '../svg/heart';
+import Icon4 from '../svg/adjust';
+
+import Tooltip from '@material-ui/core/Tooltip';
+
 export default () => {
     const [array, setArray] = useState(1);
+
+    const [hover1, setHover1] = useState(false);
+    const [hover2, setHover2] = useState(false);
+    const [hover3, setHover3] = useState(false);
+    const [hover4, setHover4] = useState(false);
 
     let arrayFeatured = [
         {id: 1, img: img1, sale: true, name: 'Printed Women Kurti (Multicolor)', price: '602,00'},
@@ -33,7 +45,7 @@ export default () => {
         {id: 8, img: img2, name: 'Applique Satin Blend Semi Stitched Anarkali Gown', price: '348,12'},
         {id: 4, img: img7, name: 'Embroidered Satin Blend Stitched Anarkali', price: '170,99'},
         {id: 7, img: img13, sale: true, name: 'Embroidered Orange Women Dupatta', price: '57,05'},
-        {id: 2, img: img1, sale: true,  name: 'Crepe Checkered Salwar Suit Material (Unstitched)', price: '120,99'},
+        {id: 2, img: img1, sale: true, name: 'Crepe Checkered Salwar Suit Material (Unstitched)', price: '120,99'},
         {id: 1, img: img5, name: 'Printed Women Kurti (Multicolor)', price: '602,00'},
         {id: 3, img: img10, sale: true, name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material', price: '125,80'},
         {id: 6, img: img3, name: 'Date Unique New Analog Watch - For Men', price: '80,00'},
@@ -52,79 +64,175 @@ export default () => {
         {id: 6, img: img7, sale: true, name: 'Date Unique New Analog Watch - For Men', price: '80,00'},
     ];
 
-    return(
+    return (
         <div className={"trending"}>
             <div className={"topText"}>
                 <span className={"title"}>Trending Product</span>
                 <div className={"rowDiv"}>
-                    <span onClick={() => setArray(1)} style={{color: array == 1 ? '#CD553F' : '#999'}} className={"textBtn"}>Featured</span>
-                    <span onClick={() => setArray(2)} style={{color: array == 2 ? '#CD553F' : '#999'}} className={"textBtn"}>Bestseller</span>
-                    <span onClick={() => setArray(3)} style={{color: array == 3 ? '#CD553F' : '#999'}} className={"textBtn"}>Latest</span>
+                    <span onClick={() => setArray(1)} style={{color: array == 1 ? '#CD553F' : '#999'}}
+                          className={"textBtn"}>Featured</span>
+                    <span onClick={() => setArray(2)} style={{color: array == 2 ? '#CD553F' : '#999'}}
+                          className={"textBtn"}>Bestseller</span>
+                    <span onClick={() => setArray(3)} style={{color: array == 3 ? '#CD553F' : '#999'}}
+                          className={"textBtn"}>Latest</span>
                 </div>
             </div>
 
             <div className={"arrayDiv"}>
                 {array == 1 &&
-                    arrayFeatured.map((item, k) => (
-                        <div className={"itemDiv"}>
-                            <div className={"itemImg"}>
-                                <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale</div>
-                                <img src={item.img} className={"img"} />
-                                <div className={"rowBtnHidden"}>
-                                    <div className={"btnHidden"}>A</div>
-                                    <div className={"btnHidden"}>A</div>
-                                    <div className={"btnHidden"}>A</div>
-                                    <div className={"btnHidden"}>A</div>
-                                </div>
-                            </div>
-                            <div className={"itemText"}>
-                                <span className={"name"}>{item.name}</span>
-                                <span className={"price"}>R$ {item.price}</span>
+                arrayFeatured.map((item, k) => (
+                    <div className={"itemDiv"}>
+                        <div className={"itemImg"}>
+                            <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale!</div>
+                            <img src={item.img} className={"img"}/>
+                            <div className={"rowBtnHidden"}>
+                                <Tooltip arrow title="Add to cart" placement="top">
+                                    <div onMouseOver={() => setHover1(true)}
+                                         onMouseOut={() => setHover1(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon1 fill={hover1 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
+
+                                <Tooltip arrow title="Quickview" placement="top">
+                                    <div onMouseOver={() => setHover2(true)}
+                                         onMouseOut={() => setHover2(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon2 fill={hover2 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
+
+                                <Tooltip arrow title="Wish List" placement="top">
+                                    <div onMouseOver={() => setHover3(true)}
+                                         onMouseOut={() => setHover3(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon3 fill={hover3 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
+
+                                <Tooltip arrow title="Compare this Product" placement="top">
+                                    <div onMouseOver={() => setHover4(true)}
+                                         onMouseOut={() => setHover4(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon4 fill={hover4 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
                             </div>
                         </div>
-                    ))
+                        <div className={"itemText"}>
+                            <span className={"name"}>{item.name}</span>
+                            <span className={"price"}>R$ {item.price}</span>
+                        </div>
+                    </div>
+                ))
                 }
 
                 {array == 2 &&
-                    arrayBestseller.map((item, k) => (
-                        <div className={"itemDiv"}>
-                            <div className={"itemImg"}>
-                                <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale</div>
-                                <img src={item.img} className={"img"} />
-                                <div className={"rowBtnHidden"}>
-                                    <div className={"btnHidden"}>A</div>
-                                    <div className={"btnHidden"}>A</div>
-                                    <div className={"btnHidden"}>A</div>
-                                    <div className={"btnHidden"}>A</div>
-                                </div>
-                            </div>
-                            <div className={"itemText"}>
-                                <span className={"name"}>{item.name}</span>
-                                <span className={"price"}>R$ {item.price}</span>
+                arrayBestseller.map((item, k) => (
+                    <div className={"itemDiv"}>
+                        <div className={"itemImg"}>
+                            <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale!</div>
+                            <img src={item.img} className={"img"}/>
+                            <div className={"rowBtnHidden"}>
+                                <Tooltip arrow title="Add to cart" placement="top">
+                                    <div onMouseOver={() => setHover1(true)}
+                                         onMouseOut={() => setHover1(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon1 fill={hover1 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
+
+                                <Tooltip arrow title="Quickview" placement="top">
+                                    <div onMouseOver={() => setHover2(true)}
+                                         onMouseOut={() => setHover2(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon2 fill={hover2 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
+
+                                <Tooltip arrow title="Wish List" placement="top">
+                                    <div onMouseOver={() => setHover3(true)}
+                                         onMouseOut={() => setHover3(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon3 fill={hover3 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
+
+                                <Tooltip arrow title="Compare this Product" placement="top">
+                                    <div onMouseOver={() => setHover4(true)}
+                                         onMouseOut={() => setHover4(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon4 fill={hover4 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
                             </div>
                         </div>
-                    ))
+                        <div className={"itemText"}>
+                            <span className={"name"}>{item.name}</span>
+                            <span className={"price"}>R$ {item.price}</span>
+                        </div>
+                    </div>
+                ))
                 }
 
                 {array == 3 &&
-                    arrayLatest.map((item, k) => (
-                        <div className={"itemDiv"}>
-                            <div className={"itemImg"}>
-                                <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale</div>
-                                <img src={item.img} className={"img"} />
-                                <div className={"rowBtnHidden"}>
-                                    <div className={"btnHidden"}>A</div>
-                                    <div className={"btnHidden"}>A</div>
-                                    <div className={"btnHidden"}>A</div>
-                                    <div className={"btnHidden"}>A</div>
-                                </div>
-                            </div>
-                            <div className={"itemText"}>
-                                <span className={"name"}>{item.name}</span>
-                                <span className={"price"}>R$ {item.price}</span>
+                arrayLatest.map((item, k) => (
+                    <div className={"itemDiv"}>
+                        <div className={"itemImg"}>
+                            <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale!</div>
+                            <img src={item.img} className={"img"}/>
+                            <div className={"rowBtnHidden"}>
+                                <Tooltip arrow title="Add to cart" placement="top">
+                                    <div onMouseOver={() => setHover1(true)}
+                                         onMouseOut={() => setHover1(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon1 fill={hover1 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
+
+                                <Tooltip arrow title="Quickview" placement="top">
+                                    <div onMouseOver={() => setHover2(true)}
+                                         onMouseOut={() => setHover2(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon2 fill={hover2 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
+
+                                <Tooltip arrow title="Wish List" placement="top">
+                                    <div onMouseOver={() => setHover3(true)}
+                                         onMouseOut={() => setHover3(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon3 fill={hover3 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
+
+                                <Tooltip arrow title="Compare this Product" placement="top">
+                                    <div onMouseOver={() => setHover4(true)}
+                                         onMouseOut={() => setHover4(false)}
+                                         className={"btnHidden"}
+                                    >
+                                        <Icon4 fill={hover4 ? '#fff' : '#000'}/>
+                                    </div>
+                                </Tooltip>
                             </div>
                         </div>
-                    ))
+                        <div className={"itemText"}>
+                            <span className={"name"}>{item.name}</span>
+                            <span className={"price"}>R$ {item.price}</span>
+                        </div>
+                    </div>
+                ))
                 }
             </div>
         </div>
