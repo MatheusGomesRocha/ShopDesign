@@ -28,7 +28,7 @@
 /** 2 -- Div do array */
 .trending .arrayDiv {       /** Div father do array */
     display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-columns: auto auto auto auto;
     align-items: center;
     justify-content: center;
     grid-gap: 30px;
