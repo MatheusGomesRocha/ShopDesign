@@ -1,19 +1,19 @@
-.ad {
+.ad {           /** Div Father */
     font-family: Candara;
     margin-top: 80px;
     margin-bottom: 100px;
     padding: 0 15px;
 }
 
-.ad .arrayDiv {
+/** 1 -- Div Array */
+.ad .arrayDiv {     /** Div Father Array */
     display: grid;
     grid-template-columns: 45% 45%;
     grid-gap: 50px;
     align-items: center;
     justify-content: center;
 }
-
-.ad .arrayDiv .itemDiv {
+.ad .arrayDiv .itemDiv {        /** Div 1 Item Array */
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #e5e5e5;
@@ -26,30 +26,26 @@
     position: relative;
     cursor: pointer;
 }
-
-.ad .arrayDiv .itemDiv .left {
+/** 1.1 -- Div que fica na esquerda dentro do item */
+.ad .arrayDiv .itemDiv .left {      /** Div Father */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-.ad .arrayDiv .itemDiv .left .smallText {
+.ad .arrayDiv .itemDiv .left .smallText {       /** Texto pequeno no topo */
     color: #999;
     font-weight: bold;
     font-size: 18px;
 }
-
-.ad .arrayDiv .itemDiv .left .bigText {
+.ad .arrayDiv .itemDiv .left .bigText {     /** Texto grande no meio */
     font-size: 40px;
     font-weight: bold;
 }
-
-.ad .arrayDiv .itemDiv .left .title {
+.ad .arrayDiv .itemDiv .left .title {       /** Título, o texto mais abaixo */
     font-size: 20px;
     font-weight: bold;
 }
-
-.ad .arrayDiv .itemDiv .left .btn {
+.ad .arrayDiv .itemDiv .left .btn {         /** Div que simula um botão */
     font-size: 16px;
     height: 40px;
     margin-top: 30px;
@@ -62,28 +58,24 @@
     align-items: center;
     justify-content: center;
 }
+/** -- 1.1 -- */
 
-.ad .arrayDiv .itemDiv .img {
+.ad .arrayDiv .itemDiv .img {       /** Img à direita (em PNG) */
     height: 250px;
 }
-
-.ad .arrayDiv .itemDiv .divHidden {
+.ad .arrayDiv .itemDiv .divHidden {     /** Div escondida que é mostrada ao passar mouse em cima do itemDiv */
     position: absolute;
     height: 93%;
     width: 93%;
     margin-left: 3.5%;
     background-color: rgba(0, 0, 0, 0.2);
-    animation: fadeFromCenter2 500ms;
+    animation: fadeFromCenter 500ms;        /** Essa animation é reutilizada do New.css */
     border-radius: 10px;
     display: none;
 }
+/** -- 1 -- */
 
-.ad .arrayDiv .itemDiv:hover .divHidden {
+/** Hovers */
+.ad .arrayDiv .itemDiv:hover .divHidden {       /** Efeito que mostra a div escondida, passando o mouse por itemDiv */
     display: flex;
-}
-
-
-@keyframes fadeFromCenter2 {
-    from{opacity: 0; transform: scale(0)}
-    to{opacity: 1; transform: scale(1)}
 }
