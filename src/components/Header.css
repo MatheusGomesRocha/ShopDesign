@@ -8,7 +8,7 @@
 }
 
 
-/** Começo do HeaderTop */
+/** 1 -- HeaderTop  */
 .header .headerTop {
     width: 100%;
     height: 80px;
@@ -16,8 +16,7 @@
     display: flex;
     justify-content: space-between;
 }
-
-/** 1 -- Header Top na esquerda */
+/** 1.1 -- Header Top na esquerda */
 .header .headerTop .headerTopLeft {
     display: flex;
 }
@@ -32,9 +31,8 @@
     transition: 250ms;
 
 }
-/** -- 1 -- */
-
-/** 2 -- Header Top na direita */
+/** -- 1.1 -- */
+/** 1.2 -- Header Top na direita */
 .header .headerTop .headerTopRight {
     display: flex;
     align-items: center;
@@ -64,18 +62,18 @@
     margin-left: 22px;
     font-family: arial;
 }
-/** -- 2 -- */
-/** Fim HeaderTop */
+/** -- 1.2 -- */
+/** -- 1 -- */
 
-/** Começo Header Bottom */
-.header .headerBottom {
+/** 2 -- HeaderBottom */
+.header .headerBottom {     /** Div Father */
     background-color: #ccc;
     height: 500px;
     display: grid;
     align-items: center;
     grid-template-columns: 50% 50%;
 }
-.header .btnCarousel {
+.header .btnCarousel {      /** Div com 2 botões para mudar Carousel */
     position: absolute;
     top: 530px;
     right: 55%;
@@ -85,7 +83,7 @@
     grid-gap: 20px;
     justify-content: center;
 }
-.header .btnCarousel .ball {
+.header .btnCarousel .ball {        /** Div singular do botão para mudar Carousel */
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -96,10 +94,9 @@
     justify-content: center;
     transition: 500ms;
 }
-
-
-/** 3 -- Dentro do Header à esquerda (onde contém os textos com o button) */
-.header .left {
+/** 2.1 -- Div à esquerda (onde contém os textos com o botão) */
+/** Algumas css repetidos com classes diferentes porque são 1 para cada item do Carousel */
+.header .left {     /** Div Father  */
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -133,10 +130,10 @@
     font-size: 20px;
     animation: fadeToRight2 1s;
 }
-/** -- 3 -- */
+/** -- 2.1 -- */
 
 
-/** 4 -- Dentro do Header na direita */
+/** 2.2 -- Dentro do Header na direita */
 .header .img {      /** Primeira imagem do Carousel */
     height: 500px;
     width: 100%;
@@ -151,28 +148,28 @@
     background-image: url("../img/header2.png");
     background-size: cover;
 }
-/** -- 4 -- */
-/** Fim HeaderBottom */
+/** -- 2.2 -- */
+/** -- 2 -- */
 
+/** Hovers */
 .header .headerTop .headerTopLeft .headerLinkDiv .headerLink:hover {        /** Links do HeaderTop da esquerda */
     cursor: pointer;
     border-bottom: 1px solid #CD553F;
     color: #CD553F;
 }
-
-.header .headerTop .headerTopRight .headerTopRightLink:hover {
+.header .headerTop .headerTopRight .headerTopRightLink:hover {      /** Icons da direita recebem um background-color ao passar mouse em cima
     cursor: pointer;
     background-color: #ddd;
 }
-
 .menuItem:hover {       /** Color do texto dentro dos menus dropdowns */
     color: #CD553F;
 }
-
 .header .btnCarousel .ball:hover {      /** Bola com button do Carousel */
     cursor: pointer;
 }
+/** */
 
+/** Animations */
 
 /** Animação BottomText **/
 @keyframes fadeToRight {
@@ -206,3 +203,5 @@
     to{opacity: 1}
 }
 /** **/
+
+/** */
