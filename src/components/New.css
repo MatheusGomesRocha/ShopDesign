@@ -1,13 +1,14 @@
-.new {
+.new {      /** Div Father */
     padding: 50px;
     font-family: Candara;
 }
+/** Aqui foi preciso criar novas div (com o mesmo css) mas por mudar algumas coisas, criei novas */
 
-.new .left, .new .right {
+.new .left, .new .right {       /** Div Father esquerda e direita */
     display: flex;
 }
-
-.new .left .leftImg, .new .right .rightImg {
+/** 1 -- Div com imagem e outra Div escondida, esquerda e direita */
+.new .left .leftImg, .new .right .rightImg {        /** Div Father */
     background-image: url("../img/new1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,74 +22,73 @@
     align-items: center;
     justify-content: center;
 }
-
-.new .left .leftImg .divHidden, .new .right .rightImg .divHidden{
+.new .left .leftImg .divHidden, .new .right .rightImg .divHidden{       /** Div escondida dentro da div de imagem, para mostrar ao passar o mouse em cima */
     height: 93%;
     width: 93%;
     background-color: rgba(0, 0, 0, 0.2);
     display: none;
     animation: fadeFromCenter 500ms;
 }
+/** -- 1 -- */
 
-.new .left .leftContent, .new .right .rightContent {
+/** Div com conteúdo (Texto e Botão), esquerda e direita */
+.new .left .leftContent, .new .right .rightContent {        /** Div Father */
     width: 80%;
     height: 150px;
     margin: 0 0 0 70px;
     display: flex;
     align-items: center;
 }
-
-.new .left .leftContent .line, .new .right .rightContent .line {
+.new .left .leftContent .line, .new .right .rightContent .line {        /** Linha que segue da imagem até o content, esquerda e direita */
     width: 20%;
     height: 1px;
     background-color: #999;
 }
-
-.new .left .leftContent .divText, .new .right .rightContent .divText {
+.new .left .leftContent .divText, .new .right .rightContent .divText {      /** Div para separar a linha do content */
     display: flex;
     flex-direction: column;
     margin-left: 30px;
 }
-
-.new .left .leftContent .divText .title, .new .right .rightContent .divText .title  {
+.new .left .leftContent .divText .title, .new .right .rightContent .divText .title  {   /** Texto grande (título) */
     font-size: 40px;
     text-transform: uppercase;
 }
-
-.new .left .leftContent .divText .subTitle, .new .right .rightContent .divText .subTitle {
+.new .left .leftContent .divText .subTitle, .new .right .rightContent .divText .subTitle {  /** Texto menor (subtítulo) */
     color: #999;
     font-size: 30px;
     margin-top: 5px;
 }
+/** -- 2 -- */
 
 
-.new .right {
+/** 3 -- Css separado que se aplica apenas na div da direita */
+.new .right {       /** Div Father */
     margin-top: -250px;
 }
-
-.new .right .rightImg {
+.new .right .rightImg {     /** Div Father da Imagem */
     background-image: url("../img/new2.jpg");
     box-shadow: -35px -35px 0px 0px #FAEEEB;
 }
-
-.new .right .rightContent {
+.new .right .rightContent {     /** Div com content (Texto e Botão) */
     width: 80%;
     margin: 350px 70px 0 0;
     align-items: flex-end;
     justify-content: flex-end;
 }
-
-.new .right .rightContent .divText {
+.new .right .rightContent .divText {        /** Div que separa a linha do Content */
     margin-left: 0;
     margin-right: -80px;
 }
+/** -- 3 -- */
 
-
-.new .left .leftImg:hover .divHidden, .new .right .rightImg:hover .divHidden{
+/** Hovers, direita e esquerda */
+.new .left .leftImg:hover .divHidden, .new .right .rightImg:hover .divHidden {  /** Mostra a Div escondida ao passar o mouse em cima da Div Father com imagem */
     display: block;
 }
+/** */
 
-@keyframes fadeFromCenter {
+/** Animation */
+@keyframes fadeFromCenter {     /** Div escondida aparece do meio e cresce */
     from{opacity: 0; transform: scale(0)}
     to{opacity: 1; transform: scale(1)}
 }

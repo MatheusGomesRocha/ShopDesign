@@ -2,8 +2,6 @@ import './Ad.css';
 
 import ad1 from '../img/header.png';
 import ad2 from '../img/ad2.png';
-import {withStyles} from "@material-ui/core/styles";
-import {Button} from "@material-ui/core";
 
 export default () => {
     let array = [
