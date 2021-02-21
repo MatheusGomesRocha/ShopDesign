@@ -35,7 +35,7 @@ export default () => {
     return(
         <div className={"category"}>
             <span className={"title"}>Our Category</span>
-            <div className={"rowDiv"}>
+            <div className={"arrayDiv"}>
                 <ScrollContainer style={{display: 'flex'}} className="scroll-container">
                 {array.map((item, k) => (
                     <div className={"itemDiv"}>

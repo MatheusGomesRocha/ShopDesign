@@ -79,3 +79,4 @@
 .ad .arrayDiv .itemDiv:hover .divHidden {       /** Efeito que mostra a div escondida, passando o mouse por itemDiv */
     display: flex;
 }
+/** **/

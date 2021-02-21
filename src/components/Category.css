@@ -1,4 +1,4 @@
-.category {
+.category {         /** Div Father */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,20 +7,19 @@
     padding: 50px 0;
     border-bottom: 1px solid #999;
 }
-
-.category .title {
+.category .title {      /** Texto grande fora da div principal (Título) */
     font-size: 40px;
     margin-top: 30px;
 }
 
-.category .rowDiv {
+/** 1 -- Div com Array alinhada horizontal */
+.category .arrayDiv {     /** Div Father */
     display: flex;
     align-items: center;
     width: 100%;
     z-index: 999;
 }
-
-.category .rowDiv .itemDiv {
+.category .arrayDiv .itemDiv {  /** Div com 1 item */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,13 +27,11 @@
     margin-top: 30px;
     width: 100%;
 }
-
-.scroll-container {
+.scroll-container {     /** Component vindo da library (react-indiana-drag-scroll) */
     padding-right: 50px;
     z-index: 999;
 }
-
-.category .rowDiv .itemDiv .itemDashed {
+.category .arrayDiv .itemDiv .itemDashed {  /** Div por fora maior que a div de dentro (para mostrar uma borda dashed) */
     width: 220px;
     height: 220px;
     border-radius: 50%;
@@ -46,8 +43,7 @@
     margin-right: 45px;
     margin-left: 45px;
 }
-
-.category .rowDiv .itemDiv .itemBall {
+.category .arrayDiv .itemDiv .itemBall {        /** Div central que tem formato de bola */
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -57,19 +53,20 @@
     justify-content: center;
     transition: 500ms;
 }
-
-.category .rowDiv .itemDiv .text {
+.category .arrayDiv .itemDiv .text {    /** Texto abaixo do itemBall */
     color: #333;
     font-size: 20px;
     margin-top: 10px;
     text-transform: uppercase;
 }
+/** -- 1 -- */
 
-.category .rowDiv .itemDiv .itemDashed:hover {
+/** Hovers */
+.category .arrayDiv .itemDiv .itemDashed:hover { /** Mostra a borda dashed ao passar o mouse por cima da div itemDashed */
     border: 2px dashed #CD553F;
     cursor: pointer;
 }
-
-.category .rowDiv .itemDiv .itemDashed:hover .itemBall {
+.category .arrayDiv .itemDiv .itemDashed:hover .itemBall {  /** Muda a cor da Div central (formato de bola) ao passar o mouse por cima da div itemDashed */
     background-color: #CD553F;
 }
+/** */
