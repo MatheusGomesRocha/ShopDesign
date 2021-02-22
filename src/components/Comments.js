@@ -8,7 +8,6 @@ import img2 from '../img/user2.jpg';
 import img3 from '../img/user3.jpg';
 import AspaIcon from '../svg/aspa';
 
-
 export default () => {
     let array = [
         {

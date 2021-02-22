@@ -1,8 +1,9 @@
-.comments {
+.comments {     /** Div Father */
     font-family: Candara;
 }
 
-.comments .itemDiv {
+/** 1 -- Div Array */
+.comments .itemDiv {        /** Div Father */
     padding: 50px 0;
     background-color: #ECBFB3;
     display: flex;
@@ -11,34 +12,31 @@
     justify-content: center;
     width: 100%;
 }
-
-.comments .itemDiv .img {
+.comments .itemDiv .img {       /** Imagem arredondada */
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 1px solid #CD553F;
     overflow: hidden;
 }
-
-.comments .itemDiv .name {
+.comments .itemDiv .name {      /** Nome do usuário */
     color: #CD553F;
     font-size: 25px;
     font-weight: bold;
     margin-top: 10px;
     text-transform: uppercase;
 }
-
-.comments .itemDiv .area {
+.comments .itemDiv .area {      /** Área que o usuário trabalha */
     color: #666;
     font-weight: bold;
     font-size: 20px;
     margin: 10px 0 30px 0;
 }
-
-.comments .itemDiv .comment {
+.comments .itemDiv .comment {       /** Comentário do usuário */
     width: 90%;
     color: #666;
     font-size: 30px;
     line-height: 1.5;
     margin-top: 50px;
 }
+/** -- 1 -- */
