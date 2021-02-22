@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Comments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Comments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg/aspa.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -67,7 +72,10 @@
       <workItem from="1613768586675" duration="4067000" />
       <workItem from="1613844966514" duration="3835000" />
       <workItem from="1613866461614" duration="1918000" />
-      <workItem from="1613915061892" duration="5173000" />
+      <workItem from="1613915061892" duration="5206000" />
+      <workItem from="1613925931930" duration="157000" />
+      <workItem from="1614005367698" duration="682000" />
+      <workItem from="1614016606451" duration="4007000" />
     </task>
     <servers />
   </component>
