@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Quality.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Quality.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/quality.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg/coin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg/gift.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg/headphone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg/truck.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Comments.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comments.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comments.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -37,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/svg" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,8 +53,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mathe\Documents\shop\src\img" />
       <recent name="C:\Users\mathe\Documents\shop\src\svg" />
+      <recent name="C:\Users\mathe\Documents\shop\src\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,7 +76,7 @@
       <workItem from="1613915061892" duration="5206000" />
       <workItem from="1613925931930" duration="157000" />
       <workItem from="1614005367698" duration="682000" />
-      <workItem from="1614016606451" duration="4752000" />
+      <workItem from="1614016606451" duration="5524000" />
     </task>
     <servers />
   </component>
