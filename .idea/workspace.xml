@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Quality.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Quality.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/quality.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/coin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/gift.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/headphone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/truck.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Comments.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comments.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Quality.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quality.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Quality.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quality.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/coin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/coin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/gift.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/gift.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/headphone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/headphone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/truck.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/truck.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +79,7 @@
       <workItem from="1613925931930" duration="157000" />
       <workItem from="1614005367698" duration="682000" />
       <workItem from="1614016606451" duration="5524000" />
+      <workItem from="1614107846164" duration="2359000" />
     </task>
     <servers />
   </component>

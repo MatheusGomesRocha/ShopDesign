@@ -1,0 +1,37 @@
+.quality {
+    background-image: url("../img/quality.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    font-family: Candara;
+}
+
+.quality .arrayDiv {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 300px;
+}
+
+.quality .itemDiv {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ddd;
+    margin: 50px 0;
+}
+
+.quality .itemDiv .title {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.quality .itemDiv .subTitle {
+    color: #999;
+    font-size: 20px;
+    margin-top: 5px;
+}
