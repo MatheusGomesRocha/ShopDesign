@@ -24,7 +24,7 @@ export default () => {
         },
     ];
 
-    return(
+    return (
         <div className={"footer"}>
             <div className={"topDiv"}>
                 <div className={"textDiv"}>
@@ -32,21 +32,21 @@ export default () => {
                     <span className={"subTitle"}>You Have Successfully Subscribed Newsletter</span>
                 </div>
                 <div className={"inputDiv"}>
-                    <input className={"email"} placeholder={"Your email address"}/>
+                    <input className={"input"} placeholder={"Your email address"}/>
                     <div className={"btn"}>Subscribe</div>
                 </div>
+            </div>
 
-                <div className={"bottomDiv"}>
-                    {array.map((item, k) => (
-                        <div className={"itemDiv"}>
-                            <div className={"top"}>
-                                <span className={"title"}>{item.title}</span>
-                                <div className={"line"}></div>
-                            </div>
-                            <a href={"#"} className={"link"}>{item.links}</a>
+            <div className={"bottomDiv"}>
+                {array.map((item, k) => (
+                    <div className={"itemDiv"}>
+                        <div className={"top"}>
+                            <span className={"title"}>{item.title}</span>
+                            <div className={"line"}></div>
                         </div>
-                    ))}
-                </div>
+                        <a href={"#"} className={"link"}>{item.links}</a>
+                    </div>
+                ))}
             </div>
         </div>
     )
