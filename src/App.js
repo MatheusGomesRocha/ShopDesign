@@ -5,6 +5,7 @@ import Trending from "./components/Trending";
 import Ad from "./components/Ad";
 import Comments from "./components/Comments";
 import Quality from "./components/Quality";
+import Daily from "./components/Daily";
 
 export default () => {
   return(
@@ -22,6 +23,8 @@ export default () => {
         <Comments />
 
         <Quality />
+
+        <Daily />
       </div>
 
   )

@@ -1,0 +1,133 @@
+.daily {         /** Div Father */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Candara;
+    margin-top: 100px;
+}
+/** 1 -- Div Top com textos */
+.daily .topText {        /** Div com texto do topo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.daily .topText .title {     /** Texto grande, título */
+    font-size: 40px;
+}
+/** -- 1 -- */
+
+/** 2 -- Div do array */
+.daily .arrayDiv {       /** Div father do array */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+.daily .arrayDiv .itemDiv {      /** Div singular do item */
+    display: flex;
+    flex-direction: column;
+    animation: fadeItem 1s;
+}
+.daily .arrayDiv .itemDiv .itemImg {     /** Div com Imagem e uns botões escondidos que mostrar ao dar um hover */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    position: relative;
+}
+.daily .arrayDiv .itemDiv .itemImg .saleText {       /** Texto para saber se o produto já está esgotado */
+    background-color: #CD553F;
+    color: #fff;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.daily .arrayDiv .itemDiv .img {         /** Imagem (em PNG) dentro da div */
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: 500ms;
+}
+.daily .arrayDiv .itemDiv .itemImg .countdownHidden {
+    display: none;
+    position: absolute;
+    top: 20px;
+    height: 50px;
+    border-radius: 5px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    background-color: #CD553F;
+}
+.countdownTime {
+    font-size: 30px;
+    color: #fff;
+    font-family: Arial;
+}
+.daily .arrayDiv .itemDiv .itemImg .rowBtnHidden {       /** Div escondida com 4 botões */
+    display: none;
+    position: absolute;
+    bottom: 20px;
+}
+.daily .arrayDiv .itemDiv .itemImg .rowBtnHidden .btnHidden {        /** Botão dentro da div escondida */
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+}
+.daily .arrayDiv .itemDiv .itemText {        /** Div com textos (name e price) abaixo das imagens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.daily .arrayDiv .itemDiv .itemText .name {      /** Nome do produto */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 270px;
+    text-align: center;
+}
+.daily .arrayDiv .itemDiv .itemText .price {     /** Preço do produto */
+    font-size: 22px;
+    font-weight: bold;
+}
+/** -- 2 -- */
+
+/** Hovers */
+.daily .arrayDiv .itemDiv:hover .itemImg .img{   /** Efeito de zoom na imagem ao passar mouse em cima do ItemDiv */
+    transform: scale(1.1);
+}
+.daily .arrayDiv .itemDiv:hover .itemImg .rowBtnHidden, .daily .arrayDiv .itemDiv:hover .itemImg .countdownHidden{      /** Passar o mouse em cima do item do array, mostra a div escondida com os botões */
+    display: flex;
+    animation: fadeItem 500ms;
+}
+.daily .arrayDiv .itemDiv .itemImg .rowBtnHidden .btnHidden:hover {      /** Mudar cor do botão ao passar mouse em cima dos botões */
+    cursor: pointer;
+    background-color: #CD553F;
+}
+/** **/
+
+/** Animations */
+@keyframes fadeItem {   /** Animação de fade ao trocar o filtro de items */
+    from{opacity: 0}
+    to{opacity: 1}
+}
