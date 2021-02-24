@@ -24,6 +24,7 @@ export default () => {
 
     return(
         <div className={"blog"}>
+            <span className={"title"}>Latest Blog</span>
             <div className={"arrayDiv"}>
                 {array.map((item, k) => (
                     <div className={"itemDiv"}>
