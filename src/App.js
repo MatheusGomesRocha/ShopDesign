@@ -7,6 +7,7 @@ import Comments from "./components/Comments";
 import Quality from "./components/Quality";
 import Daily from "./components/Daily";
 import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 export default () => {
   return(
@@ -28,6 +29,8 @@ export default () => {
         <Daily />
 
         <Blog />
+
+        <Footer />
       </div>
 
   )
