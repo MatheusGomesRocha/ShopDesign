@@ -11,16 +11,17 @@
     background-color: #333;
     width: 85%;
     height: 100px;
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
     align-items: center;
     border-radius: 10px;
     padding: 0 50px;
+    position: relative;
 }
 
 .footer .topDiv .textDiv {
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
 }
 
 .footer .topDiv .textDiv .title {
@@ -37,6 +38,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 20px;
 }
 
 .footer .topDiv .inputDiv .input {
@@ -45,7 +48,7 @@
     border: none;
     height: 60px;
     padding-left: 10px;
-    width: 50%;
+    width: 300px;
     font-size: 18px;
 }
 
@@ -59,7 +62,7 @@
 
 .footer .topDiv .inputDiv .btn {
     height: 62px;
-    width: 20%;
+    width: 150px;
     background-color: #CD553F;
     color: #fff;
     display: flex;
@@ -73,7 +76,47 @@
 }
 
 
+.footer .bottomDiv {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 50px;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+}
+.footer .bottomDiv .itemDiv {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+.footer .bottomDiv .itemDiv .top {
+    display: flex;
+    flex-direction: column;
+}
+.footer .bottomDiv .itemDiv .title {
+    color: #fff;
+    font-size: 22px;
+}
+.footer .bottomDiv .itemDiv .top .line {
+    background-color: #CD553F;
+    height: 3px;
+    width: 20%;
+    margin-top: 10px;
+}
+.footer .bottomDiv .itemDiv .link {
+    white-space: pre-wrap;
+    color: #999;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: 250ms;
+}
+
+
 .footer .topDiv .inputDiv .btn:hover {
     cursor: pointer;
     background-color: #000;
+}
+.footer .bottomDiv .itemDiv .link:hover {
+    color: #CD553F;
 }

@@ -1,32 +1,51 @@
 import './Footer.css';
+import PlaneIcon from '../svg/paper-plane';
 
 export default () => {
+
     let array = [
         {
             id: 1,
             title: 'Information',
-            links: ['About Us', 'Delivery Information', 'Privacy Policy', 'Terms & Conditions', 'Brands']
+            link1: 'About Us',
+            link2: 'Delivery Information',
+            link3: 'Privacy Policy',
+            link4: 'Terms & Conditions',
+            link5: 'Brands'
         },
         {
             id: 2,
             title: 'My Account',
-            links: ['My Account', 'Order History', 'Wish List', 'Newsletter', 'Specials']
+            link1: 'My Account',
+            link2: 'Order History',
+            link3: 'Wish List',
+            link4: 'Newsletter',
+            link5: 'Specials'
         },
         {
             id: 3,
             title: 'Customer Service',
-            links: ['Contact Us', 'Returns', 'Site Map', 'Gift Certificates', 'Affiliate']
+            link1: 'Contact Us',
+            link2: 'Returns',
+            link3: 'Site Map',
+            link4: 'Gift Certificates',
+            link5: 'Affiliate'
         },
         {
             id: 4,
             title: 'Contact Us',
-            links: ['Fashion Store Duffin Street Pufville India surat', '123-456-789', 'demo@demo.com']
+            link1: 'Fashion Store Duffin Street Pufville India surat',
+            link2: '123-456-789',
+            link3: 'demo@demo.com',
+            link4: null,
+            link5: null
         },
     ];
 
     return (
         <div className={"footer"}>
             <div className={"topDiv"}>
+                <PlaneIcon />
                 <div className={"textDiv"}>
                     <span className={"title"}>Join Our Newsletter Now</span>
                     <span className={"subTitle"}>You Have Successfully Subscribed Newsletter</span>
@@ -44,7 +63,11 @@ export default () => {
                             <span className={"title"}>{item.title}</span>
                             <div className={"line"}></div>
                         </div>
-                        <a href={"#"} className={"link"}>{item.links}</a>
+                        <a href={"#"} className={"link"}>{item.link1}</a>
+                        <a href={"#"} className={"link"}>{item.link2}</a>
+                        <a href={"#"} className={"link"}>{item.link3}</a>
+                        <a href={"#"} className={"link"}>{item.link4}</a>
+                        <a href={"#"} className={"link"}>{item.link5}</a>
                     </div>
                 ))}
             </div>

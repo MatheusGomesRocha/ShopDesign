@@ -1,4 +1,5 @@
 import './Blog.css';
+import LinkIcon from '../svg/link';
 
 export default () => {
     let array = [
@@ -34,7 +35,9 @@ export default () => {
                             <span className={"content"}>{item.text}</span>
                         </div>
                         <div className={"readMore"}>
-                            <div className={"ballDiv"}></div>
+                            <div className={"ballDiv"}>
+                                <LinkIcon />
+                            </div>
                             <span className={"readText"}>Read More</span>
                         </div>
                     </div>
