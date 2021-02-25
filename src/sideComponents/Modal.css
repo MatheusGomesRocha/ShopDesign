@@ -1,0 +1,139 @@
+.modal {
+    width: 1100px;
+    height: 500px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    font-family: Candara;
+}
+
+.modal .imgDiv {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #fff;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.modal .imgDiv .img {
+    height: 300px;
+    width: 300px;
+}
+
+.modal .rightDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.modal .rightDiv .name {
+    font-size: 25px;
+    font-weight: bold;
+}
+.modal .rightDiv .top {
+    margin-top: 10px;
+}
+.modal .rightDiv .top .infoDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.modal .rightDiv .top .infoDiv span {
+    font-size: 18px;
+    margin-top: 5px;
+}
+.modal .rightDiv .top .infoDiv .rightSpan {
+    width: 100px;
+}
+
+
+
+.modal .rightDiv .price {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.modal .rightDiv .qtdDiv {
+    display: flex;
+    align-items: center;
+}
+
+.modal .rightDiv .qtdDiv .btns {
+    display: flex;
+    margin-left: 50px;
+}
+
+.modal .rightDiv .qtdDiv .btns .less {
+    border: 1px solid #ddd;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.modal .rightDiv .qtdDiv .btns .input {
+    width: 40px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.modal .rightDiv .qtdDiv .btns .more {
+    border: 1px solid #ddd;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.modal .rightDiv .bottomDiv {
+    display: flex;
+}
+
+.modal .rightDiv .bottomDiv .largeBtn {
+    background-color: #CD553F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 250ms;
+}
+.modal .rightDiv .bottomDiv .smallBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #CD553F;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 250ms;
+}
+
+.modal .rightDiv .bottomDiv .largeBtn:hover, .modal .rightDiv .bottomDiv .smallBtn:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+
+.modal .line {
+    background-color: #ddd;
+    height: 1px;
+    width: 100%;
+    margin: 30px 0;
+}
