@@ -48,7 +48,7 @@
     border: none;
     height: 60px;
     padding-left: 10px;
-    width: 300px;
+    width: 350px;
     font-size: 18px;
 }
 
@@ -113,10 +113,45 @@
 }
 
 
+.footer .line {
+    width: 90%;
+    height: 1px;
+    background-color: #999;
+    margin-top: 50px;
+}
+.footer .credits {
+    display: flex;
+    margin-top: 50px;
+}
+.footer .credits .divIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+
+.footer .creditsText {
+    color: #999;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
 .footer .topDiv .inputDiv .btn:hover {
     cursor: pointer;
     background-color: #000;
 }
 .footer .bottomDiv .itemDiv .link:hover {
     color: #CD553F;
+}
+.footer .credits .divIcon:hover {
+    background-color: #CD553F;
+    border: 1px solid #CD553F;
 }

@@ -1,5 +1,8 @@
 import './Footer.css';
 import PlaneIcon from '../svg/paper-plane';
+import InstaIcon from '../svg/instagram';
+import FaceIcon from '../svg/facebook';
+import TwitterIcon from '../svg/twitter';
 
 export default () => {
 
@@ -71,6 +74,22 @@ export default () => {
                     </div>
                 ))}
             </div>
+
+            <div className={"line"}></div>
+
+            <div className={"credits"}>
+                <div className={"divIcon"}>
+                    <InstaIcon />
+                </div>
+                <div className={"divIcon"}>
+                    <FaceIcon />
+                </div>
+                <div className={"divIcon"}>
+                    <TwitterIcon />
+                </div>
+            </div>
+
+            <span className={"creditsText"}>Powered By OpenCart fevino © 2021</span>
         </div>
     )
 }
