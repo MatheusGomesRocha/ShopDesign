@@ -1,8 +1,10 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import './Modal.css';
 
 import HeartIcon from '../svg/heart';
 import AdjustIcon from '../svg/adjust';
+import MinusIcon from '../svg/minus';
+import PlusIcon from '../svg/plus';
 
 export default (props) => {
     const [quantidade, setQuantidade] = useState(1);
@@ -54,11 +56,15 @@ export default (props) => {
                 <div className={"line"}></div>
 
                 <div className={"qtdDiv"}>
-                    <span>Qtd</span>
+                    <span>Quantidade:</span>
                     <div className={"btns"}>
-                        <div style={{backgroundColor: quantidade === 1 ? '#ccc' : 'transparent'}} onClick={handleLess} className={"less"}>A</div>
+                        <div style={{backgroundColor: quantidade === 1 ? '#ccc' : 'transparent'}} onClick={handleLess} className={"less"}>
+                            <MinusIcon />
+                        </div>
                         <input className={"input"} value={quantidade}/>
-                        <div onClick={handleMore} className={"more"}>B</div>
+                        <div onClick={handleMore} className={"more"}>
+                            <PlusIcon />
+                        </div>
                     </div>
                 </div>
 

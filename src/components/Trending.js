@@ -99,7 +99,8 @@ export default () => {
             </div>
 
             <div className={"arrayDiv"}>
-                {arrayFeatured.map((item, k) => (
+                {array == 1 &&
+                    arrayFeatured.map((item, k) => (
                     <div key={k} className={"itemDiv"}>
                         <Dialog maxWidth={"100%"} onClose={handleClose} open={open}>
                             <Modal name={name} price={price} img={img}/>
@@ -159,9 +160,14 @@ export default () => {
                 {array == 2 &&
                 arrayBestseller.map((item, k) => (
                     <div className={"itemDiv"}>
+                        <Dialog maxWidth={"100%"} onClose={handleClose} open={open}>
+                            <Modal name={name} price={price} img={img}/>
+                        </Dialog>
+
                         <div className={"itemImg"}>
                             <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale!</div>
                             <img src={item.img} className={"img"}/>
+
                             <div className={"rowBtnHidden"}>
                                 <Tooltip arrow title="Add to cart" placement="top">
                                     <div onMouseOver={() => setHover1(true)}
@@ -175,7 +181,7 @@ export default () => {
                                 <Tooltip arrow title="Quickview" placement="top">
                                     <div onMouseOver={() => setHover2(true)}
                                          onMouseOut={() => setHover2(false)}
-                                         className={"btnHidden"}
+                                         className={"btnHidden"}  onClick={() => handleClickOpen(item.name, item.price, item.img)}
                                     >
                                         <Icon2 fill={hover2 ? '#fff' : '#000'}/>
                                     </div>
@@ -211,9 +217,14 @@ export default () => {
                 {array == 3 &&
                 arrayLatest.map((item, k) => (
                     <div className={"itemDiv"}>
+                        <Dialog maxWidth={"100%"} onClose={handleClose} open={open}>
+                            <Modal name={name} price={price} img={img}/>
+                        </Dialog>
+
                         <div className={"itemImg"}>
                             <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale!</div>
                             <img src={item.img} className={"img"}/>
+
                             <div className={"rowBtnHidden"}>
                                 <Tooltip arrow title="Add to cart" placement="top">
                                     <div onMouseOver={() => setHover1(true)}
@@ -227,7 +238,7 @@ export default () => {
                                 <Tooltip arrow title="Quickview" placement="top">
                                     <div onMouseOver={() => setHover2(true)}
                                          onMouseOut={() => setHover2(false)}
-                                         className={"btnHidden"}
+                                         className={"btnHidden"}  onClick={() => handleClickOpen(item.name, item.price, item.img)}
                                     >
                                         <Icon2 fill={hover2 ? '#fff' : '#000'}/>
                                     </div>
