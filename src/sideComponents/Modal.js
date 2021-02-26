@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import './Modal.css';
 
 import HeartIcon from '../svg/heart';
@@ -6,21 +6,49 @@ import AdjustIcon from '../svg/adjust';
 import MinusIcon from '../svg/minus';
 import PlusIcon from '../svg/plus';
 
+import Dialog from "@material-ui/core/Dialog";
+import SuccessMessage from "./SuccessMessage";
+
 export default (props) => {
     const [quantidade, setQuantidade] = useState(1);
+    const [openMessage, setOpenMessage] = useState(false);
+
+    const [btnPressed, setBtnPressed] = useState(false);
+    const [name, setName] = useState('');
 
     const handleLess = () => {
         if(quantidade > 1) {
             setQuantidade(quantidade - 1);
         }
     }
-
     const handleMore = () => {
         setQuantidade(quantidade + 1);
     }
 
+    const handleClickOpenMessage = (name, value) => {
+        setOpenMessage(true);
+        setName(name);
+
+        if(value == 'cart') {
+            setBtnPressed('cart');
+        } else if (value == 'wish') {
+            setBtnPressed('wish');
+        } else if (value == 'compare') {
+            setBtnPressed('compare');
+        }
+    }
+
     return(
         <div className={"modal"}>
+            <Dialog
+                open={openMessage}
+                onClose={() => setOpenMessage(false)}
+                aria-labelledby="alert-dialog-title"
+                aria-describedby="alert-dialog-description"
+            >
+                <SuccessMessage name={name} btnPressed={btnPressed}/>
+            </Dialog>
+
             <div className={"imgDiv"}>
                 <img className={"img"} src={props.img} />
             </div>
@@ -71,14 +99,14 @@ export default (props) => {
                 <div className={"line"}></div>
 
                 <div className={"bottomDiv"}>
-                    <div className={"largeBtn"}>
+                    <div className={"largeBtn"} onClick={() => handleClickOpenMessage(props.name, 'cart')}>
                         <span>Add To Cart</span>
                     </div>
 
-                    <div className={"smallBtn"}>
+                    <div className={"smallBtn"} onClick={() => handleClickOpenMessage(props.name, 'wish')}>
                         <HeartIcon fill={"#fff"} />
                     </div>
-                    <div className={"smallBtn"}>
+                    <div className={"smallBtn"} onClick={() => handleClickOpenMessage(props.name, 'compare')}>
                         <AdjustIcon fill={"#fff"} />
                     </div>
                 </div>
