@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sideComponents/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/Modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Daily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Daily.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trending.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -79,7 +85,10 @@
       <workItem from="1614251581823" duration="3771000" />
       <workItem from="1614271948403" duration="2534000" />
       <workItem from="1614277764635" duration="6448000" />
-      <workItem from="1614336171778" duration="5569000" />
+      <workItem from="1614336171778" duration="5704000" />
+      <workItem from="1614353860634" duration="71000" />
+      <workItem from="1614359158253" duration="793000" />
+      <workItem from="1614367578713" duration="510000" />
     </task>
     <servers />
   </component>
@@ -113,7 +122,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Comments.js</url>
           <line>3</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

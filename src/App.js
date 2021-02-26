@@ -1,37 +1,21 @@
-import Header from './components/Header';
-import Category from "./components/Category";
-import New from "./components/New";
-import Trending from "./components/Trending";
-import Ad from "./components/Ad";
-import Comments from "./components/Comments";
-import Quality from "./components/Quality";
-import Daily from "./components/Daily";
-import Blog from "./components/Blog";
-import Footer from "./components/Footer";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import Product from "./Product";
 
 export default () => {
   return(
-      <div>
-        <Header />
+    <BrowserRouter>
+        <Switch>
+            <Route exact path="/">
+                <Home />
+            </Route>
 
-        <Category />
+            <Route exact path="/Product">
+                <Product />
+            </Route>
 
-        <New />
-
-        <Trending />
-
-        <Ad />
-
-        <Comments />
-
-        <Quality />
-
-        <Daily />
-
-        <Blog />
-
-        <Footer />
-      </div>
+        </Switch>
+    </BrowserRouter>
 
   )
 }
