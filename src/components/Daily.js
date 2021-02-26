@@ -12,11 +12,30 @@ import Icon3 from "../svg/heart";
 import Icon4 from "../svg/adjust";
 import Countdown from 'react-countdown';
 
+import Modal from '../sideComponents/Modal.js'
+import Dialog from "@material-ui/core/Dialog";
+
 export default () => {
+    const [open, setOpen] = useState(false);
+
     const [hover1, setHover1] = useState(false);
     const [hover2, setHover2] = useState(false);
     const [hover3, setHover3] = useState(false);
     const [hover4, setHover4] = useState(false);
+
+    const [name, setName] = useState('');
+    const [price, setPrice] = useState('');
+    const [img, setImg] = useState('');
+
+    const handleClickOpen = (name, price, img) => {
+        setOpen(true);
+        setName(name);
+        setPrice(price);
+        setImg(img);
+    };
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     let array = [
         {id: 1, img: img1, timer: 500000000, sale: true, name: 'Printed Women Kurti (Multicolor)', price: '602,00'},
@@ -38,6 +57,10 @@ export default () => {
             <div className={"arrayDiv"}>
                 {array.map((item, k) => (
                     <div className={"itemDiv"}>
+                        <Dialog maxWidth={"100%"} onClose={handleClose} open={open}>
+                            <Modal name={name} price={price} img={img}/>
+                        </Dialog>
+
                         <div className={"itemImg"}>
                             <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale!</div>
                             <img src={item.img} className={"img"}/>
@@ -61,7 +84,7 @@ export default () => {
                                 <Tooltip arrow title="Quickview" placement="top">
                                     <div onMouseOver={() => setHover2(true)}
                                          onMouseOut={() => setHover2(false)}
-                                         className={"btnHidden"}
+                                         className={"btnHidden"} onClick={() => handleClickOpen(item.name, item.price, item.img)}
                                     >
                                         <Icon2 fill={hover2 ? '#fff' : '#000'}/>
                                     </div>

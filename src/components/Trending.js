@@ -125,8 +125,6 @@ export default () => {
                                          onMouseOut={() => setHover2(false)}
                                          className={"btnHidden"} onClick={() => handleClickOpen(item.name, item.price, item.img)}
                                     >
-
-
                                         <Icon2 fill={hover2 ? '#fff' : '#000'}/>
                                     </div>
                                 </Tooltip>
@@ -181,7 +179,7 @@ export default () => {
                                 <Tooltip arrow title="Quickview" placement="top">
                                     <div onMouseOver={() => setHover2(true)}
                                          onMouseOut={() => setHover2(false)}
-                                         className={"btnHidden"}  onClick={() => handleClickOpen(item.name, item.price, item.img)}
+                                         className={"btnHidden"} onClick={() => handleClickOpen(item.name, item.price, item.img)}
                                     >
                                         <Icon2 fill={hover2 ? '#fff' : '#000'}/>
                                     </div>
@@ -238,7 +236,7 @@ export default () => {
                                 <Tooltip arrow title="Quickview" placement="top">
                                     <div onMouseOver={() => setHover2(true)}
                                          onMouseOut={() => setHover2(false)}
-                                         className={"btnHidden"}  onClick={() => handleClickOpen(item.name, item.price, item.img)}
+                                         className={"btnHidden"} onClick={() => handleClickOpen(item.name, item.price, item.img)}
                                     >
                                         <Icon2 fill={hover2 ? '#fff' : '#000'}/>
                                     </div>
