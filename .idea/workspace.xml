@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Daily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Daily.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sideComponents/SuccessMessage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sideComponents/SuccessMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg/check-circle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Trending.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +82,7 @@
       <workItem from="1614251581823" duration="3771000" />
       <workItem from="1614271948403" duration="2534000" />
       <workItem from="1614277764635" duration="6448000" />
-      <workItem from="1614336171778" duration="2240000" />
+      <workItem from="1614336171778" duration="5145000" />
     </task>
     <servers />
   </component>

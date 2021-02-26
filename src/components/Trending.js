@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import './Trending.css';
 
 import img1 from '../img/img1.png';
@@ -24,9 +24,13 @@ import Tooltip from '@material-ui/core/Tooltip';
 import Dialog from '@material-ui/core/Dialog';
 
 import Modal from '../sideComponents/Modal.js'
+import SuccessMessage from '../sideComponents/SuccessMessage';
 
 export default () => {
     const [open, setOpen] = useState(false);
+    const [openMessage, setOpenMessage] = useState(false);
+
+    const [btnPressed, setBtnPressed] = useState(false);
 
     const [array, setArray] = useState(1);
 
@@ -48,6 +52,19 @@ export default () => {
     const handleClose = () => {
         setOpen(false);
     };
+
+    const handleClickOpenMessage = (name, value) => {
+        setOpenMessage(true);
+        setName(name);
+
+        if(value == 'cart') {
+            setBtnPressed('cart');
+        } else if (value == 'wish') {
+            setBtnPressed('wish');
+        } else if (value == 'compare') {
+            setBtnPressed('compare');
+        }
+    }
 
     let arrayFeatured = [
         {id: 1, img: img1, sale: true, name: 'Printed Women Kurti (Multicolor)', price: '602,00'},
@@ -106,6 +123,15 @@ export default () => {
                             <Modal name={name} price={price} img={img}/>
                         </Dialog>
 
+                        <Dialog
+                            open={openMessage}
+                            onClose={() => setOpenMessage(false)}
+                            aria-labelledby="alert-dialog-title"
+                            aria-describedby="alert-dialog-description"
+                        >
+                            <SuccessMessage name={name} btnPressed={btnPressed}/>
+                        </Dialog>
+
                         <div className={"itemImg"}>
                             <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale!</div>
                             <img src={item.img} className={"img"}/>
@@ -115,6 +141,7 @@ export default () => {
                                     <div onMouseOver={() => setHover1(true)}
                                          onMouseOut={() => setHover1(false)}
                                          className={"btnHidden"}
+                                         onClick={() => handleClickOpenMessage(item.name, 'cart')}
                                     >
                                         <Icon1 fill={hover1 ? '#fff' : '#000'}/>
                                     </div>
@@ -123,7 +150,8 @@ export default () => {
                                 <Tooltip arrow title="Quickview" placement="top">
                                     <div onMouseOver={() => setHover2(true)}
                                          onMouseOut={() => setHover2(false)}
-                                         className={"btnHidden"} onClick={() => handleClickOpen(item.name, item.price, item.img)}
+                                         className={"btnHidden"}
+                                         onClick={() => handleClickOpen(item.name, item.price, item.img)}
                                     >
                                         <Icon2 fill={hover2 ? '#fff' : '#000'}/>
                                     </div>
@@ -133,6 +161,7 @@ export default () => {
                                     <div onMouseOver={() => setHover3(true)}
                                          onMouseOut={() => setHover3(false)}
                                          className={"btnHidden"}
+                                         onClick={() => handleClickOpenMessage(item.name, 'wish')}
                                     >
                                         <Icon3 fill={hover3 ? '#fff' : '#000'}/>
                                     </div>
@@ -142,6 +171,7 @@ export default () => {
                                     <div onMouseOver={() => setHover4(true)}
                                          onMouseOut={() => setHover4(false)}
                                          className={"btnHidden"}
+                                         onClick={() => handleClickOpenMessage(item.name, 'compare')}
                                     >
                                         <Icon4 fill={hover4 ? '#fff' : '#000'}/>
                                     </div>
@@ -162,6 +192,15 @@ export default () => {
                             <Modal name={name} price={price} img={img}/>
                         </Dialog>
 
+                        <Dialog
+                            open={openMessage}
+                            onClose={() => setOpenMessage(false)}
+                            aria-labelledby="alert-dialog-title"
+                            aria-describedby="alert-dialog-description"
+                        >
+                            <SuccessMessage name={name} btnPressed={btnPressed}/>
+                        </Dialog>
+
                         <div className={"itemImg"}>
                             <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale!</div>
                             <img src={item.img} className={"img"}/>
@@ -171,6 +210,7 @@ export default () => {
                                     <div onMouseOver={() => setHover1(true)}
                                          onMouseOut={() => setHover1(false)}
                                          className={"btnHidden"}
+                                         onClick={() => handleClickOpenMessage(item.name, 'cart')}
                                     >
                                         <Icon1 fill={hover1 ? '#fff' : '#000'}/>
                                     </div>
@@ -179,7 +219,8 @@ export default () => {
                                 <Tooltip arrow title="Quickview" placement="top">
                                     <div onMouseOver={() => setHover2(true)}
                                          onMouseOut={() => setHover2(false)}
-                                         className={"btnHidden"} onClick={() => handleClickOpen(item.name, item.price, item.img)}
+                                         className={"btnHidden"}
+                                         onClick={() => handleClickOpen(item.name, item.price, item.img)}
                                     >
                                         <Icon2 fill={hover2 ? '#fff' : '#000'}/>
                                     </div>
@@ -189,6 +230,7 @@ export default () => {
                                     <div onMouseOver={() => setHover3(true)}
                                          onMouseOut={() => setHover3(false)}
                                          className={"btnHidden"}
+                                         onClick={() => handleClickOpenMessage(item.name, 'wish')}
                                     >
                                         <Icon3 fill={hover3 ? '#fff' : '#000'}/>
                                     </div>
@@ -198,6 +240,7 @@ export default () => {
                                     <div onMouseOver={() => setHover4(true)}
                                          onMouseOut={() => setHover4(false)}
                                          className={"btnHidden"}
+                                         onClick={() => handleClickOpenMessage(item.name, 'compare')}
                                     >
                                         <Icon4 fill={hover4 ? '#fff' : '#000'}/>
                                     </div>
@@ -219,6 +262,15 @@ export default () => {
                             <Modal name={name} price={price} img={img}/>
                         </Dialog>
 
+                        <Dialog
+                            open={openMessage}
+                            onClose={() => setOpenMessage(false)}
+                            aria-labelledby="alert-dialog-title"
+                            aria-describedby="alert-dialog-description"
+                        >
+                            <SuccessMessage name={name} btnPressed={btnPressed}/>
+                        </Dialog>
+
                         <div className={"itemImg"}>
                             <div style={{display: item.sale ? 'flex' : 'none'}} className={"saleText"}>Sale!</div>
                             <img src={item.img} className={"img"}/>
@@ -228,6 +280,7 @@ export default () => {
                                     <div onMouseOver={() => setHover1(true)}
                                          onMouseOut={() => setHover1(false)}
                                          className={"btnHidden"}
+                                         onClick={() => handleClickOpenMessage(item.name, 'cart')}
                                     >
                                         <Icon1 fill={hover1 ? '#fff' : '#000'}/>
                                     </div>
@@ -236,7 +289,8 @@ export default () => {
                                 <Tooltip arrow title="Quickview" placement="top">
                                     <div onMouseOver={() => setHover2(true)}
                                          onMouseOut={() => setHover2(false)}
-                                         className={"btnHidden"} onClick={() => handleClickOpen(item.name, item.price, item.img)}
+                                         className={"btnHidden"}
+                                         onClick={() => handleClickOpen(item.name, item.price, item.img)}
                                     >
                                         <Icon2 fill={hover2 ? '#fff' : '#000'}/>
                                     </div>
@@ -246,6 +300,7 @@ export default () => {
                                     <div onMouseOver={() => setHover3(true)}
                                          onMouseOut={() => setHover3(false)}
                                          className={"btnHidden"}
+                                         onClick={() => handleClickOpenMessage(item.name, 'wish')}
                                     >
                                         <Icon3 fill={hover3 ? '#fff' : '#000'}/>
                                     </div>
@@ -255,6 +310,7 @@ export default () => {
                                     <div onMouseOver={() => setHover4(true)}
                                          onMouseOut={() => setHover4(false)}
                                          className={"btnHidden"}
+                                         onClick={() => handleClickOpenMessage(item.name, 'compare')}
                                     >
                                         <Icon4 fill={hover4 ? '#fff' : '#000'}/>
                                     </div>
