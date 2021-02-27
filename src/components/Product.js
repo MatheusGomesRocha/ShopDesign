@@ -1,9 +1,12 @@
 import React, {useState} from "react";
 import './Product.css';
+
 import MinusIcon from "../svg/minus";
 import PlusIcon from "../svg/plus";
 import HeartIcon from "../svg/heart";
 import AdjustIcon from "../svg/adjust";
+import StarFullIcon from '../svg/star_full';
+import StarEmptyIcon from '../svg/star_empty';
 
 import Img from '../img/img1.png';
 
@@ -122,7 +125,11 @@ export default () => {
 
                 <div className={"reviewRow"}>
                     <div className={"reviewRowDiv"}>
-                        A A A A A
+                        <StarFullIcon />
+                        <StarFullIcon />
+                        <StarFullIcon />
+                        <StarEmptyIcon />
+                        <StarEmptyIcon />
                     </div>
 
                     <div className={"lineVertical"}></div>
