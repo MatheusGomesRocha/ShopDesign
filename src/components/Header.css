@@ -17,28 +17,28 @@
     justify-content: space-between;
 }
 /** 1.1 -- Header Top na esquerda */
-.header .headerTop .headerTopLeft {
+.header .headerTop .headerTopLeft {     /** Div Father */
     display: flex;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv {
+.header .headerTop .headerTopLeft .headerLinkDiv {      /** Div com os links */
     display: flex;
     margin-left: 15px;
     height: 80px;
     align-items: center;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv .headerLink {
+.header .headerTop .headerTopLeft .headerLinkDiv .headerLink {      /** Os links */
     height: 20px;
     transition: 250ms;
 
 }
 /** -- 1.1 -- */
 /** 1.2 -- Header Top na direita */
-.header .headerTop .headerTopRight {
+.header .headerTop .headerTopRight {        /** Div Father */
     display: flex;
     align-items: center;
     margin-right: 20px;
 }
-.header .headerTop .headerTopRight .headerTopRightLink {
+.header .headerTop .headerTopRight .headerTopRightLink {        /** Div com os links */
     margin-left: 5px;
     width: 65px;
     height: 45px;
@@ -48,7 +48,7 @@
     justify-content: center;
     transition: 500ms;
 }
-.header .headerTop .headerTopRight .headerTopRightLink .badge {
+.header .headerTop .headerTopRight .headerTopRightLink .badge {     /** Badge em cima do icon de cesta de compras */
     width: 20px;
     height: 20px;
     border-radius: 50%;
