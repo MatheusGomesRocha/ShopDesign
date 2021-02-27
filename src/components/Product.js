@@ -35,6 +35,8 @@ export default () => {
     const [btnPressed, setBtnPressed] = useState(false);
     const [name, setName] = useState('');
 
+    const [isReview, setIsReview] = useState(false);
+
     const handleLess = () => {
         if (quantidade > 1) {
             setQuantidade(quantidade - 1);
@@ -170,8 +172,24 @@ export default () => {
 
             <div className={"review"}>
                 <div className={"top"}>
-                    <div className={"btnChange"}>Description</div>
-                    <div className={"btnChange"}>Reviews (0)</div>
+                    <div onClick={() => setIsReview(false)}
+                         style={{
+                             color: isReview ? '#000' : '#CD553F',
+                             borderBottom: isReview ? '3px solid transparent' : '3px solid #CD553F'
+                         }}
+                         className={"btnChange"}
+                    >
+                        Description
+                    </div>
+                    <div onClick={() => setIsReview(true)}
+                         style={{
+                             color: isReview ? '#CD553F' : '#000',
+                             borderBottom: isReview ? '3px solid #CD553F' : '3px solid transparent'
+                         }}
+                         className={"btnChange"}
+                    >
+                        Reviews (0)
+                    </div>
                 </div>
 
                 <div className={"descriptionDiv"}>
