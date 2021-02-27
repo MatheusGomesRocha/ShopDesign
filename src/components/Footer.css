@@ -1,4 +1,4 @@
-.footer {
+.footer {       /** Div Father */
     font-family: Candara;
     background-color: #000;
     padding: 50px 0;
@@ -6,8 +6,8 @@
     flex-direction: column;
     align-items: center;
 }
-
-.footer .topDiv {
+/* 1 -- Div de cima com cor diferente (#333) */
+.footer .topDiv {           /** Div Father */
     background-color: #333;
     width: 85%;
     height: 100px;
@@ -17,32 +17,27 @@
     padding: 0 50px;
     position: relative;
 }
-
-.footer .topDiv .textDiv {
+.footer .topDiv .textDiv {      /** Div com textos */
     display: flex;
     flex-direction: column;
     margin-left: 50px;
 }
-
-.footer .topDiv .textDiv .title {
+.footer .topDiv .textDiv .title {       /** Título (texto grande) */
     color: #fff;
     font-size: 30px;
 }
-
-.footer .topDiv .textDiv .subTitle {
+.footer .topDiv .textDiv .subTitle {        /** Sub título (texto pequeno) */
     color: #999;
     font-size: 20px;
 }
-
-.footer .topDiv .inputDiv {
+.footer .topDiv .inputDiv {     /** Div com input e botão */
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     right: 20px;
 }
-
-.footer .topDiv .inputDiv .input {
+.footer .topDiv .inputDiv .input {      /** Input */
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: none;
@@ -51,16 +46,13 @@
     width: 350px;
     font-size: 18px;
 }
-
-.input:focus {
+.input:focus {          /** Ao focar no input, tira a borda */
     outline: 0;
 }
-
-.input::placeholder {
+.input::placeholder {       /** Style do placeholder do input */
     font-size: 18px;
 }
-
-.footer .topDiv .inputDiv .btn {
+.footer .topDiv .inputDiv .btn {        /** Div que simula um botão */
     height: 62px;
     width: 150px;
     background-color: #CD553F;
@@ -74,9 +66,10 @@
     font-size: 18px;
     transition: 250ms;
 }
+/** -- 1 -- */
 
-
-.footer .bottomDiv {
+/** 2 -- Div com os links e informações */
+.footer .bottomDiv {            /** Div Array Father */
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
     grid-gap: 50px;
@@ -84,26 +77,26 @@
     width: 100%;
     justify-content: center;
 }
-.footer .bottomDiv .itemDiv {
+.footer .bottomDiv .itemDiv {       /** Div com item único (uma coluna de links)*/
     display: flex;
     flex-direction: column;
     height: 250px;
 }
-.footer .bottomDiv .itemDiv .top {
+.footer .bottomDiv .itemDiv .top {      /** Div com título e linha abaixo */
     display: flex;
     flex-direction: column;
 }
-.footer .bottomDiv .itemDiv .title {
+.footer .bottomDiv .itemDiv .title {        /** Título (texto grande) */
     color: #fff;
     font-size: 22px;
 }
-.footer .bottomDiv .itemDiv .top .line {
+.footer .bottomDiv .itemDiv .top .line {        /** Linha abaixo do título */
     background-color: #CD553F;
     height: 3px;
     width: 20%;
     margin-top: 10px;
 }
-.footer .bottomDiv .itemDiv .link {
+.footer .bottomDiv .itemDiv .link {     /** Links */
     white-space: pre-wrap;
     color: #999;
     text-decoration: none;
@@ -111,19 +104,20 @@
     margin-top: 15px;
     transition: 250ms;
 }
+/** -- 2 -- */
 
-
-.footer .line {
+/** 3 -- More */
+.footer .line {         /** Div com uma linha grande para separar dos créditos */
     width: 90%;
     height: 1px;
     background-color: #999;
     margin-top: 50px;
 }
-.footer .credits {
+.footer .credits {      /** Div horizontal com os Icons de redes sociais */
     display: flex;
     margin-top: 50px;
 }
-.footer .credits .divIcon {
+.footer .credits .divIcon {     /** Div quadrada onde fica o Icon */
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -135,23 +129,24 @@
     cursor: pointer;
     transition: 250ms;
 }
-
-
-.footer .creditsText {
+.footer .creditsText {      /** Texto abaixo da Div créditos */
     color: #999;
     margin-top: 20px;
     font-size: 20px;
 }
+/** -- 3 -- */
 
 
-.footer .topDiv .inputDiv .btn:hover {
+/** Hovers */
+.footer .topDiv .inputDiv .btn:hover {      /** Botão de subscribe no topDiv */
     cursor: pointer;
     background-color: #000;
 }
-.footer .bottomDiv .itemDiv .link:hover {
+.footer .bottomDiv .itemDiv .link:hover {       /** Links no bottomDiv */
     color: #CD553F;
 }
-.footer .credits .divIcon:hover {
+.footer .credits .divIcon:hover {           /** Div quadrada com o Icon */
     background-color: #CD553F;
     border: 1px solid #CD553F;
 }
+/** */
