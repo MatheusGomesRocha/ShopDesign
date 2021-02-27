@@ -61,7 +61,7 @@ export default () => {
                 <div className={"top"}>
                     <div className={"infoDiv"}>
                         <span>Brand:</span>
-                        <span className={"rightSpan"}>Apple</span>
+                        <span style={{color: '#CD553F'}} className={"rightSpan"}>Apple</span>
                     </div>
                     <div className={"infoDiv"}>
                         <span>Product Code:</span>
@@ -137,6 +137,8 @@ export default () => {
                         <span>Write A Review</span>
                     </div>
                 </div>
+
+                <div className={"line"}></div>
 
             </div>
         </div>
