@@ -1,4 +1,4 @@
-.product {
+.product {      /** Div Father */
     width: 100%;
     background-color: #fff;
     display: grid;
@@ -9,7 +9,15 @@
     font-family: Candara;
 }
 
-.product .imgDiv {
+.product .line {        /** Linha para separar as divs */
+    background-color: #ddd;
+    height: 1px;
+    width: 100%;
+    margin: 30px 0;
+}
+
+/** 1 -- Div esquerda */
+.product .imgDiv {          /** Div Father */
     height: 100%;
     width: 80%;
     border-radius: 5px;
@@ -20,68 +28,72 @@
     border: 5px solid #fff;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
 }
-.product .imgDiv .img {
+.product .imgDiv .img {     /** Imagem em PNG */
     height: 400px;
     width: 400px;
 }
+/** -- 1.1 -- */
 
-
-.product .rightDiv {
+/** 2 -- Div direita */
+.product .rightDiv {        /** Div Father */
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
-.product .rightDiv .name {
+.product .rightDiv .name {       /** Nome do produto */
     font-size: 25px;
     font-weight: bold;
 }
-.product .rightDiv .top {
+
+/** 2.1 -- Div de cima com algumas infos do produto */
+.product .rightDiv .top {       /** Div Father */
     margin-top: 10px;
 }
-.product .rightDiv .top .infoDiv {
+.product .rightDiv .top .infoDiv {          /** Div com 2 textos alinhados na horizontal */
     display: flex;
     justify-content: space-between;
     width: 300px;
 }
-.product .rightDiv .top .infoDiv span {
+.product .rightDiv .top .infoDiv span {         /** Textos da infoDiv */
     font-size: 18px;
     margin-top: 5px;
 }
-.product .rightDiv .top .infoDiv .rightSpan {
+.product .rightDiv .top .infoDiv .rightSpan {       /* Apenas os textos da direita da infoDiv */
     width: 100px;
 }
+/** -- 2.1 -- */
 
-.product .rightDiv .center {
+/** 2.2 -- Div de Texto com preço  */
+.product .rightDiv .divPrice {        /** Div Father */
     display: flex;
     flex-direction: column;
 }
-
-.product .rightDiv .center .price {
+.product .rightDiv .divPrice .price {       /** Texto */
     font-size: 35px;
     font-weight: bold;
 }
+/** -- 2.2 -- */
 
-.product .rightDiv .qtdDiv {
+/** 2.3 -- Div com quantidade */
+.product .rightDiv .qtdDiv {         /** Div Father */
     display: flex;
     align-items: center;
 }
-
-.product .rightDiv .qtdDiv .btns {
+.product .rightDiv .qtdDiv .btns {      /** Div alinhada horizontalmente com botões */
     display: flex;
     margin-left: 50px;
 }
-
-.product .rightDiv .qtdDiv .btns .less {
+.product .rightDiv .qtdDiv .btns .less {         /** Botão de Menos */
     border: 1px solid #ddd;
-    width: 60px;
+    width: 50px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
-.product .rightDiv .qtdDiv .btns .input {
+.product .rightDiv .qtdDiv .btns .input {       /** Input entre os botões */
     width: 40px;
     border: 1px solid #ddd;
     display: flex;
@@ -90,21 +102,22 @@
     text-align: center;
     font-size: 18px;
 }
-.product .rightDiv .qtdDiv .btns .more {
+.product .rightDiv .qtdDiv .btns .more {        /** Botão de Mais */
     border: 1px solid #ddd;
-    width: 60px;
+    width: 50px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
+/** -- 2.3 -- */
 
-.product .rightDiv .bottomDiv {
+/** 2.4 -- Div de baixo com os botões de escolher o que fazer com o produto */
+.product .rightDiv .bottomDiv {     /** Div Father */
     display: flex;
 }
-
-.product .rightDiv .bottomDiv .largeBtn {
+.product .rightDiv .bottomDiv .largeBtn {       /** Botão grande (Add To Cart) */
     background-color: #CD553F;
     display: flex;
     align-items: center;
@@ -115,7 +128,7 @@
     font-size: 18px;
     transition: 250ms;
 }
-.product .rightDiv .bottomDiv .smallBtn {
+.product .rightDiv .bottomDiv .smallBtn {       /** Botão pequeno (Wish e Compare) */
     width: 50px;
     height: 50px;
     border-radius: 5px;
@@ -126,35 +139,32 @@
     justify-content: center;
     transition: 250ms;
 }
+/** -- 1.2.4 -- */
 
-
-.product .line {
-    background-color: #ddd;
-    height: 1px;
-    width: 100%;
-    margin: 30px 0;
-}
-
-.product .reviewRow {
+/** 1.2.5 -- Div com infos de Review */
+.product .reviewRow {    /** Div Father */
     display: flex;
 }
-
-.product .reviewRow .reviewRowDiv {
+.product .reviewRow .reviewRowDiv {     /** Div Item */
     margin-left: 15px;
     font-size: 22px;
     font-family: Cambria;
 }
-.product .reviewRow .reviewRow span {
+.product .reviewRow .reviewRow span {       /** Texto */
     color: #000;
     transition: 250ms;
 }
-.product .reviewRow .lineVertical {
+.product .reviewRow .lineVertical {     /** Linha vertical que separa as divs */
     height: 100%;
     width: 1px;
     background-color: #000;
     margin-left: 15px;
-
 }
+/** -- 1.2.5 -- */
+
+
+
+/** -- 1.2 -- */
 
 .product .rightDiv .bottomDiv .largeBtn:hover, .product .rightDiv .bottomDiv .smallBtn:hover {
     background-color: #000;

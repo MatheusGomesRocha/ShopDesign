@@ -79,7 +79,7 @@ export default () => {
 
                 <div className={"line"}></div>
 
-                <div className={"center"}>
+                <div className={"divPrice"}>
                     <span className={"price"}>R$ 195,05</span>
                     <span style={{marginTop: 10, fontSize: 18}}>Price In Reward Points: 350</span>
                 </div>
