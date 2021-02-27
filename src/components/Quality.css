@@ -1,4 +1,4 @@
-.quality {
+.quality {  /** Div Father */
     background-image: url("../img/quality.jpg");
     background-position: center;
     background-size: cover;
@@ -7,14 +7,14 @@
     font-family: Candara;
 }
 
-.quality .arrayDiv {
+/** 1 -- Array */
+.quality .arrayDiv {    /** Div Father */
     background-color: rgba(0, 0, 0, 0.8);
     display: grid;
     grid-template-columns: auto auto auto auto;
     height: 300px;
 }
-
-.quality .itemDiv {
+.quality .itemDiv {     /** Div com item único */
     height: auto;
     display: flex;
     flex-direction: column;
@@ -23,14 +23,12 @@
     border-right: 1px solid #ddd;
     margin: 50px 0;
 }
-
-.quality .itemDiv .title {
+.quality .itemDiv .title {      /** Título (texto grande)*/
     color: #fff;
     font-size: 30px;
     margin-top: 20px;
 }
-
-.quality .itemDiv .subTitle {
+.quality .itemDiv .subTitle {       /** Sub título (texto pequeno */
     color: #999;
     font-size: 20px;
     margin-top: 5px;
