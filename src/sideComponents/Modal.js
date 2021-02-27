@@ -17,7 +17,7 @@ export default (props) => {
     const [name, setName] = useState('');
 
     const handleLess = () => {
-        if(quantidade > 1) {
+        if (quantidade > 1) {
             setQuantidade(quantidade - 1);
         }
     }
@@ -29,7 +29,7 @@ export default (props) => {
         setOpenMessage(true);
         setName(name);
 
-        if(value == 'cart') {
+        if (value == 'cart') {
             setBtnPressed('cart');
         } else if (value == 'wish') {
             setBtnPressed('wish');
@@ -38,7 +38,7 @@ export default (props) => {
         }
     }
 
-    return(
+    return (
         <div className={"modal"}>
             <Dialog
                 open={openMessage}
@@ -50,7 +50,7 @@ export default (props) => {
             </Dialog>
 
             <div className={"imgDiv"}>
-                <img className={"img"} src={props.img} />
+                <img className={"img"} src={props.img}/>
             </div>
 
             <div className={"rightDiv"}>
@@ -77,21 +77,20 @@ export default (props) => {
 
                 <div className={"line"}></div>
 
-                <div className={"center"}>
-                    <span className={"price"}>R$ {props.price}</span>
-                </div>
+                <span className={"price"}>R$ {props.price}</span>
 
                 <div className={"line"}></div>
 
                 <div className={"qtdDiv"}>
                     <span>Quantidade:</span>
                     <div className={"btns"}>
-                        <div style={{backgroundColor: quantidade === 1 ? '#ccc' : 'transparent'}} onClick={handleLess} className={"less"}>
-                            <MinusIcon />
+                        <div style={{backgroundColor: quantidade === 1 ? '#ccc' : 'transparent'}} onClick={handleLess}
+                             className={"less"}>
+                            <MinusIcon/>
                         </div>
                         <input className={"input"} value={quantidade}/>
                         <div onClick={handleMore} className={"more"}>
-                            <PlusIcon />
+                            <PlusIcon/>
                         </div>
                     </div>
                 </div>
@@ -104,10 +103,10 @@ export default (props) => {
                     </div>
 
                     <div className={"smallBtn"} onClick={() => handleClickOpenMessage(props.name, 'wish')}>
-                        <HeartIcon fill={"#fff"} />
+                        <HeartIcon fill={"#fff"}/>
                     </div>
                     <div className={"smallBtn"} onClick={() => handleClickOpenMessage(props.name, 'compare')}>
-                        <AdjustIcon fill={"#fff"} />
+                        <AdjustIcon fill={"#fff"}/>
                     </div>
                 </div>
             </div>

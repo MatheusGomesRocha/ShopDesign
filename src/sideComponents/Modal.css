@@ -1,4 +1,5 @@
-.modal {
+/** 1 -- Dentro do Modal */
+.modal {        /** Div Father */
     width: 1100px;
     height: 500px;
     background-color: #fff;
@@ -11,7 +12,15 @@
     font-family: Candara;
 }
 
-.modal .imgDiv {
+.modal .line {      /** Linha para separar as divs */
+    background-color: #ddd;
+    height: 1px;
+    width: 100%;
+    margin: 30px 0;
+}
+
+/** 1.1 -- Div esquerda */
+.modal .imgDiv {        /** Div Father */
     height: 100%;
     width: 100%;
     border-radius: 5px;
@@ -22,64 +31,68 @@
     border: 5px solid #fff;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
 }
-.modal .imgDiv .img {
+.modal .imgDiv .img {       /** Imagem em PNG */
     height: 300px;
     width: 300px;
 }
+/** -- 1.1 -- */
 
-.modal .rightDiv {
+/** 1.2 -- Div direita */
+.modal .rightDiv {      /** Div Father */
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
-.modal .rightDiv .name {
+.modal .rightDiv .name {    /** Nome do produto */
     font-size: 25px;
     font-weight: bold;
 }
-.modal .rightDiv .top {
+
+/** 1.2.1 -- Div de cima com algumas infos do produto */
+.modal .rightDiv .top {     /** Div Father */
     margin-top: 10px;
 }
-.modal .rightDiv .top .infoDiv {
+.modal .rightDiv .top .infoDiv {    /** Div com 2 textos alinhados na horizontal */
     display: flex;
     justify-content: space-between;
     width: 300px;
 }
-.modal .rightDiv .top .infoDiv span {
+.modal .rightDiv .top .infoDiv span {       /** Textos da infoDiv */
     font-size: 18px;
     margin-top: 5px;
 }
-.modal .rightDiv .top .infoDiv .rightSpan {
+.modal .rightDiv .top .infoDiv .rightSpan {     /* Apenas os textos da direita da infoDiv */
     width: 100px;
 }
+/** -- 1.2.1 -- */
 
-
-
-.modal .rightDiv .price {
+/** 1.2.2 -- Texto com preço  */
+.modal .rightDiv .price {       /** Texto com preço */
     font-size: 35px;
     font-weight: bold;
 }
+/** -- 1.2.2 -- */
 
-.modal .rightDiv .qtdDiv {
+/** 1.2.3 -- Div com quantidade */
+.modal .rightDiv .qtdDiv {      /** Div Father */
     display: flex;
     align-items: center;
 }
-
-.modal .rightDiv .qtdDiv .btns {
+.modal .rightDiv .qtdDiv .btns {        /** Div alinhada horizontalmente com botões */
     display: flex;
     margin-left: 50px;
 }
-
-.modal .rightDiv .qtdDiv .btns .less {
+.modal .rightDiv .qtdDiv .btns .less {      /** Botão de Menos */
     border: 1px solid #ddd;
-    width: 60px;
+    width: 50px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
-.modal .rightDiv .qtdDiv .btns .input {
+.modal .rightDiv .qtdDiv .btns .input {     /** Input entre os botões */
     width: 40px;
     border: 1px solid #ddd;
     display: flex;
@@ -88,7 +101,7 @@
     text-align: center;
     font-size: 18px;
 }
-.modal .rightDiv .qtdDiv .btns .more {
+.modal .rightDiv .qtdDiv .btns .more {      /** Botão de Mais */
     border: 1px solid #ddd;
     width: 60px;
     height: 40px;
@@ -97,12 +110,13 @@
     justify-content: center;
     cursor: pointer;
 }
+/** -- 1.2.3 -- */
 
-.modal .rightDiv .bottomDiv {
+/** 1.2.4 -- Div de baixo com os botões de escolher o que fazer com o produto */
+.modal .rightDiv .bottomDiv {       /** Div Father */
     display: flex;
 }
-
-.modal .rightDiv .bottomDiv .largeBtn {
+.modal .rightDiv .bottomDiv .largeBtn {     /** Botão grande (Add To Cart) */
     background-color: #CD553F;
     display: flex;
     align-items: center;
@@ -113,7 +127,7 @@
     font-size: 18px;
     transition: 250ms;
 }
-.modal .rightDiv .bottomDiv .smallBtn {
+.modal .rightDiv .bottomDiv .smallBtn {     /** Botão pequeno (Wish e Compare) */
     width: 50px;
     height: 50px;
     border-radius: 5px;
@@ -124,16 +138,13 @@
     justify-content: center;
     transition: 250ms;
 }
+/** -- 1.2.4 -- */
+/** -- 1.2 -- */
 
-.modal .rightDiv .bottomDiv .largeBtn:hover, .modal .rightDiv .bottomDiv .smallBtn:hover {
+/** Hovers */
+.modal .rightDiv .bottomDiv .largeBtn:hover, .modal .rightDiv .bottomDiv .smallBtn:hover {      /** Botões ficam pretos*/
     background-color: #000;
     cursor: pointer;
 }
 
 
-.modal .line {
-    background-color: #ddd;
-    height: 1px;
-    width: 100%;
-    margin: 30px 0;
-}
