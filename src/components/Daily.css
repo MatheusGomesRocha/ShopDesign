@@ -61,7 +61,7 @@
     cursor: pointer;
     transition: 500ms;
 }
-.daily .arrayDiv .itemDiv .itemImg .countdownHidden {
+.daily .arrayDiv .itemDiv .itemImg .countdownHidden {       /** Div com cronômetro escondido */
     display: none;
     position: absolute;
     top: 20px;
@@ -72,7 +72,7 @@
     justify-content: center;
     background-color: #CD553F;
 }
-.countdownTime {
+.countdownTime {        /** Texto do cronômetro */
     font-size: 30px;
     color: #fff;
     font-family: Arial;
@@ -116,7 +116,7 @@
 .daily .arrayDiv .itemDiv:hover .itemImg .img{   /** Efeito de zoom na imagem ao passar mouse em cima do ItemDiv */
     transform: scale(1.1);
 }
-.daily .arrayDiv .itemDiv:hover .itemImg .rowBtnHidden, .daily .arrayDiv .itemDiv:hover .itemImg .countdownHidden{      /** Passar o mouse em cima do item do array, mostra a div escondida com os botões */
+.daily .arrayDiv .itemDiv:hover .itemImg .rowBtnHidden, .daily .arrayDiv .itemDiv:hover .itemImg .countdownHidden { /** Mostra o cronômetro */      /** Passar o mouse em cima do item do array, mostra a div escondida com os botões */
     display: flex;
     animation: fadeItem 500ms;
 }
@@ -131,3 +131,4 @@
     from{opacity: 0}
     to{opacity: 1}
 }
+/** **/
