@@ -1,25 +1,24 @@
-.blog {
+.blog {     /** Div Father */
     margin: 100px 50px;
     font-family: Candara;
     display: flex;
     flex-direction: column;
 }
-
-.blog .title {
+.blog .title {      /** Título (texto grande) fora do Array */
     text-align: center;
     font-size: 40px;
 
 }
 
-.blog .arrayDiv {
+/** 1 -- Array com os posts do Blog */
+.blog .arrayDiv {       /** Div Father */
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-gap: 30px;
     justify-content: center;
     margin-top: 20px;
 }
-
-.blog .arrayDiv .itemDiv {
+.blog .arrayDiv .itemDiv {      /** Div única com cada post */
     display: flex;
     flex-direction: column;
     border: 1px solid #ddd;
@@ -29,8 +28,7 @@
     cursor: pointer;
     transition: 250ms;
 }
-
-.blog .arrayDiv .itemDiv .top {
+.blog .arrayDiv .itemDiv .top {     /** Div de cima onde fica a data, título e subtítulo */
     border-bottom: 1px solid #ddd;
     height: 50%;
     margin: 0 25px;
@@ -38,19 +36,17 @@
     display: flex;
     flex-direction: column;
 }
-.blog .arrayDiv .itemDiv .top .date {
+.blog .arrayDiv .itemDiv .top .date {       /** Data */
     font-size: 20px;
 }
-
-.blog .arrayDiv .itemDiv .top .title{
+.blog .arrayDiv .itemDiv .top .title{       /** Título (texto grande) */
     font-size: 30px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-top: 10px;
 }
-
-.blog .arrayDiv .itemDiv .top .content {
+.blog .arrayDiv .itemDiv .top .content {        /** Sub título (texto pequeno) */
     color: #999;
     height: 20px;
     font-size: 18px;
@@ -60,14 +56,13 @@
     margin-top: 10px;
 }
 
-.blog .arrayDiv .itemDiv .readMore {
+.blog .arrayDiv .itemDiv .readMore {        /** Div bottom com botão Read More */
     display: flex;
     align-items: center;
     height: 45%;
     margin: 0 25px;
 }
-
-.blog .arrayDiv .itemDiv .readMore .ballDiv {
+.blog .arrayDiv .itemDiv .readMore .ballDiv {       /** Div em formato de bola */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,19 +71,20 @@
     border-radius: 50%;
     background-color: #CD553F;
 }
-
-.blog .arrayDiv .itemDiv .readMore .readText {
+.blog .arrayDiv .itemDiv .readMore .readText {      /** Texto ao lado da div em formado de bola */
     color: #CD553F;
     margin-left: 20px;
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
 }
+/** -- 1 -- */
 
-.blog .arrayDiv .itemDiv:hover {
+/** Hovers */
+.blog .arrayDiv .itemDiv:hover {        /** itemDiv recebe uma borda preta */
     border: 1px solid #000;
 }
-
-.blog .arrayDiv .itemDiv .readMore .readText:hover {
+.blog .arrayDiv .itemDiv .readMore .readText:hover {        /** Texto Read More fica preto */
     color: #000;
 }
+/** **/
