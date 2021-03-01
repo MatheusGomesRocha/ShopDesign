@@ -37,6 +37,12 @@ export default () => {
 
     const [isReview, setIsReview] = useState(false);
 
+    const [star1, setStar1] = useState(false);
+    const [star2, setStar2] = useState(false);
+    const [star3, setStar3] = useState(false);
+    const [star4, setStar4] = useState(false);
+    const [star5, setStar5] = useState(false);
+
     const handleLess = () => {
         if (quantidade > 1) {
             setQuantidade(quantidade - 1);
@@ -59,8 +65,48 @@ export default () => {
         }
     }
 
-    return (
-        <div className={"product"}>
+    const handleOverRating = (value) => {
+        if (value == 1) {
+            setStar1(true);
+            setStar2(false);
+            setStar3(false);
+            setStar4(false);
+            setStar5(false);
+        } else if (value == 2) {
+            setStar1(true);
+            setStar2(true);
+            setStar3(false);
+            setStar4(false);
+            setStar5(false);
+        } else if (value == 3) {
+            setStar1(true);
+            setStar2(true);
+            setStar3(true);
+            setStar4(false);
+            setStar5(false);
+        } else if (value == 4) {
+            setStar1(true);
+            setStar2(true);
+            setStar3(true);
+            setStar4(true);
+            setStar5(false);
+        } else if (value == 5) {
+            setStar1(true);
+            setStar2(true);
+            setStar3(true);
+            setStar4(true);
+            setStar5(true);
+        } else if (value == 0) {
+            setStar1(false);
+            setStar2(false);
+            setStar3(false);
+            setStar4(false);
+            setStar5(false);
+        }
+    }
+
+    const ProductInfoComponent = () => {
+        return(
             <div className={"productInfo"}>
                 <Dialog
                     open={openMessage}
@@ -170,51 +216,138 @@ export default () => {
                 </div>
             </div>
 
+        )
+    }
+
+    return (
+        <div className={"product"}>
+
+            <ProductInfoComponent />
+
             <div className={"review"}>
-                <div className={"top"}>
-                    <div onClick={() => setIsReview(false)}
-                         style={{
-                             color: isReview ? '#000' : '#CD553F',
-                             borderBottom: isReview ? '3px solid transparent' : '3px solid #CD553F'
-                         }}
-                         className={"btnChange"}
-                    >
-                        Description
-                    </div>
-                    <div onClick={() => setIsReview(true)}
-                         style={{
-                             color: isReview ? '#CD553F' : '#000',
-                             borderBottom: isReview ? '3px solid #CD553F' : '3px solid transparent'
-                         }}
-                         className={"btnChange"}
-                    >
-                        Reviews (0)
-                    </div>
-                </div>
-
-                <div className={"descriptionDiv"}>
-                    <span className={"description"}>
-                    HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high
-                    definition clarity for a mobile experience you never thought possible. Seductively sleek, the HTC
-                    Touch HD provides the next generation of mobile functionality, all at a simple touch. Fully
-                    integrated with Windows Mobile Professional 6.1, ultrafast 3.5G, GPS, 5MP camera, plus lots more -
-                    all delivered on a breathtakingly crisp 3.8" WVGA touchscreen - you can take control of your mobile
-                    world with the HTC Touch HD.
-                </span>
-                </div>
-
-
-                <div className={"featuresDiv"}>
-                    <span className={"title"}>Features</span>
-                    <div className={"featuresText"}>
-                        {arrayFeatures.map((item, k) => (
-                            <div className={"featuresRow"}>
-                                <div className={"smallBall"}></div>
-                                <span>{item.text}</span>
+                {isReview ?      /* Se isReview for TRUE, retorna a tela com o formulário para adicionar uma review ao produto */
+                    <div className={"reviewForm"}>
+                        <div className={"top"}>
+                            <div onClick={() => setIsReview(false)}
+                                 style={{
+                                     color: isReview ? '#000' : '#CD553F',
+                                     borderBottom: isReview ? '3px solid transparent' : '3px solid #CD553F'
+                                 }}
+                                 className={"btnChange"}
+                            >
+                                Description
                             </div>
-                        ))}
+                            <div onClick={() => setIsReview(true)}
+                                 style={{
+                                     color: isReview ? '#CD553F' : '#000',
+                                     borderBottom: isReview ? '3px solid #CD553F' : '3px solid transparent'
+                                 }}
+                                 className={"btnChange"}
+                            >
+                                Reviews (0)
+                            </div>
+                        </div>
+
+                        <div className={"divTop"}>
+                            There are no reviews for this product.
+                        </div>
+
+                        <span className={"title"}>Write a Review</span>
+
+                        <div className={"divInput"}>
+                            <label className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span> Your
+                                Name</label>
+                            <input type={"text"} className={"input"}/>
+                        </div>
+
+                        <div className={"divInput"}>
+                            <label className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span> Your Review</label>
+                            <textarea className={"bigInput"}/>
+                        </div>
+
+                        <div className={"rating"}>
+                            <span><span style={{color: 'red', marginRight: 5}}>*</span> Rating</span>
+                            <div onMouseOver={() => handleOverRating(1)} onMouseOut={() => handleOverRating(0)}>
+                                <StarFullIcon width={"20px"} height={"20px"} fill={star1 ? '#cd553f' : '#ccc'}/>
+                            </div>
+
+                            <div onMouseOver={() => handleOverRating(2)} onMouseOut={() => handleOverRating(0)}>
+                                <StarFullIcon width={"20px"} height={"20px"} fill={star2 ? '#cd553f' : '#ccc'}/>
+                            </div>
+
+                            <div onMouseOver={() => handleOverRating(3)} onMouseOut={() => handleOverRating(0)}>
+                                <StarFullIcon width={"20px"} height={"20px"} fill={star3 ? '#cd553f' : '#ccc'}/>
+                            </div>
+
+                            <div onMouseOver={() => handleOverRating(4)} onMouseOut={() => handleOverRating(0)}>
+                                <StarFullIcon width={"20px"} height={"20px"} fill={star4 ? '#cd553f' : '#ccc'}/>
+                            </div>
+
+                            <div onMouseOver={() => handleOverRating(5)} onMouseOut={() => handleOverRating(0)}>
+                                <StarFullIcon width={"20px"} height={"20px"} fill={star5 ? '#cd553f' : '#ccc'}/>
+                            </div>
+                        </div>
+
+                        <span className={"title"}>Captcha</span>
+
+                        <div style={{margin: 20, width: 'auto'}} className={"line"}></div>
+
+                        <div className={"divInput"}>
+                            <span><span style={{color: 'red', marginRight: 5}}>*</span>Enter the code in the box</span>
+                            <input type={"text"} className={"input"}/>
+                        </div>
                     </div>
-                </div>
+
+                    :           /* Se isReview for FALSE, retorna a tela de features do produto (infos) */
+
+                    <div className={"productFeatures"}>
+
+                        <div className={"top"}>
+                            <div onClick={() => setIsReview(false)}
+                                 style={{
+                                     color: isReview ? '#000' : '#CD553F',
+                                     borderBottom: isReview ? '3px solid transparent' : '3px solid #CD553F'
+                                 }}
+                                 className={"btnChange"}
+                            >
+                                Description
+                            </div>
+                            <div onClick={() => setIsReview(true)}
+                                 style={{
+                                     color: isReview ? '#CD553F' : '#000',
+                                     borderBottom: isReview ? '3px solid #CD553F' : '3px solid transparent'
+                                 }}
+                                 className={"btnChange"}
+                            >
+                                Reviews (0)
+                            </div>
+                        </div>
+
+                        <div className={"descriptionDiv"}>
+                            <span className={"description"}>
+                                HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high
+                                definition clarity for a mobile experience you never thought possible. Seductively sleek, the HTC
+                                Touch HD provides the next generation of mobile functionality, all at a simple touch. Fully
+                                integrated with Windows Mobile Professional 6.1, ultrafast 3.5G, GPS, 5MP camera, plus lots more -
+                                all delivered on a breathtakingly crisp 3.8" WVGA touchscreen - you can take control of your mobile
+                                world with the HTC Touch HD.
+                            </span>
+                        </div>
+
+                        <div className={"featuresDiv"}>
+                            <span className={"title"}>Features</span>
+                            <div className={"featuresText"}>
+                                {arrayFeatures.map((item, k) => (
+                                    <div className={"featuresRow"}>
+                                        <div className={"smallBall"}></div>
+                                        <span>{item.text}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                }
+
             </div>
         </div>
     )

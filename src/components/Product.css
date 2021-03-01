@@ -14,7 +14,7 @@
     justify-content: center;
     padding: 100px 0;
 }
-.product .productInfo .line {        /** Linha para separar as divs */
+.product .line {        /** Linha para separar as divs */
     background-color: #ddd;
     height: 1px;
     width: 100%;
@@ -175,14 +175,14 @@
     margin-bottom: 50px;
 }
 
-.product .review .top {
+.product .review .top {     /** Essa div não usa nenhum css antes do .top pois serve pra dus divs Fathers diferentes */
     display: flex;
     align-items: center;
     height: 50px;
     border-bottom: 1px solid #ddd;
 }
 
-.product .review .top .btnChange {
+.product .review .top .btnChange { /** Essa div não usa nenhum css antes do .top pois serve pra dus divs Fathers diferentes */
     margin-left: 20px;
     height: 50px;
     display: flex;
@@ -193,41 +193,110 @@
     font-size: 18px;
 }
 
-.product .review .descriptionDiv {
+.product .review .productFeatures .descriptionDiv {
     margin: 20px;
 }
-.product .review .descriptionDiv .description {
+.product .review .productFeatures .descriptionDiv .description {
     font-size: 20px;
     line-height: 1.3;
 }
 
-.product .review .featuresDiv {
+.product .review .productFeatures .featuresDiv {
     margin: 20px;
 }
-.product .review .featuresDiv .title {
+.product .review .productFeatures .featuresDiv .title {
     font-size: 22px;
     font-weight: bold;
 }
 
-.product .review .featuresDiv .featuresText {
+.product .review .productFeatures .featuresDiv .featuresText {
     display: flex;
     flex-direction: column;
     margin: 10px 0 0 50px;
 }
-.product .review .featuresDiv .featuresText .featuresRow {
+.product .review .productFeatures .featuresDiv .featuresText .featuresRow {
     display: flex;
     align-items: center;
     margin-top: 5px;
 }
-.product .review .featuresDiv .featuresText .featuresRow .smallBall {
+.product .review .productFeatures .featuresDiv .featuresText .featuresRow .smallBall {
     width: 5px;
     height: 5px;
     border-radius: 50%;
     background-color: #000;
     margin-right: 10px;
 }
-.product .review .featuresDiv .featuresText .featuresRow span {
+.product .review .productFeatures .featuresDiv .featuresText .featuresRow span {
     font-size: 18px;
+}
+
+
+.product .review .reviewForm {
+}
+
+.product .review .reviewForm .divTop {
+    border: 1px solid #ddd;
+    margin: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.product .review .reviewForm .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.product .review .reviewForm .divInput {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.product .review .reviewForm .divInput .label {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.product .review .reviewForm .divInput .input {
+    border: 1px solid #ddd;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.product .review .reviewForm .divInput .bigInput {
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px;
+    height: 150px;
+}
+
+.product .review .reviewForm .rating {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.product .review .reviewForm .rating span {
+    margin-right: 20px;
+    font-size: 18px;
+}
+.product .review .reviewForm .rating div {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+
+
+.product .review .reviewForm .divInput .input:focus, .product .review .reviewForm .divInput .bigInput:focus {
+    border: 1px solid #CD553F;
+    outline: #CD553F;
 }
 
 /** Hovers */
@@ -239,7 +308,7 @@
     color: #CD553F;
     cursor: pointer;
 }
-.product .review .top .btnChange:hover {
+.product .review .productFeatures .top .btnChange:hover {
     color: #CD553F;
 }
 /** **/
