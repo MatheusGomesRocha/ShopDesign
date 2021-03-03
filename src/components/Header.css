@@ -67,7 +67,7 @@
 
 /** 2 -- HeaderBottom */
 .header .headerBottom {     /** Div Father */
-    background-color: #ccc;
+    background-color: #eee;
     height: 500px;
     display: grid;
     align-items: center;

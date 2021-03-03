@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sideComponents/Path.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sideComponents/Path.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/bus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/danger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/like.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/prancheta.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sideComponents/Path.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/Path.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +91,7 @@
       <workItem from="1614776892431" duration="656000" />
       <workItem from="1614783730112" duration="68000" />
       <workItem from="1614786690406" duration="324000" />
-      <workItem from="1614788044881" duration="4013000" />
+      <workItem from="1614788044881" duration="4230000" />
     </task>
     <servers />
   </component>
