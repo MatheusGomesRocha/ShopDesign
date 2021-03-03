@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/star_full.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/star_full.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
       </list>
@@ -87,7 +90,11 @@
       <workItem from="1614367578713" duration="852000" />
       <workItem from="1614385225403" duration="4725000" />
       <workItem from="1614443040207" duration="2992000" />
-      <workItem from="1614614606187" duration="5045000" />
+      <workItem from="1614614606187" duration="5155000" />
+      <workItem from="1614776892431" duration="656000" />
+      <workItem from="1614783730112" duration="68000" />
+      <workItem from="1614786690406" duration="324000" />
+      <workItem from="1614788044881" duration="751000" />
     </task>
     <servers />
   </component>
@@ -122,6 +129,11 @@
           <url>file://$PROJECT_DIR$/src/components/Comments.js</url>
           <line>3</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Product.js</url>
+          <line>302</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

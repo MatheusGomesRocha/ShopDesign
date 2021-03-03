@@ -4,6 +4,9 @@ import InstaIcon from '../svg/instagram';
 import FaceIcon from '../svg/facebook';
 import TwitterIcon from '../svg/twitter';
 
+import {Link} from 'react-router-dom';
+import React from "react";
+
 export default () => {
 
     let array = [
@@ -14,7 +17,8 @@ export default () => {
             link2: 'Delivery Information',
             link3: 'Privacy Policy',
             link4: 'Terms & Conditions',
-            link5: 'Brands'
+            link5: 'Brands',
+            about: true
         },
         {
             id: 2,
@@ -48,7 +52,7 @@ export default () => {
     return (
         <div className={"footer"}>
             <div className={"topDiv"}>
-                <PlaneIcon />
+                <PlaneIcon/>
                 <div className={"textDiv"}>
                     <span className={"title"}>Join Our Newsletter Now</span>
                     <span className={"subTitle"}>You Have Successfully Subscribed Newsletter</span>
@@ -66,11 +70,38 @@ export default () => {
                             <span className={"title"}>{item.title}</span>
                             <div className={"line"}></div>
                         </div>
-                        <a href={"#"} className={"link"}>{item.link1}</a>
-                        <a href={"#"} className={"link"}>{item.link2}</a>
-                        <a href={"#"} className={"link"}>{item.link3}</a>
-                        <a href={"#"} className={"link"}>{item.link4}</a>
-                        <a href={"#"} className={"link"}>{item.link5}</a>
+                        {item.about ?
+                            <>
+                                <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                    <a href={"#"} className={"link"}>{item.link1}</a>
+                                </Link>
+
+                                <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                    <a href={"#"} className={"link"}>{item.link2}</a>
+                                </Link>
+
+                                <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                    <a href={"#"} className={"link"}>{item.link3}</a>
+                                </Link>
+
+                                <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                    <a href={"#"} className={"link"}>{item.link4}</a>
+                                </Link>
+
+                                <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                    <a href={"#"} className={"link"}>{item.link5}</a>
+                                </Link>
+                            </>
+                            :
+                            <>
+                                <a href={"#"} className={"link"}>{item.link1}</a>
+                                <a href={"#"} className={"link"}>{item.link2}</a>
+                                <a href={"#"} className={"link"}>{item.link3}</a>
+                                <a href={"#"} className={"link"}>{item.link4}</a>
+                                <a href={"#"} className={"link"}>{item.link5}</a>
+                            </>
+                        }
+
                     </div>
                 ))}
             </div>
@@ -79,13 +110,13 @@ export default () => {
 
             <div className={"credits"}>
                 <div className={"divIcon"}>
-                    <InstaIcon />
+                    <InstaIcon/>
                 </div>
                 <div className={"divIcon"}>
-                    <FaceIcon />
+                    <FaceIcon/>
                 </div>
                 <div className={"divIcon"}>
-                    <TwitterIcon />
+                    <TwitterIcon/>
                 </div>
             </div>
 
