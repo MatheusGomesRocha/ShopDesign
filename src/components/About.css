@@ -1,0 +1,38 @@
+.about {
+    font-family: Candara;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.about .arrayDiv .arrayTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.about .arrayDiv .arrayTitle {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.about .arrayDiv .itemDiv {
+    margin-top: 70px;
+}
+.about .arrayDiv .itemDiv .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.about .arrayDiv .itemDiv .itemRow {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.about .arrayDiv .itemDiv .itemRow .text {
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
