@@ -94,7 +94,9 @@ export default () => {
                             </>
                             :
                             <>
-                                <a href={"#"} className={"link"}>{item.link1}</a>
+                                <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                    <a href={"#"} className={"link"}>{item.link1}</a>
+                                </Link>
                                 <a href={"#"} className={"link"}>{item.link2}</a>
                                 <a href={"#"} className={"link"}>{item.link3}</a>
                                 <a href={"#"} className={"link"}>{item.link4}</a>
