@@ -17,6 +17,7 @@
 
 .path .divTopText .text {
     transition: 250ms;
+    font-size: 20px;
 }
 .path .divTopText .text:hover {
     color: #CD553F;

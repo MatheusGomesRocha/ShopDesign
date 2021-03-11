@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sideComponents/Path.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/Path.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sideComponents/Path.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/Path.js" afterDir="false" />
@@ -97,7 +98,7 @@
       <workItem from="1614786690406" duration="324000" />
       <workItem from="1614788044881" duration="4284000" />
       <workItem from="1615381167902" duration="1127000" />
-      <workItem from="1615467935177" duration="1996000" />
+      <workItem from="1615467935177" duration="2380000" />
     </task>
     <servers />
   </component>

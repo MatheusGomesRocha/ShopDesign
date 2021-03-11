@@ -2,6 +2,8 @@ import './Login.css';
 import PathComponent from "../sideComponents/Path";
 import {withStyles} from "@material-ui/core/styles";
 import {Button} from "@material-ui/core";
+import {Link} from "react-router-dom";
+import React from "react";
 
 
 export default () => {
@@ -86,7 +88,9 @@ export default () => {
                         and keep track of the orders you have previously made.
                     </span>
 
-                    <DefaultBtn2>Continue</DefaultBtn2>
+                    <Link to={"/Register"} style={{textDecoration: 'none'}}>
+                        <DefaultBtn2>Continue</DefaultBtn2>
+                    </Link>
                 </div>
             </div>
         </div>

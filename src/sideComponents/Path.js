@@ -26,10 +26,18 @@ export default (props) => {
                 }
 
                 {props.login &&
-                    <div style={{display: 'flex' }}>
+                    <div style={{display: 'flex'}}>
                         <span className={"text"}>Account</span>
                         <div className={"lineVertical"}></div>
                         <span className={"text"}>Login</span>
+                    </div>
+                }
+
+                {props.register &&
+                    <div style={{display: 'flex'}}>
+                        <span className={"text"}>Account</span>
+                        <div className={"lineVertical"}></div>
+                        <span className={"text"}>Register</span>
                     </div>
                 }
             </div>
