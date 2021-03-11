@@ -38,7 +38,7 @@ export default () => {
     return(
         <div className={"about"}>
 
-            <PathComponent />
+            <PathComponent about={true}/>
 
             <div className={"arrayDiv"}>
                 <span className={"arrayTitle"}>Terms & Conditions</span>

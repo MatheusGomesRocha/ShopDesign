@@ -12,12 +12,15 @@
 }
 .path .divTopText {
     font-size: 18px;
-    cursor: pointer;
     transition: 250ms;
 }
 
-.path .divTopText:hover {
+.path .divTopText .text {
+    transition: 250ms;
+}
+.path .divTopText .text:hover {
     color: #CD553F;
+    cursor: pointer;
 }
 
 

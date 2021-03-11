@@ -4,7 +4,7 @@ import './Path.css';
 import HomeIcon from "../svg/home";
 import {Link} from "react-router-dom";
 
-export default () => {
+export default (props) => {
     const [hover, setHover] = useState(false);
 
     return (
@@ -19,7 +19,20 @@ export default () => {
             </Link>
 
             <div className={"lineVertical"}></div>
-            <span className={"divTopText"}>Terms & Conditions</span>
+
+            <div className={"divTopText"}>
+                {props.about &&
+                    <span className={"text"}>Terms & Conditions</span>
+                }
+
+                {props.login &&
+                    <div style={{display: 'flex' }}>
+                        <span className={"text"}>Account</span>
+                        <div className={"lineVertical"}></div>
+                        <span className={"text"}>Login</span>
+                    </div>
+                }
+            </div>
         </div>
     )
 }

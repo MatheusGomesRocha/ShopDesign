@@ -1,0 +1,77 @@
+.login {
+    padding: 50px;
+    font-family: Candara;
+}
+
+.login .loginChild {
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-gap: 20px;
+    margin-top: 25px;
+}
+.login .loginChild .right {
+    max-height: 60%;
+}
+.login .loginChild .left, .login .loginChild .right {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+.login .loginChild .title {
+    font-size: 23px;
+    font-weight: bold;
+}
+.login .loginChild .lineHorizontal {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 15px 0;
+}
+.login .loginChild .bold {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.login .loginChild .inputDiv {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.login .loginChild .label {
+    font-size: 20px;
+}
+.login .loginChild .input {
+    border: 1px solid #ddd;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+    transition: 250ms;
+}
+
+.login .loginChild .forgot {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+
+.login .loginChild .right .text {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+.login .loginChild .forgot:hover {
+    color: #CD553F;
+}
+
+.login .loginChild .input:focus {
+    border: 1px solid #CD553F;
+}
+
