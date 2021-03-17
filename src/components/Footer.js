@@ -97,10 +97,22 @@ export default () => {
                                 <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
                                     <span className={"link"}>{item.link1}</span>
                                 </Link>
-                                <span className={"link"}>{item.link2}</span>
-                                <span className={"link"}>{item.link3}</span>
-                                <span className={"link"}>{item.link4}</span>
-                                <span className={"link"}>{item.link5}</span>
+
+                                <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                    <span className={"link"}>{item.link2}</span>
+                                </Link>
+
+                                <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                    <span className={"link"}>{item.link3}</span>
+                                </Link>
+
+                                <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                    <span className={"link"}>{item.link4}</span>
+                                </Link>
+
+                                <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                    <span className={"link"}>{item.link5}</span>
+                                </Link>
                             </>
                         }
 
