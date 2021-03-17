@@ -1,7 +1,34 @@
+import {useState} from "react";
 import './Register.css';
 import PathComponent from '../sideComponents/Path';
+import {withStyles} from "@material-ui/core/styles";
+import {Button} from "@material-ui/core";
 
 export default () => {
+    const [checked, setChecked] = useState(false);
+
+    const DefaultBtn = withStyles(() => ({
+        root: {
+            padding: 20,
+            fontSize: 16,
+            height: 50,
+            marginTop: 15,
+            borderRadius: 5,
+            width: 120,
+            backgroundColor: '#CD553F',
+            color: '#fff',
+            fontWeight: 'bold',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: '500ms',
+
+            '&:hover': {
+                backgroundColor: '#000',
+            }
+        },
+    }))(Button);
+
     return (
         <div className={"register"}>
             <PathComponent register={true}/>
@@ -23,23 +50,23 @@ export default () => {
 
                 <div className={"divInput"}>
                     <div className={"rowInput"}>
-                        <span className={"label"}><span style={{color: 'red'}}>*</span>First Name</span>
+                        <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>First Name</span>
                         <input type={"text"} className={"input"} placeholder={"First Name"}/>
                     </div>
 
                     <div className={"rowInput"}>
-                        <span className={"label"}><span style={{color: 'red'}}>*</span>Last Name</span>
+                        <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>Last Name</span>
                         <input type={"text"} className={"input"} placeholder={"Last Name"}/>
                     </div>
 
                     <div className={"rowInput"}>
-                        <span className={"label"}><span style={{color: 'red'}}>*</span>E-mail</span>
+                        <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>E-mail</span>
                         <input type={"email-address"} className={"input"} placeholder={"E-mail"}/>
                     </div>
 
                     <div className={"rowInput"}>
-                        <span className={"label"}><span style={{color: 'red'}}>*</span>Telephone</span>
-                        <input type={"number"} className={"input"} placeholder={"Telephone"}/>
+                        <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>Telephone</span>
+                        <input type={"text"} className={"input"} placeholder={"Telephone"}/>
                     </div>
                 </div>
 
@@ -52,12 +79,12 @@ export default () => {
 
                 <div className={"divInput"}>
                     <div className={"rowInput"}>
-                        <span className={"label"}><span style={{color: 'red'}}>*</span>Password</span>
+                        <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>Password</span>
                         <input type={"password"} className={"input"} placeholder={"Password"}/>
                     </div>
 
                     <div className={"rowInput"}>
-                        <span className={"label"}><span style={{color: 'red'}}>*</span>Password Confirm</span>
+                        <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>Password Confirm</span>
                         <input type={"password"} className={"input"} placeholder={"Password Confirm"}/>
                     </div>
                 </div>
@@ -73,10 +100,10 @@ export default () => {
                     <div className={"rowInput"}>
                         <div className={"label"}>Subscribe</div>
 
-                        <input type={"radio"} className={"input"}/>
+                        <input name={"radio"} type={"radio"} className={"inputRadio"}/>
                         <span>Yes</span>
 
-                        <input checked={true} type={"radio"} className={"input"}/>
+                        <input checked={true} name={"radio"} type={"radio"} className={"inputRadio"} />
                         <span>No</span>
                     </div>
                 </div>
@@ -90,11 +117,21 @@ export default () => {
 
                 <div className={"divInput"}>
                     <div className={"rowInput"}>
-                        <span className={"label"}><span style={{color: 'red'}}>*</span>Enter the cod in the box</span>
+                        <span className={"label"}>
+                            <span style={{color: 'red', marginRight: 5}}>*</span>
+                            Enter the code in the box
+                        </span>
                         <input type={"text"} className={"input"} />
                     </div>
 
-                    <div className={"captcha"}>6a3356</div>
+                    {/*CAPTCHA*/}
+
+                </div>
+
+                <div className={"finishing"}>
+                    <span className={"text"}>I have read and agree to the <strong>Privacy Policy</strong></span>
+                    <input className={"checkbox"} type={"checkbox"} />
+                    <DefaultBtn>Continue</DefaultBtn>
                 </div>
             </div>
         </div>
