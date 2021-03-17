@@ -73,34 +73,34 @@ export default () => {
                         {item.about ?
                             <>
                                 <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <a href={"#"} className={"link"}>{item.link1}</a>
+                                    <span className={"link"}>{item.link1}</span>
                                 </Link>
 
                                 <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <a href={"#"} className={"link"}>{item.link2}</a>
+                                    <span className={"link"}>{item.link2}</span>
                                 </Link>
 
                                 <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <a href={"#"} className={"link"}>{item.link3}</a>
+                                    <span className={"link"}>{item.link3}</span>
                                 </Link>
 
                                 <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <a href={"#"} className={"link"}>{item.link4}</a>
+                                    <span className={"link"}>{item.link4}</span>
                                 </Link>
 
                                 <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <a href={"#"} className={"link"}>{item.link5}</a>
+                                    <span className={"link"}>{item.link5}</span>
                                 </Link>
                             </>
                             :
                             <>
                                 <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <a href={"#"} className={"link"}>{item.link1}</a>
+                                    <span className={"link"}>{item.link1}</span>
                                 </Link>
-                                <a href={"#"} className={"link"}>{item.link2}</a>
-                                <a href={"#"} className={"link"}>{item.link3}</a>
-                                <a href={"#"} className={"link"}>{item.link4}</a>
-                                <a href={"#"} className={"link"}>{item.link5}</a>
+                                <span className={"link"}>{item.link2}</span>
+                                <span className={"link"}>{item.link3}</span>
+                                <span className={"link"}>{item.link4}</span>
+                                <span className={"link"}>{item.link5}</span>
                             </>
                         }
 

@@ -99,7 +99,6 @@
 .footer .bottomDiv .itemDiv .link {     /** Links */
     white-space: pre-wrap;
     color: #999;
-    text-decoration: none;
     font-size: 18px;
     margin-top: 15px;
     transition: 250ms;
