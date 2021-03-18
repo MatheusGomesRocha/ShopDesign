@@ -15,7 +15,7 @@ export default (props) => {
             >
 
 
-                <HomeIcon fill={hover ? '#CD553F' : '#000'}/>
+                <HomeIcon mLeft={"30px"} fill={hover ? '#CD553F' : '#000'}/>
             </Link>
 
             <div className={"lineVertical"}></div>
@@ -39,6 +39,10 @@ export default (props) => {
                         <div className={"lineVertical"}></div>
                         <span className={"text"}>Register</span>
                     </div>
+                }
+
+                {props.contact &&
+                <span className={"text"}>Contact Us</span>
                 }
             </div>
         </div>

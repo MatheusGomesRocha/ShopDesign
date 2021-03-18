@@ -27,7 +27,8 @@ export default () => {
             link2: 'Order History',
             link3: 'Wish List',
             link4: 'Newsletter',
-            link5: 'Specials'
+            link5: 'Specials',
+            login: true
         },
         {
             id: 3,
@@ -36,7 +37,8 @@ export default () => {
             link2: 'Returns',
             link3: 'Site Map',
             link4: 'Gift Certificates',
-            link5: 'Affiliate'
+            link5: 'Affiliate',
+            service: true
         },
         {
             id: 4,
@@ -70,50 +72,77 @@ export default () => {
                             <span className={"title"}>{item.title}</span>
                             <div className={"line"}></div>
                         </div>
-                        {item.about ?
-                            <>
-                                <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <span className={"link"}>{item.link1}</span>
-                                </Link>
 
-                                <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <span className={"link"}>{item.link2}</span>
-                                </Link>
+                        {item.about &&
+                        <>
+                            <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link1}</span>
+                            </Link>
 
-                                <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <span className={"link"}>{item.link3}</span>
-                                </Link>
+                            <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link2}</span>
+                            </Link>
 
-                                <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <span className={"link"}>{item.link4}</span>
-                                </Link>
+                            <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link3}</span>
+                            </Link>
 
-                                <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <span className={"link"}>{item.link5}</span>
-                                </Link>
-                            </>
-                            :
-                            <>
-                                <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <span className={"link"}>{item.link1}</span>
-                                </Link>
+                            <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link4}</span>
+                            </Link>
 
-                                <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <span className={"link"}>{item.link2}</span>
-                                </Link>
+                            <Link to={"/About"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link5}</span>
+                            </Link>
+                        </>
+                        }
 
-                                <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <span className={"link"}>{item.link3}</span>
-                                </Link>
+                        {item.login &&
+                        <>
+                            <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link1}</span>
+                            </Link>
 
-                                <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <span className={"link"}>{item.link4}</span>
-                                </Link>
+                            <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link2}</span>
+                            </Link>
 
-                                <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
-                                    <span className={"link"}>{item.link5}</span>
-                                </Link>
-                            </>
+                            <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link3}</span>
+                            </Link>
+
+                            <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link4}</span>
+                            </Link>
+
+                            <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link5}</span>
+                            </Link>
+                        </>
+                        }
+
+                        {item.service &&
+                        <>
+                            <Link to={"/Contact"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link1}</span>
+                            </Link>
+
+                            <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link2}</span>
+                            </Link>
+
+                            <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link3}</span>
+                            </Link>
+
+                            <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link4}</span>
+                            </Link>
+
+                            <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                                <span className={"link"}>{item.link5}</span>
+                            </Link>
+                        </>
                         }
 
                     </div>

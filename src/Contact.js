@@ -1,11 +1,11 @@
 import Header from './components/Header';
 import Footer from "./components/Footer";
-import Register from "./components/Register";
+import Contact from "./components/Contact";
 
 export default () => {
     return (
         <div>
-            <Register />
+            <Contact />
 
             <Footer/>
         </div>

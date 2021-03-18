@@ -1,0 +1,108 @@
+.contact {
+    padding: 50px;
+    font-family: Candara;
+}
+.contact .titleLine {
+    margin: 15px 0;
+}
+.contact .titleLine .title {
+    font-size: 25px;
+}
+.contact .titleLine .line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 5px;
+}
+
+.contact .bigTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact .mainDiv {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-gap: 5%;
+}
+
+
+.contact .mainDiv .side {
+    padding: 25px 0;
+}
+
+.contact .mainDiv .side .info {
+    display: flex;
+    margin-top: 30px;
+}
+.contact .mainDiv .side .info .infoText {
+    width: 180px;
+    font-size: 20px;
+}
+
+.contact .mainDiv .side .divInput {
+    display: flex;
+    margin-top: 20px;
+}
+.contact .mainDiv .side .divInput .label {
+    width: 200px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.contact .mainDiv .side .divInput .input {
+    border: 1px solid #ddd;
+    height: 40px;
+    width: 100%;
+    transition: 250ms;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.contact .mainDiv .side .divInput .inputArea {
+    border: 1px solid #ddd;
+    height: 250px;
+    width: 100%;
+    transition: 250ms;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contact .captcha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contact .captcha .titleLine {
+    width: 50%;
+}
+.contact .captcha .divInput {
+    display: flex;
+    margin-top: 20px;
+}
+.contact .captcha .label {
+    margin-right: 10px;
+    font-size: 18px;
+    text-align: right;
+}
+.contact .captcha .input {
+    border: 1px solid #ddd;
+    height: 40px;
+    width: 100%;
+    transition: 250ms;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.contact .submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contact .mainDiv .side .divInput input:focus, .contact .mainDiv .side .divInput textarea:focus, .contact .captcha .divInput input:focus {
+    border: 1px solid #CD553F;
+    outline: none;
+}
