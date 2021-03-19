@@ -1,6 +1,7 @@
 import {useState} from "react";
 import './Register.css';
 import PathComponent from '../sideComponents/Path';
+import LineDivComponent from '../sideComponents/LineDiv';
 import {withStyles} from "@material-ui/core/styles";
 import {Button} from "@material-ui/core";
 
@@ -34,19 +35,13 @@ export default () => {
             <PathComponent register={true}/>
 
             <div className={"form"}>
-                <div className={"titleLine"}>
-                    <strong className={"title"}>Register Account</strong>
-                    <div className={"line"}></div>
-                </div>
+                <LineDivComponent bolder={"bold"} title={"Register Account"} />
 
                 <span className={"text"}>If you already have an account with us, please login at the login page</span>
 
                 {/*       */}
 
-                <div className={"titleLine"}>
-                    <span className={"title"}>Your Personal Details</span>
-                    <div className={"line"}></div>
-                </div>
+                <LineDivComponent title={"Your Personal Details"} />
 
                 <div className={"divInput"}>
                     <div className={"rowInput"}>
@@ -72,10 +67,7 @@ export default () => {
 
                 {/*       */}
 
-                <div className={"titleLine"}>
-                    <span className={"title"}>Your Password</span>
-                    <div className={"line"}></div>
-                </div>
+                <LineDivComponent title={"Your Password"} />
 
                 <div className={"divInput"}>
                     <div className={"rowInput"}>
@@ -91,10 +83,7 @@ export default () => {
 
                 {/*       */}
 
-                <div className={"titleLine"}>
-                    <span className={"title"}>Newsletter</span>
-                    <div className={"line"}></div>
-                </div>
+                <LineDivComponent title={"Newsletter"} />
 
                 <div className={"divInput"}>
                     <div className={"rowInput"}>
@@ -110,10 +99,7 @@ export default () => {
 
                 {/*       */}
 
-                <div className={"titleLine"}>
-                    <span className={"title"}>Captcha</span>
-                    <div className={"line"}></div>
-                </div>
+                <LineDivComponent title={"Captcha"} />
 
                 <div className={"divInput"}>
                     <div className={"rowInput"}>

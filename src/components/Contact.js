@@ -6,6 +6,7 @@ import {Button} from "@material-ui/core";
 import HomeIcon from '../svg/home';
 import ClockIcon from '../svg/clock';
 import PhoneIcon from '../svg/phone';
+import LineDivComponent from "../sideComponents/LineDiv";
 
 export default () => {
     const DefaultBtn = withStyles(() => ({
@@ -39,10 +40,8 @@ export default () => {
             <div className={"mainDiv"}>
 
                 <div className={"side"}>
-                    <div className={"titleLine"}>
-                        <span className={"title"}>Our Location</span>
-                        <div className={"line"}></div>
-                    </div>
+                    <LineDivComponent title={"Our Location"} />
+
 
                     <div className={"info"}>
                         <HomeIcon mLeft={"0"} mRight={"10px"}/>
@@ -63,10 +62,8 @@ export default () => {
                 {/*    */}
 
                 <div className={"side"}>
-                    <div className={"titleLine"}>
-                        <span className={"title"}>Contact Form</span>
-                        <div className={"line"}></div>
-                    </div>
+                    <LineDivComponent title={"Contact Form"} />
+
 
                     <div className={"divInput"}>
                         <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>Your Name</span>
@@ -90,10 +87,7 @@ export default () => {
             </div>
 
             <div className={"captcha"}>
-                <div className={"titleLine"}>
-                    <span className={"title"}>Captcha</span>
-                    <div className={"line"}></div>
-                </div>
+                <LineDivComponent title={"Captcha"} />
 
                 <div className={"divInput"}>
                     <span className={"label"}>

@@ -1,0 +1,12 @@
+.titleLine {
+    margin-top: 20px;
+}
+.titleLine .title {
+    font-size: 25px;
+}
+.titleLine .line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+}

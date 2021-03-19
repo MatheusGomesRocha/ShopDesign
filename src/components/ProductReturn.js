@@ -5,7 +5,10 @@ export default () => {
     return(
         <div className={"return"}>
             <PathComponent return={true}/>
-            Olá mundo
+
+            <div className={"mainDiv"}>
+
+            </div>
         </div>
     )
 }
