@@ -1,36 +1,13 @@
 import PathComponent from '../sideComponents/Path';
 import './Contact.css';
-import {withStyles} from "@material-ui/core/styles";
-import {Button} from "@material-ui/core";
 
 import HomeIcon from '../svg/home';
 import ClockIcon from '../svg/clock';
 import PhoneIcon from '../svg/phone';
 import LineDivComponent from "../sideComponents/LineDiv";
+import DefaultBtnComponent from '../sideComponents/DefaultBtn';
 
 export default () => {
-    const DefaultBtn = withStyles(() => ({
-        root: {
-            padding: 20,
-            fontSize: 18,
-            height: 40,
-            marginTop: 15,
-            borderRadius: 5,
-            width: 100,
-            backgroundColor: '#CD553F',
-            color: '#fff',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: '500ms',
-            textTransform: 'capitalize',
-
-            '&:hover': {
-                backgroundColor: '#000',
-            }
-        },
-    }))(Button);
-
     return (
         <div className={"contact"}>
             <PathComponent contact={true}/>
@@ -99,7 +76,7 @@ export default () => {
             </div>
 
             <div className={"submitBtn"}>
-                <DefaultBtn>Submit</DefaultBtn>
+                <DefaultBtnComponent title={"Submit"} />
             </div>
         </div>
     )
