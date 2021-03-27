@@ -1,55 +1,10 @@
 import './ProductReturn.css';
 import PathComponent from '../sideComponents/Path';
 import LineDivComponent from '../sideComponents/LineDiv';
-import {withStyles} from "@material-ui/core/styles";
-import {Button} from "@material-ui/core";
+
+import DefaultBtnComponent from "../sideComponents/DefaultBtn";
 
 export default () => {
-    const SmallBtn = withStyles(() => ({
-        root: {
-            padding: 20,
-            fontSize: 18,
-            height: 45,
-            marginTop: 15,
-            borderRadius: 5,
-            width: 100,
-            backgroundColor: '#CD553F',
-            color: '#fff',
-            fontWeight: 'bold',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: '500ms',
-            textTransform: 'capitalize',
-
-            '&:hover': {
-                backgroundColor: '#000',
-            }
-        },
-    }))(Button);
-
-    const BigBtn = withStyles(() => ({
-        root: {
-            padding: 20,
-            fontSize: 18,
-            height: 45,
-            marginTop: 15,
-            borderRadius: 5,
-            width: 120,
-            backgroundColor: '#CD553F',
-            color: '#fff',
-            fontWeight: 'bold',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: '500ms',
-            textTransform: 'capitalize',
-
-            '&:hover': {
-                backgroundColor: '#000',
-            }
-        },
-    }))(Button);
 
     return (
         <div className={"return"}>
@@ -180,9 +135,9 @@ export default () => {
                 </div>
 
                 <div className={"divBtn"}>
-                    <SmallBtn>Back</SmallBtn>
+                    <DefaultBtnComponent mTop={"15px"} width={"100px"} height={"40px"} title={"Back"}/>
 
-                    <BigBtn>Submit</BigBtn>
+                    <DefaultBtnComponent mTop={"15px"} width={"120px"} height={"40px"} title={"Submit"}/>
                 </div>
 
             </div>

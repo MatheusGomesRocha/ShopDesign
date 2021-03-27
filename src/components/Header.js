@@ -6,9 +6,8 @@ import HeartIcon from '../svg/heart';
 import BasketIcon from '../svg/shopping-basket';
 import MenuCircleIcon from '../svg/menu-circle';
 
-import {withStyles} from "@material-ui/core/styles";
 import {Button, Menu, MenuItem} from "@material-ui/core";
-
+import DefaultBtnComponent from '../sideComponents/DefaultBtn';
 
 export default () => {
     const [header, setHeader] = useState(true);
@@ -21,27 +20,7 @@ export default () => {
     const [hoverLink4, setHoverLink4] = useState(false)
     const [hoverLink5, setHoverLink5] = useState(false)
 
-    const DefaultBtn = withStyles(() => ({
-        root: {
-            padding: 20,
-            fontSize: 16,
-            height: 50,
-            marginTop: 30,
-            borderRadius: 10,
-            width: 200,
-            backgroundColor: '#CD553F',
-            color: '#fff',
-            fontWeight: 'bold',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: '500ms',
 
-            '&:hover': {
-                backgroundColor: '#000',
-            }
-        },
-    }))(Button);
 
     useEffect(() => {
         setTimeout(() => {
@@ -231,7 +210,7 @@ export default () => {
                         </>
                     }
 
-                    <DefaultBtn>Discover now</DefaultBtn>
+                    <DefaultBtnComponent mTop={"30px"} width={"200px"} height={"50px"} title={"Discover now"}/>
                 </div>
 
                 {header ?

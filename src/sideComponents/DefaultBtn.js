@@ -6,10 +6,10 @@ export default(props) => {
         root: {
             padding: 20,
             fontSize: 16,
-            height: 40,
-            marginTop: 15,
+            height: props.height,
+            marginTop: props.mTop,
             borderRadius: 5,
-            width: 120,
+            width: props.width,
             backgroundColor: '#CD553F',
             color: '#fff',
             fontWeight: 'bold',

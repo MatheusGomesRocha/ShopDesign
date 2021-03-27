@@ -1,55 +1,13 @@
 import './Login.css';
 import PathComponent from "../sideComponents/Path";
-import {withStyles} from "@material-ui/core/styles";
-import {Button} from "@material-ui/core";
+
 import {Link} from "react-router-dom";
 import React from "react";
+import DefaultBtnComponent from "../sideComponents/DefaultBtn";
 
 
 export default () => {
-    const DefaultBtn = withStyles(() => ({
-        root: {
-            padding: 20,
-            fontSize: 16,
-            height: 50,
-            marginTop: 15,
-            borderRadius: 5,
-            width: 120,
-            backgroundColor: '#CD553F',
-            color: '#fff',
-            fontWeight: 'bold',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: '500ms',
 
-            '&:hover': {
-                backgroundColor: '#000',
-            }
-        },
-    }))(Button);
-
-    const DefaultBtn2 = withStyles(() => ({
-        root: {
-            padding: 20,
-            fontSize: 16,
-            height: 50,
-            marginTop: 30,
-            borderRadius: 5,
-            width: 150,
-            backgroundColor: '#CD553F',
-            color: '#fff',
-            fontWeight: 'bold',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: '500ms',
-
-            '&:hover': {
-                backgroundColor: '#000',
-            }
-        },
-    }))(Button);
 
     return (
         <div className={"login"}>
@@ -74,7 +32,7 @@ export default () => {
 
                     <span className={"forgot"}>Forgotten Password</span>
 
-                    <DefaultBtn>Login</DefaultBtn>
+                    <DefaultBtnComponent mTop={"30px"} width={"120px"} height={"40px"} title={"Login"}/>
                 </div>
 
                 <div className={"right"}>
@@ -89,7 +47,7 @@ export default () => {
                     </span>
 
                     <Link to={"/Register"} style={{textDecoration: 'none'}}>
-                        <DefaultBtn2>Continue</DefaultBtn2>
+                        <DefaultBtnComponent mTop={"30px"} width={"150px"} height={"40px"} title={"Continue"}/>
                     </Link>
                 </div>
             </div>

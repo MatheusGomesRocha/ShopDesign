@@ -76,7 +76,7 @@ export default () => {
             </div>
 
             <div className={"submitBtn"}>
-                <DefaultBtnComponent title={"Submit"} />
+                <DefaultBtnComponent mTop={"15px"} width={"120px"} height={"40px"} title={"Submit"} />
             </div>
         </div>
     )

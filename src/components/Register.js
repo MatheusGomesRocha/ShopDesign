@@ -1,35 +1,9 @@
-import {useState} from "react";
 import './Register.css';
 import PathComponent from '../sideComponents/Path';
 import LineDivComponent from '../sideComponents/LineDiv';
-import {withStyles} from "@material-ui/core/styles";
-import {Button} from "@material-ui/core";
+import DefaultBtnComponent from "../sideComponents/DefaultBtn";
 
 export default () => {
-    const [checked, setChecked] = useState(false);
-
-    const DefaultBtn = withStyles(() => ({
-        root: {
-            padding: 20,
-            fontSize: 16,
-            height: 50,
-            marginTop: 15,
-            borderRadius: 5,
-            width: 120,
-            backgroundColor: '#CD553F',
-            color: '#fff',
-            fontWeight: 'bold',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: '500ms',
-
-            '&:hover': {
-                backgroundColor: '#000',
-            }
-        },
-    }))(Button);
-
     return (
         <div className={"register"}>
             <PathComponent register={true}/>
@@ -117,7 +91,7 @@ export default () => {
                 <div className={"finishing"}>
                     <span className={"text"}>I have read and agree to the <strong>Privacy Policy</strong></span>
                     <input className={"checkbox"} type={"checkbox"} />
-                    <DefaultBtn>Continue</DefaultBtn>
+                    <DefaultBtnComponent mTop={"15px"} width={"120px"} height={"40px"} title={"Continue"}/>
                 </div>
             </div>
         </div>
