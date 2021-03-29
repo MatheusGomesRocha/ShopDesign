@@ -6,6 +6,7 @@ import Login from "./Login";
 import Register from "./Register";
 import Contact from "./Contact";
 import ProductReturn from "./ProductReturn";
+import Map from "./Map";
 
 export default () => {
     return (
@@ -37,6 +38,10 @@ export default () => {
 
                 <Route exact path="/Product_return">
                     <ProductReturn/>
+                </Route>
+
+                <Route exact path="/Map">
+                    <Map />
                 </Route>
 
             </Switch>

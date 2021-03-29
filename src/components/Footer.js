@@ -131,7 +131,7 @@ export default () => {
                                 <span className={"link"}>{item.link2}</span>
                             </Link>
 
-                            <Link to={"/Login"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                            <Link to={"/Map"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
                                 <span className={"link"}>{item.link3}</span>
                             </Link>
 
