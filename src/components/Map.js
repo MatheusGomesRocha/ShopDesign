@@ -1,107 +1,413 @@
 import './Map.css';
 import PathComponent from '../sideComponents/Path';
 
-let array = [
-    {
-        id: 1,
-        title: 'Headgear',
-        subTitle1: 'Haute Couture',
-        links1: ['Shawls', 'Test 1', 'Wraps'],
-        subTitle2: 'Knee Clothing',
-        links2: ['Hosiery', 'Kurties', 'Roller Skates'],
-        subTitle3: 'Printers',
-        links3: ['Athletic Shoes', 'Sports Masks', 'Undergarments']
-    },
-
-    {
-        id: 2,
-        title: 'Mens Wear',
-        subTitle1: 'Skirts',
-        links1: ['Dresses', 'Kimono', 'Western Wear'],
-        subTitle2: 'Womans Wear',
-        links2: ['Jeans', 'Sarees', 'Shirt'],
-    },
-
-    {
-        id: 3,
-        title: 'Ice Skates',
-        subTitle1: 'PC',
-        links1: ['Culottes', 'Leggings'],
-        subTitle2: 'Aprons',
-        links2: ['Frock Coats', 'Test 4'],
-    },
-
-    {
-        id: 4,
-        title: 'Dungarees'
-    },
-
-    {
-        id: 5,
-        title: 'Jodhpur Pants'
-    },
-
-    {
-        id: 6,
-        title: 'Stirrup Pants'
-    },
-
-    {
-        id: 7,
-        title: 'Footwear'
-    },
-
-    {
-        id: 8,
-        title: 'Punk Pants'
-    },
-
-    {
-        id: 9,
-        title: 'Speacia Offers'
-    },
-
-    {
-        id: 10,
-        title: 'My Account',
-        subTitle1: 'Account Information',
-        subTitle2: 'Password',
-        subTitle3: 'Address Book',
-        subTitle4: 'Order History',
-        subTitle5: 'Downloads',
-    },
-
-    {
-        id: 11,
-        title: 'Shopping Cart'
-    },
-
-    {
-        id: 12,
-        title: 'Checkout'
-    },
-
-    {
-        id: 13,
-        title: 'Search'
-    },
-
-    {
-        id: 14,
-        title: 'Information',
-        subTitle1: 'About Us',
-        subTitle2: 'Delivery Information',
-        subTitle3: 'Privacy Policy',
-        subTitle4: 'Terms & Conditions',
-        subTitle5: 'Contact US',
-    },
-]
-
 export default () => {
     return (
         <div className={"map"}>
             <PathComponent map={true}/>
-            Olá mundo
+
+            <span className={"bigText"}>Site Map</span>
+
+            <div className={"mainDiv"}>
+                <div className={"sideDiv"}>
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Headgear</span>
+                        </div>
+
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Haute Couture</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"allSideTexts"}>
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Shawls</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Test 1</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Wraps</span>
+                            </div>
+                        </div>
+
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Knee Clothing</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"allSideTexts"}>
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Hosiery</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Kurties</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Roller Skates</span>
+                            </div>
+                        </div>
+
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Printers</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"allSideTexts"}>
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Athletic Shoes</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Sports Masks</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Undergarments</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Mens Wear</span>
+                        </div>
+
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Skirts</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"allSideTexts"}>
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Dresses</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Kimono</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Western Wear</span>
+                            </div>
+                        </div>
+
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Womens Wear</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"allSideTexts"}>
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Jeans</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Sarees</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Shirt</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Ice Skates</span>
+                        </div>
+
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>PC</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"allSideTexts"}>
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Culottes</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Leggings</span>
+                            </div>
+                        </div>
+
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Aprons</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"allSideTexts"}>
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Frock Coats</span>
+                            </div>
+
+                            <div className={"textDiv"}>
+                                <div className={"squareFull"}></div>
+                                <span className={"text"}>Test 4</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Dungarees</span>
+                        </div>
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Jodhpur Pants</span>
+                        </div>
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Stirrup Pants</span>
+                        </div>
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Footewear</span>
+                        </div>
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Punk Pants</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={"sideDiv"}>
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Special Offers</span>
+                        </div>
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>My Account</span>
+                        </div>
+
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Account Information</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Password</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Address Book</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Order History</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Downloads</span>
+                        </div>
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Shopping Cart</span>
+                        </div>
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Checkout</span>
+                        </div>
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Search</span>
+                        </div>
+                    </div>
+
+
+
+                    {/*     */}
+                    <div className={"categoryDiv"}>
+
+                        {/*     */}
+                        <div className={"titleDiv"}>
+                            <div className={"ballFull"}></div>
+                            <span className={"text"}>Information</span>
+                        </div>
+
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>About Us</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Delivery Information</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Privacy Policy</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Terms & Conditions</span>
+                        </div>
+
+                        {/*     */}
+                        <div className={"subTitleDiv"}>
+                            <div className={"ballEmpty"}></div>
+                            <span className={"text"}>Contact Us</span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
         </div>
     )
 }

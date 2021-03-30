@@ -2,3 +2,67 @@
     padding: 50px;
     font-family: Candara;
 }
+
+.map .bigText {
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.map .mainDiv {
+    display: grid;
+    grid-gap: 40%;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+
+.map .mainDiv .sideDiv .categoryDiv .titleDiv {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.map .mainDiv .sideDiv .categoryDiv .titleDiv .ballFull{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+
+.map .mainDiv .sideDiv .categoryDiv .subTitleDiv {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 20px;
+}
+.map .mainDiv .sideDiv .categoryDiv .subTitleDiv .ballEmpty{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+
+.map .mainDiv .sideDiv .categoryDiv .allSideTexts .textDiv {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 40px;
+}
+.map .mainDiv .sideDiv .categoryDiv .allSideTexts .textDiv .squareFull {
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+}
+
+
+.map .mainDiv .sideDiv .text {
+    font-size: 18px;
+    margin-left: 10px;
+    transition: 250ms;
+}
+.map .mainDiv .sideDiv .text:hover {
+    color: #CD553F;
+    cursor: pointer;
+}
