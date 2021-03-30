@@ -2,13 +2,25 @@
     TELA COM FORMULÁRIO PARA RETORNAR UM PRODUTO INDESEJADO (ACESSADO PELO FOOTER NO LINK "RETURNS")
  */
 
+import React, {useEffect, useState} from 'react';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+
 import './ProductReturn.css';
+
 import PathComponent from '../sideComponents/Path';
 import LineDivComponent from '../sideComponents/LineDiv';
-
 import DefaultBtnComponent from "../sideComponents/DefaultBtn";
 
+import CalendarIcon from '../svg/calendar';
+
 export default () => {
+    const [date, setDate] = useState();
+    const [viewCalendar, setViewCalendar] = useState(false);
+
+    useEffect(() => {
+        setDate(new Date())
+    }, [])
 
     return (
         <div className={"return"}>
@@ -49,8 +61,23 @@ export default () => {
 
                     <div className={"rowInput"}>
                         <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>Order Date</span>
-                        <input type={"text"} className={"input"} placeholder={"Order Date"}/>
+                        <input defaultValue={date} style={{width: '95%'}} type={"text"} className={"input"} placeholder={"Order Date"}/>
+                        <div className={"btnCalendar"}>
+                            <div onClick={viewCalendar ? () => setViewCalendar(false) : () => setViewCalendar(true)} className={"calendarIcon"}>
+                                <CalendarIcon />
+                            </div>
+                            <div style={{display: viewCalendar ? 'flex' : 'none'}} className={"calendar"}>
+                                <Calendar
+                                    onChange={(v) => setDate(v) }
+                                    value={date}
+                                    defaultValue={date}
+                                    maxDate={new Date()}
+                                />
+                            </div>
+                        </div>
+
                     </div>
+
 
                 </div>
 
@@ -73,7 +100,7 @@ export default () => {
 
                     <div className={"rowInput"}>
                         <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>Quantity</span>
-                        <input type={"text"} className={"input"} value={"1"}/>
+                        <input type={"text"} className={"input"} defaultValue={"1"}/>
                     </div>
 
                     <div className={"rowInput"} style={{marginTop: 30}}>

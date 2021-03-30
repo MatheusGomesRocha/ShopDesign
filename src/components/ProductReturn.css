@@ -50,12 +50,39 @@
     margin-top: 30px;
 }
 
+
+.return .mainDiv .divInput .rowInput .calendarIcon {
+    width: 60px;
+    height: 41px;
+    border: 1px solid #CD553F;
+    background-color: #CD553F;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 250ms;
+    position: relative;
+}
+.btnCalendar {
+    display: flex;
+    flex-direction: column;
+}
+.react-calendar {
+    position: absolute;
+    right: 50px;
+}
+
+
+
+.return .mainDiv .divInput .rowInput .calendarIcon:hover {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
 .return .mainDiv .divInput .rowInput .input:focus, .return .mainDiv .divInput .rowInput .textarea:focus {
     border: 1px solid #CD553F;
     outline: none;
 }
-
-
 
 input::placeholder {
     color: #bbb;
