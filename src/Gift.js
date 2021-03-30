@@ -1,0 +1,13 @@
+import Header from './components/Header';
+import Footer from "./components/Footer";
+import Gift from "./components/Gift";
+
+export default () => {
+    return (
+        <div>
+            <Gift />
+
+            <Footer/>
+        </div>
+    )
+}

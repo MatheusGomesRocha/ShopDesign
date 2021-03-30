@@ -7,6 +7,7 @@ import Register from "./Register";
 import Contact from "./Contact";
 import ProductReturn from "./ProductReturn";
 import Map from "./Map";
+import Gift from "./Gift";
 
 export default () => {
     return (
@@ -42,6 +43,10 @@ export default () => {
 
                 <Route exact path="/Map">
                     <Map />
+                </Route>
+
+                <Route exact path="/Gift_certificate">
+                    <Gift />
                 </Route>
 
             </Switch>

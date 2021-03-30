@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Gift.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Gift.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Gift.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -102,7 +104,7 @@
       <workItem from="1616850197842" duration="5733000" />
       <workItem from="1617025236396" duration="1892000" />
       <workItem from="1617036729830" duration="624000" />
-      <workItem from="1617108653576" duration="4950000" />
+      <workItem from="1617108653576" duration="5176000" />
     </task>
     <servers />
   </component>
@@ -157,6 +159,12 @@
           <url>file://$PROJECT_DIR$/src/components/Product.js</url>
           <line>107</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Footer.js</url>
+          <line>126</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
