@@ -2,3 +2,72 @@
     padding: 50px;
     font-family: Candara;
 }
+
+.gift .mainDiv {
+    margin-top: 30px;
+}
+
+.gift .mainDiv .text {
+    font-size: 20px;
+}
+
+.gift .mainDiv .formDiv {
+    margin: 40px 150px;
+}
+.gift .mainDiv .formDiv .inputDiv {
+    display: flex;
+    margin: 20px 0 0 0;
+}
+.gift .mainDiv .formDiv .inputDiv .label {
+    width: 200px;
+    text-align: right;
+    margin: 5px 20px 0 0;
+    font-size: 18px;
+}
+.gift .mainDiv .formDiv .inputDiv .input, .gift .mainDiv .formDiv .inputDiv .textarea {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    font-size: 18px;
+    transition: 250ms;
+    margin-left: 55px;
+}
+
+.gift .mainDiv .formDiv .inputDiv .radioInput {
+    display: flex;
+    flex-direction: column;
+}
+.gift .mainDiv .formDiv .inputDiv .radioInput .radioSpan {
+    margin-left: 5px;
+}
+
+.gift .mainDiv .formDiv .inputDiv .textarea {
+    padding-top: 10px;
+    height: 250px;
+}
+
+
+
+.gift .mainDiv .submitDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gift .mainDiv .submitDiv .text{
+    font-size: 18px;
+}
+.gift .mainDiv .submitDiv .checkbox {
+    width: 20px;
+    height: 20px;
+    margin: 0 20px 0 10px;
+}
+
+
+.gift .mainDiv .formDiv .inputDiv .input:focus, .gift .mainDiv .formDiv .inputDiv .textarea:focus {
+    outline: 0;
+    border: 1px solid #CD553F;
+}
+.gift .mainDiv .formDiv .inputDiv .radioInput .radio {
+    cursor: pointer;
+}

@@ -5,7 +5,6 @@ export default(props) => {
     const DefaultBtn = withStyles(() => ({
         root: {
             padding: 20,
-            fontSize: 16,
             height: props.height,
             marginTop: props.mTop,
             borderRadius: 5,
@@ -17,6 +16,7 @@ export default(props) => {
             alignItems: 'center',
             justifyContent: 'center',
             transition: '500ms',
+            textTransform: props.transform ? props.transform : 'uppercase',
 
             '&:hover': {
                 backgroundColor: '#000',
