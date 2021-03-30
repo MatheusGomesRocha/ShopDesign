@@ -12,7 +12,7 @@
 }
 
 .gift .mainDiv .formDiv {
-    margin: 40px 150px;
+    margin: 40px 0 40px 150px;
 }
 .gift .mainDiv .formDiv .inputDiv {
     display: flex;
