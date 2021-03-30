@@ -1,3 +1,7 @@
+/**
+    TELA COM FORMULÁRIOS PARA CONTATAR A EMPRESA (ACESSADA PELO FOTTER NO LINK "CONTACT US")
+ */
+
 import PathComponent from '../sideComponents/Path';
 import './Contact.css';
 

@@ -1,3 +1,7 @@
+/**
+    COMPONENT COM CATEGORIAS PARA SEPARAR OS PRODUTOS (FICA NA TELA HOME ABAIXO DE HEADER)
+ */
+
 import {useState} from "react";
 import './Category.css';
 import ScrollContainer from 'react-indiana-drag-scroll'

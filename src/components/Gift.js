@@ -1,3 +1,7 @@
+/**
+    TELA DE CADASTRO DE PRODUTO COMO PRESENTE
+ */
+
 import './Gift.css';
 import PathComponent from '../sideComponents/Path';
 

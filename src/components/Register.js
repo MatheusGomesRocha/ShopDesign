@@ -1,3 +1,7 @@
+/**
+     TELA PARA O USUÁRIO REALIZAR O CADASTRO (ACESSADA PELO TELA DE LOGIN NO BOTÃO "CONTINUE")
+ */
+
 import './Register.css';
 import PathComponent from '../sideComponents/Path';
 import LineDivComponent from '../sideComponents/LineDiv';

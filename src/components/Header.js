@@ -1,3 +1,8 @@
+/**
+    COMPONENT HEADER (TOP E BOTTOM FICA NA TELA HOME, NAS TELAS RESTANTES, CHAMO APENAS O TOP)
+    É O PRIMEIRO COMPONENT DA TELA COM O TOP FIXADO AO SCROLLAR
+ */
+
 import {useState, useEffect} from "react";
 import './Header.css';
 

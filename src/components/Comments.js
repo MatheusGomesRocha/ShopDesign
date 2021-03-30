@@ -1,3 +1,7 @@
+/**
+    COMPONENT COM COMENTÁRIOS DE USUÁRIOS SOBRE A EMPRESA (FICA NA TELA HOME ABAIXO  DO AD/PROPAGANDA)
+ */
+
 import './Comments.css';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader

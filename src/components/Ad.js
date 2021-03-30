@@ -1,3 +1,7 @@
+/**
+    COMPONENT QUE TEM 2 PROPAGANDAS (NO SITE FICA NO HOME ACIMA DOS COMENTÁRIOS DE USUÁRIOS E ABAIXO DOS PRODUTOS TRENDINGS
+ */
+
 import './Ad.css';
 
 import ad1 from '../img/header.png';

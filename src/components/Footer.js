@@ -1,3 +1,7 @@
+/**
+    COMPONENT FOOTER, CHAMADO EM TODAS AS TELAS, O ÚLTIMO COMPONENT
+ */
+
 import './Footer.css';
 import PlaneIcon from '../svg/paper-plane';
 import InstaIcon from '../svg/instagram';

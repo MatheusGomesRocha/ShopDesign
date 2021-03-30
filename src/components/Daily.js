@@ -1,3 +1,7 @@
+/**
+    COMPONENT QUE MOSTRA ALGUNS PRODUTOS EM OFERTA (TELA HOME ACIMA DO BLOG)
+ */
+
 import React, {useState} from "react";
 import './Daily.css';
 import img1 from "../img/img1.png";

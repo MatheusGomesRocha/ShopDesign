@@ -1,3 +1,7 @@
+/**
+    COMPONENT QUE MOSTRA AS QUALIDADES DA EMPRESA DONA DO SITE (FICA NA TELA HOME ABAIXO DOS COMENTÁRIOS DOS USUÁRIOS")
+ */
+
 import {useState} from 'react';
 import './Quality.css';
 

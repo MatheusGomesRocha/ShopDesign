@@ -1,3 +1,7 @@
+/**
+    TELA COM O MAPEAMENTO DO SITE (ACESSADA PELO FOTTER NO LINK "SITE MAP")
+ */
+
 import './Map.css';
 import PathComponent from '../sideComponents/Path';
 

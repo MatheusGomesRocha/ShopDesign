@@ -1,3 +1,8 @@
+/**
+    TELA PARA O USUÁRIO REALIZAR O LOGIN (ACESSADA PELO FOOTER OU EM QUALQUER AÇÃO QUE PRECISE DE DADOS DO USUÁRIO PARA
+    ENTRAR)
+ */
+
 import './Login.css';
 import PathComponent from "../sideComponents/Path";
 

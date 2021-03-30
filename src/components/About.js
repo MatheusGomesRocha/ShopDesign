@@ -1,3 +1,7 @@
+/**
+    TELA COM INFORMAÇÕES SOBRE A EMPRESA (ACESSADA PELO FOTTER EM QUALQUER LINK DE "INFORMATION")
+ */
+
 import React from "react";
 import './About.css';
 

@@ -1,3 +1,8 @@
+/**
+    COMPONENT QUE MOSTRA OS PRODUTOS MAIS VENDIDOS DO SITE (FICA NA TELA HOME ACIMA DO AD/PROPAGANDA E ABAIXO DO
+    NEW COLLECTION)
+ */
+
 import React, {useState} from "react";
 import './Trending.css';
 

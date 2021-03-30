@@ -1,3 +1,7 @@
+/**
+    TELA COM FORMULÁRIO PARA RETORNAR UM PRODUTO INDESEJADO (ACESSADO PELO FOOTER NO LINK "RETURNS")
+ */
+
 import './ProductReturn.css';
 import PathComponent from '../sideComponents/Path';
 import LineDivComponent from '../sideComponents/LineDiv';

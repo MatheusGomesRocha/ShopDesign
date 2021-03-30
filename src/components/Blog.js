@@ -1,3 +1,6 @@
+/**
+    COMPONENT COM PREVIEWS DE POSTANGENS NO BLOG (ÚLTIMO COMPONENT DA TELA HOME, ACIMA DO FOOTER)
+ */
 import './Blog.css';
 import LinkIcon from '../svg/link';
 
