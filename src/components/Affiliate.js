@@ -1,6 +1,6 @@
 /**
-     TELA DE AFILIAÇÃO, ONDE O USUÁRIO REALIZA O LOGIN OU VAI PARA O CADASTRO COMO AFILIADO DO SITE (ACESSADO PELO FOOTER
-     COM O LINK "AFFILIATE"
+ TELA DE AFILIAÇÃO, ONDE O USUÁRIO REALIZA O LOGIN OU VAI PARA O CADASTRO COMO AFILIADO DO SITE (ACESSADO PELO FOOTER
+ COM O LINK "AFFILIATE"
  */
 
 import './Affiliate.css';
@@ -75,7 +75,9 @@ export default () => {
                                 <input className={"input"} type={"text"} placeholder={"Password"}/>
                             </div>
 
-                            <span className={"forgotLink"}>Forgotten Password</span>
+                            <Link to={"/Forgot_password"} style={{textDecoration: 'none', color: '#000'}}>
+                                <span className={"forgotLink"}>Forgotten Password</span>
+                            </Link>
 
                             <DefaultBtn mTop={"20px"} height={"40px"} width={"80px"} transform={"capitalize"}
                                         title={"Login"}/>

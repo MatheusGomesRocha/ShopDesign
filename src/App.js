@@ -10,6 +10,7 @@ import Map from "./Map";
 import Gift from "./Gift";
 import Affiliate from "./Affiliate";
 import NewAffiliate from "./NewAffiliate";
+import ForgotPassword from "./ForgotPassword";
 
 export default () => {
     return (
@@ -44,19 +45,23 @@ export default () => {
                 </Route>
 
                 <Route exact path="/Map">
-                    <Map />
+                    <Map/>
                 </Route>
 
                 <Route exact path="/Gift_certificate">
-                    <Gift />
+                    <Gift/>
                 </Route>
 
                 <Route exact path="/Affiliate_program">
-                    <Affiliate />
+                    <Affiliate/>
                 </Route>
 
-                 <Route exact path="/New_affiliate">
-                    <NewAffiliate />
+                <Route exact path="/New_affiliate">
+                    <NewAffiliate/>
+                </Route>
+
+                <Route exact path="/Forgot_password">
+                    <ForgotPassword/>
                 </Route>
 
             </Switch>
