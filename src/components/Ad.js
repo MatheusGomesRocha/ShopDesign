@@ -4,6 +4,7 @@
 
 import './Ad.css';
 
+import React from "react";
 import ad1 from '../img/header.png';
 import ad2 from '../img/ad2.png';
 

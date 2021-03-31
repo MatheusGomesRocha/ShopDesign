@@ -3,6 +3,8 @@
  */
 
 import './Map.css';
+
+import React from "react";
 import PathComponent from '../sideComponents/Path';
 
 export default () => {

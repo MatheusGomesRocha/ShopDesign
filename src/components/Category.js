@@ -1,9 +1,9 @@
 /**
     COMPONENT COM CATEGORIAS PARA SEPARAR OS PRODUTOS (FICA NA TELA HOME ABAIXO DE HEADER)
  */
-
-import {useState} from "react";
 import './Category.css';
+
+import React, {useState} from "react";
 import ScrollContainer from 'react-indiana-drag-scroll'
 
 import LampIcon from '../svg/lamp';

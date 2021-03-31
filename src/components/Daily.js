@@ -2,8 +2,9 @@
     COMPONENT QUE MOSTRA ALGUNS PRODUTOS EM OFERTA (TELA HOME ACIMA DO BLOG)
  */
 
-import React, {useState} from "react";
 import './Daily.css';
+
+import React, {useState} from "react";
 import img1 from "../img/img1.png";
 import img2 from "../img/img2.png";
 import img3 from "../img/img3.png";

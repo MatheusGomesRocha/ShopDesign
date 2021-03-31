@@ -2,9 +2,9 @@
     TELA COM INFORMAÇÕES SOBRE A EMPRESA (ACESSADA PELO FOTTER EM QUALQUER LINK DE "INFORMATION")
  */
 
-import React from "react";
 import './About.css';
 
+import React from "react";
 import LikeIcon from '../svg/like';
 import BusIcon from '../svg/bus';
 import PranchetaIcon from '../svg/prancheta';

@@ -2,12 +2,13 @@
     TELA COM FORMULÁRIO PARA RETORNAR UM PRODUTO INDESEJADO (ACESSADO PELO FOOTER NO LINK "RETURNS")
  */
 
-import React, {useEffect, useState} from 'react';
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
+
 
 import './ProductReturn.css';
 
+import React, {useEffect, useState} from 'react';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 import PathComponent from '../sideComponents/Path';
 import LineDivComponent from '../sideComponents/LineDiv';
 import DefaultBtnComponent from "../sideComponents/DefaultBtn";

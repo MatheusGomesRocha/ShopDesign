@@ -2,8 +2,9 @@
     COMPONENT QUE TEM 2 IMAGENS MOSTRANDO UMA NOVA COLEÇÃO DE PRODUTOS (FICA NA TELA HOME ACIMA DE TRENDINGS E ABAIXO DE CATEGORY)
  */
 
-import {useState} from "react";
 import './New.css';
+
+import React, {useState} from "react";
 import ArrowIcon from '../svg/right-arrow';
 
 import {withStyles} from "@material-ui/core/styles";

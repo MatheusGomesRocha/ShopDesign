@@ -4,10 +4,10 @@
  */
 
 import './Login.css';
-import PathComponent from "../sideComponents/Path";
 
-import {Link} from "react-router-dom";
 import React from "react";
+import {Link} from "react-router-dom";
+import PathComponent from "../sideComponents/Path";
 import DefaultBtnComponent from "../sideComponents/DefaultBtn";
 
 

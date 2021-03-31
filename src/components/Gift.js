@@ -3,6 +3,8 @@
  */
 
 import './Gift.css';
+
+import React from "react";
 import PathComponent from '../sideComponents/Path';
 import LineDivComponent from '../sideComponents/LineDiv';
 import DefaultBtn from "../sideComponents/DefaultBtn";

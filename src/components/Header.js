@@ -3,9 +3,9 @@
     É O PRIMEIRO COMPONENT DA TELA COM O TOP FIXADO AO SCROLLAR
  */
 
-import {useState, useEffect} from "react";
 import './Header.css';
 
+import React, {useState, useEffect} from "react";
 import UserIcon from '../svg/user';
 import HeartIcon from '../svg/heart';
 import BasketIcon from '../svg/shopping-basket';

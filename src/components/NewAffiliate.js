@@ -4,10 +4,10 @@
 
 import './NewAffiliate.css';
 
+import React from "react";
 import PathComponent from '../sideComponents/Path';
 import LineDivComponent from '../sideComponents/LineDiv';
 import AccountSettingsComponent from "../sideComponents/AccountSettings";
-import React from "react";
 
 export default () => {
     return(

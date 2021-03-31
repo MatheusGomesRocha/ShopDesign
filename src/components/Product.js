@@ -1,10 +1,9 @@
 /**
     TELA COM AS INFORMAÇÕES DO PRODUTO SELECIONADO (ACESSADA AO CLICAR NO TITULO DO PRODUTO NA TELA HOME)
  */
-
-import React, {useState} from "react";
 import './Product.css';
 
+import React, {useState} from "react";
 import MinusIcon from "../svg/minus";
 import PlusIcon from "../svg/plus";
 import HeartIcon from "../svg/heart";

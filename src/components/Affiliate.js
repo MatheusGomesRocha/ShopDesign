@@ -5,12 +5,12 @@
 
 import './Affiliate.css';
 
+import React from "react";
 import PathComponent from '../sideComponents/Path';
 import LineDivComponent from '../sideComponents/LineDiv';
 import DefaultBtn from '../sideComponents/DefaultBtn';
 import AccountSettingsComponent from "../sideComponents/AccountSettings";
 import {Link} from "react-router-dom";
-import React from "react";
 
 export default () => {
     return (

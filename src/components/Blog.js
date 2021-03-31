@@ -2,6 +2,8 @@
     COMPONENT COM PREVIEWS DE POSTANGENS NO BLOG (ÚLTIMO COMPONENT DA TELA HOME, ACIMA DO FOOTER)
  */
 import './Blog.css';
+
+import React from "react";
 import LinkIcon from '../svg/link';
 
 export default () => {

@@ -3,13 +3,14 @@
  */
 
 import './Footer.css';
+
+import React from "react";
 import PlaneIcon from '../svg/paper-plane';
 import InstaIcon from '../svg/instagram';
 import FaceIcon from '../svg/facebook';
 import TwitterIcon from '../svg/twitter';
 
 import {Link} from 'react-router-dom';
-import React from "react";
 
 export default () => {
 

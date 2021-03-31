@@ -1,15 +1,15 @@
 /**
     TELA COM FORMULÁRIOS PARA CONTATAR A EMPRESA (ACESSADA PELO FOTTER NO LINK "CONTACT US")
  */
-
-import PathComponent from '../sideComponents/Path';
 import './Contact.css';
 
+import React from "react";
 import HomeIcon from '../svg/home';
 import ClockIcon from '../svg/clock';
 import PhoneIcon from '../svg/phone';
 import LineDivComponent from "../sideComponents/LineDiv";
 import DefaultBtnComponent from '../sideComponents/DefaultBtn';
+import PathComponent from '../sideComponents/Path';
 
 export default () => {
     return (

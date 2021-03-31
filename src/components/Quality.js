@@ -2,9 +2,9 @@
     COMPONENT QUE MOSTRA AS QUALIDADES DA EMPRESA DONA DO SITE (FICA NA TELA HOME ABAIXO DOS COMENTÁRIOS DOS USUÁRIOS")
  */
 
-import {useState} from 'react';
 import './Quality.css';
 
+import React, {useState} from 'react';
 import HeadphoneIcon from '../svg/headphone';
 import CoinIcon from '../svg/coin';
 import TruckIcon from '../svg/truck';
