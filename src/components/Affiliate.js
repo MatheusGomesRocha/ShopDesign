@@ -1,6 +1,6 @@
 /**
-    TELA DE AFILIAÇÃO, ONDE O USUÁRIO REALIZA O LOGIN OU VAI PARA O CADASTRO COMO AFILIADO DO SITE (ACESSADO PELO FOOTER
-    COM O LINK "AFFILIATE"
+ TELA DE AFILIAÇÃO, ONDE O USUÁRIO REALIZA O LOGIN OU VAI PARA O CADASTRO COMO AFILIADO DO SITE (ACESSADO PELO FOOTER
+ COM O LINK "AFFILIATE"
  */
 
 import './Affiliate.css';
@@ -8,8 +8,7 @@ import './Affiliate.css';
 import PathComponent from '../sideComponents/Path';
 import LineDivComponent from '../sideComponents/LineDiv';
 import DefaultBtn from '../sideComponents/DefaultBtn';
-
-import UserIcon from '../svg/user';
+import AccountSettingsComponent from "../sideComponents/AccountSettings";
 
 export default () => {
     return (
@@ -37,10 +36,11 @@ export default () => {
 
                     {/*       */}
 
-                    <div className={"topAndBottom"}>
+                    <div className={"rowDiv"}>
 
                         {/*       */}
-                        <div className={"box"}>
+                        <div className={"box"} >
+
                             <LineDivComponent title={"New affiliate"}/>
 
                             <span className={"text"}>I am not currently an affiliate.</span>
@@ -49,43 +49,41 @@ export default () => {
                                 not connected in any way to your customer account.
                             </span>
 
-                            <DefaultBtn mTop={"20px"} height={"40px"} width={"100px"} transform={"capitalize"} title={"Continue"} />
+                            <DefaultBtn mTop={"20px"} height={"40px"} width={"100px"} transform={"capitalize"}
+                                        title={"Continue"}/>
+
                         </div>
 
                         {/*       */}
 
                         <div className={"box"}>
-                            <LineDivComponent title={"AFFILIATE LOGIN"}/>
+                            <LineDivComponent title={"Affiliate Login"}/>
 
                             <span style={{fontWeight: 'bold'}} className={"text"}>I am a returning affiliate.</span>
 
                             <div className={"inputDiv"}>
                                 <span className={"label"}>Affiliate E-mail</span>
-                                <input type={"text"} placeholder={"Affiliate E-mail"} />
+                                <input className={"input"} type={"text"} placeholder={"Affiliate E-mail"}/>
                             </div>
 
                             <div className={"inputDiv"}>
                                 <span className={"label"}>Password</span>
-                                <input type={"text"} placeholder={"Password"} />
+                                <input className={"input"} type={"text"} placeholder={"Password"}/>
                             </div>
 
-                            <DefaultBtn mTop={"20px"} height={"40px"} width={"80px"} transform={"capitalize"} title={"Login"} />
+                            <span className={"forgotLink"}>Forgotten Password</span>
+
+                            <DefaultBtn mTop={"20px"} height={"40px"} width={"80px"} transform={"capitalize"}
+                                        title={"Login"}/>
                         </div>
 
-                    </div>      {/*   TopAndBottom    */}
-                </div>    {/*   Side    */}
-
-                <div className={"side"}>
-                    <div style={{display: 'flex'}}>
-                        <UserIcon fill={"red"} width={"15px"} height={"15px"} />
-                        <span className={"title"}>Account Settings</span>
                     </div>
-
-                    <span className={"link"}>Login</span>
-                    <span className={"link"}>Register</span>
-                    <span className={"link"}>Forgotten Password</span>
-                    <span className={"link"}>My Account</span>
+                    {/*   rowDiv    */}
                 </div>
+                {/*   Side    */}
+
+                <AccountSettingsComponent />
+
             </div>
         </div>
     )

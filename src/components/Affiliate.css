@@ -1,0 +1,56 @@
+.affiliate {
+    padding: 50px;
+    font-family: Candara;
+}
+
+.affiliate .mainDiv {
+    display:  grid;
+    grid-gap: 2%;
+    grid-template-columns: 75% 23%;
+}
+
+.affiliate .mainDiv .side .text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.affiliate .mainDiv .side .rowDiv {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 45% 45%;
+    margin-top: 30px;
+}
+.affiliate .mainDiv .side .rowDiv .box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 0 20px 20px 20px;
+    min-height: 300px;
+}
+
+.affiliate .mainDiv .side .rowDiv .box .inputDiv {
+    margin-top: 15px;
+    font-size: 18px;
+    padding-right: 20px;
+}
+.affiliate .mainDiv .side .rowDiv .box .inputDiv .input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.affiliate .mainDiv .side .rowDiv .box .forgotLink {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.affiliate .mainDiv .side .rowDiv .box .forgotLink:hover {
+    color: #CD553F;
+}
