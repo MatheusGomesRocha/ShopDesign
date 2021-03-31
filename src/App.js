@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import ProductReturn from "./ProductReturn";
 import Map from "./Map";
 import Gift from "./Gift";
+import Affiliate from "./Affiliate";
 
 export default () => {
     return (
@@ -47,6 +48,10 @@ export default () => {
 
                 <Route exact path="/Gift_certificate">
                     <Gift />
+                </Route>
+
+                <Route exact path="/Affiliate_program">
+                    <Affiliate />
                 </Route>
 
             </Switch>

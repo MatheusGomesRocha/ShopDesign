@@ -1,3 +1,8 @@
+/**
+    TELA DE AFILIAÇÃO, ONDE O USUÁRIO REALIZA O LOGIN OU VAI PARA O CADASTRO COMO AFILIADO DO SITE (ACESSADO PELO FOOTER
+    COM O LINK "AFFILIATE"
+ */
+
 import './Affiliate.css';
 
 import PathComponent from '../sideComponents/Path';
