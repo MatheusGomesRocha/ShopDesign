@@ -1,0 +1,35 @@
+.return .mainDiv .divInput {
+    margin: 20px 0 0 150px;
+}
+.return .mainDiv .divInput .rowInput {
+    display: flex;
+    margin-top: 20px;
+}
+.return .mainDiv .divInput .rowInput .label {
+    width: 200px;
+    text-align: right;
+    margin-top: 5px;
+    font-size: 18px;
+}
+.return .mainDiv .divInput .rowInput .input, .return .mainDiv .divInput .rowInput .textarea {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #ddd;
+    transition: 250ms;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-left: 50px;
+}
+.return .mainDiv .divInput .rowInput .radioInput {
+    display: flex;
+    flex-direction: column;
+}
+.return .mainDiv .divInput .rowInput .radio {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+.return .mainDiv .divInput .rowInput .radioSpan {
+    margin-left: 10px;
+    font-size: 18px;
+}

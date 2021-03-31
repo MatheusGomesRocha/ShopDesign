@@ -9,6 +9,7 @@ import ProductReturn from "./ProductReturn";
 import Map from "./Map";
 import Gift from "./Gift";
 import Affiliate from "./Affiliate";
+import NewAffiliate from "./NewAffiliate";
 
 export default () => {
     return (
@@ -52,6 +53,10 @@ export default () => {
 
                 <Route exact path="/Affiliate_program">
                     <Affiliate />
+                </Route>
+
+                 <Route exact path="/New_affiliate">
+                    <NewAffiliate />
                 </Route>
 
             </Switch>

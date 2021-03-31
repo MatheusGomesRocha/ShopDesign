@@ -9,6 +9,8 @@ import PathComponent from '../sideComponents/Path';
 import LineDivComponent from '../sideComponents/LineDiv';
 import DefaultBtn from '../sideComponents/DefaultBtn';
 import AccountSettingsComponent from "../sideComponents/AccountSettings";
+import {Link} from "react-router-dom";
+import React from "react";
 
 export default () => {
     return (
@@ -39,7 +41,7 @@ export default () => {
                     <div className={"rowDiv"}>
 
                         {/*       */}
-                        <div className={"box"} >
+                        <div className={"box"}>
 
                             <LineDivComponent title={"New affiliate"}/>
 
@@ -49,8 +51,10 @@ export default () => {
                                 not connected in any way to your customer account.
                             </span>
 
-                            <DefaultBtn mTop={"20px"} height={"40px"} width={"100px"} transform={"capitalize"}
-                                        title={"Continue"}/>
+                            <Link to={"/New_affiliate"} style={{textDecoration: 'none'}}>
+                                <DefaultBtn mTop={"20px"} height={"40px"} width={"100px"} transform={"capitalize"}
+                                            title={"Continue"}/>
+                            </Link>
 
                         </div>
 
@@ -82,7 +86,7 @@ export default () => {
                 </div>
                 {/*   Side    */}
 
-                <AccountSettingsComponent />
+                <AccountSettingsComponent/>
 
             </div>
         </div>
