@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Affiliate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Affiliate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Gift.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gift.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -101,7 +102,8 @@
       <workItem from="1617025236396" duration="1892000" />
       <workItem from="1617036729830" duration="624000" />
       <workItem from="1617108653576" duration="12629000" />
-      <workItem from="1617124600441" duration="171000" />
+      <workItem from="1617124600441" duration="193000" />
+      <workItem from="1617193472522" duration="1649000" />
     </task>
     <servers />
   </component>
