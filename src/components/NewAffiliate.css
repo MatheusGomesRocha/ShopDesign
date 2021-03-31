@@ -1,35 +1,60 @@
-.return .mainDiv .divInput {
-    margin: 20px 0 0 150px;
+.newAffiliate {
+    padding: 50px;
+    font-family: Candara;
 }
-.return .mainDiv .divInput .rowInput {
+.newAffiliate .mainDiv {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 75% 23%;
+}
+.newAffiliate .mainDiv .side {
+    display: flex;
+    flex-direction: column;
+}
+.newAffiliate .mainDiv .side .text {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.newAffiliate .mainDiv .side .divInput {
+    margin: 10px 0 25px 50px;
+}
+.newAffiliate .mainDiv .side .divInput .rowInput {
     display: flex;
     margin-top: 20px;
 }
-.return .mainDiv .divInput .rowInput .label {
+.newAffiliate .mainDiv .side .divInput .rowInput .label {
     width: 200px;
     text-align: right;
     margin-top: 5px;
     font-size: 18px;
 }
-.return .mainDiv .divInput .rowInput .input, .return .mainDiv .divInput .rowInput .textarea {
+.newAffiliate .mainDiv .side .divInput .rowInput .input {
     height: 40px;
     width: 100%;
     border: 1px solid #ddd;
     transition: 250ms;
     padding-left: 10px;
     font-size: 18px;
-    margin-left: 50px;
+    margin-left: 95px;
 }
-.return .mainDiv .divInput .rowInput .radioInput {
+.newAffiliate .mainDiv .side .divInput .rowInput .radioInput {
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
 }
-.return .mainDiv .divInput .rowInput .radio {
+.newAffiliate .mainDiv .side .divInput .rowInput .radio {
     cursor: pointer;
     width: 15px;
     height: 15px;
 }
-.return .mainDiv .divInput .rowInput .radioSpan {
+.newAffiliate .mainDiv .side .divInput .rowInput .radioSpan {
     margin-left: 10px;
     font-size: 18px;
+}
+
+
+
+.newAffiliate .mainDiv .side .divInput .rowInput .input:focus {
+    border: 1px solid #CD553F;
 }

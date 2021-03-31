@@ -35,22 +35,26 @@ export default () => {
 
                 <div className={"divInput"}>
                     <div className={"rowInput"}>
-                        <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>First Name</span>
+                        <span className={"label"}><span
+                            style={{color: 'red', marginRight: 5}}>*</span>First Name</span>
                         <input type={"text"} className={"input"} placeholder={"First Name"}/>
                     </div>
 
                     <div className={"rowInput"}>
-                        <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>Last Name</span>
+                        <span className={"label"}><span
+                            style={{color: 'red', marginRight: 5}}>*</span>Last Name</span>
                         <input type={"text"} className={"input"} placeholder={"Last Name"}/>
                     </div>
 
                     <div className={"rowInput"}>
-                        <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>E-mail</span>
-                        <input type={"email address"} className={"input"} placeholder={"E-mail"}/>
+                        <span className={"label"}><span
+                            style={{color: 'red', marginRight: 5}}>*</span>E-mail</span>
+                        <input type={"email-address"} className={"input"} placeholder={"E-mail"}/>
                     </div>
 
                     <div className={"rowInput"}>
-                        <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>Telephone</span>
+                        <span className={"label"}><span
+                            style={{color: 'red', marginRight: 5}}>*</span>Telephone</span>
                         <input type={"text"} className={"input"} placeholder={"Telephone"}/>
                     </div>
 

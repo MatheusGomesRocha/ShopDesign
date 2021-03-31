@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/NewAffiliate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NewAffiliate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NewAffiliate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Affiliate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Affiliate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewAffiliate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewAffiliate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewAffiliate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewAffiliate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProductReturn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductReturn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductReturn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductReturn.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

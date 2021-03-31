@@ -1,6 +1,6 @@
 /**
- TELA DE AFILIAÇÃO, ONDE O USUÁRIO REALIZA O LOGIN OU VAI PARA O CADASTRO COMO AFILIADO DO SITE (ACESSADO PELO FOOTER
- COM O LINK "AFFILIATE"
+     TELA DE AFILIAÇÃO, ONDE O USUÁRIO REALIZA O LOGIN OU VAI PARA O CADASTRO COMO AFILIADO DO SITE (ACESSADO PELO FOOTER
+     COM O LINK "AFFILIATE"
  */
 
 import './Affiliate.css';
@@ -22,7 +22,7 @@ export default () => {
 
                     {/*       */}
                     <div className={"topAndBottom"}>
-                        <LineDivComponent title={"Affiliate program"}/>
+                        <LineDivComponent bolder={"bold"} title={"Affiliate Program"}/>
 
                         <span className={"text"}>
                             fevino affiliate program is free and enables members to earn revenue by placing a link or links
