@@ -1,12 +1,12 @@
 import React from "react";
 import Header from './components/Header';
 import Footer from "./components/Footer";
-import Affiliate from "./components/Affiliate";
+import AllProducts from "./components/AllProducts";
 
 export default () => {
     return (
         <div>
-            <Affiliate />
+            <AllProducts />
 
             <Footer/>
         </div>

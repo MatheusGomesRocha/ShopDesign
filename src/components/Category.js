@@ -1,10 +1,11 @@
 /**
-    COMPONENT COM CATEGORIAS PARA SEPARAR OS PRODUTOS (FICA NA TELA HOME ABAIXO DE HEADER)
+ COMPONENT COM CATEGORIAS PARA SEPARAR OS PRODUTOS (FICA NA TELA HOME ABAIXO DE HEADER)
  */
 import './Category.css';
 
 import React, {useState} from "react";
 import ScrollContainer from 'react-indiana-drag-scroll'
+import {Link} from "react-router-dom";
 
 import LampIcon from '../svg/lamp';
 import ShirtIcon from '../svg/shirts';
@@ -36,21 +37,24 @@ export default () => {
         {id: 8, text: 'punk pants', Icon: WatchIcon, hover: hoverItem8, setHover: setHoverItem8},
     ]
 
-    return(
+    return (
         <div className={"category"}>
             <span className={"title"}>Our Category</span>
             <div className={"arrayDiv"}>
                 <ScrollContainer style={{display: 'flex'}} className="scroll-container">
-                {array.map((item, k) => (
-                    <div className={"itemDiv"}>
-                        <div className={"itemDashed"} onMouseOver={() => item.setHover(true)} onMouseOut={() => item.setHover(false)}>
-                            <div className={"itemBall"}>
-                                <item.Icon fill={item.hover ? '#fff' : '#999'} />
+                    {array.map((item, k) => (
+                        <Link to={"/All_products"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
+                            <div className={"itemDiv"}>
+                                <div className={"itemDashed"} onMouseOver={() => item.setHover(true)}
+                                     onMouseOut={() => item.setHover(false)}>
+                                    <div className={"itemBall"}>
+                                        <item.Icon fill={item.hover ? '#fff' : '#999'}/>
+                                    </div>
+                                </div>
+                                <span className={"text"}>{item.text}</span>
                             </div>
-                        </div>
-                        <span className={"text"}>{item.text}</span>
-                    </div>
-                ))}
+                        </Link>
+                    ))}
                 </ScrollContainer>
             </div>
         </div>

@@ -12,6 +12,7 @@ import Gift from "./Gift";
 import Affiliate from "./Affiliate";
 import NewAffiliate from "./NewAffiliate";
 import ForgotPassword from "./ForgotPassword";
+import AllProducts from "./AllProducts";
 
 export default () => {
     return (
@@ -63,6 +64,10 @@ export default () => {
 
                 <Route exact path="/Forgot_password">
                     <ForgotPassword/>
+                </Route>
+
+                <Route exact path="/All_products">
+                    <AllProducts />
                 </Route>
 
             </Switch>

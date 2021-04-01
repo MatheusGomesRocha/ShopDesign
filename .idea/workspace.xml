@@ -2,31 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AllProducts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AllProducts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AllProducts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Affiliate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Affiliate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Affiliate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Affiliate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ForgotPassword.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ForgotPassword.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Gift.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gift.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewAffiliate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewAffiliate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductReturn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductReturn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductReturn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductReturn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Trending.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trending.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sideComponents/AccountSettings.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/AccountSettings.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sideComponents/LineDiv.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/LineDiv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sideComponents/Modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/Modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sideComponents/Path.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/Path.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sideComponents/Path.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/Path.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Affiliate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affiliate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +108,7 @@
       <workItem from="1617108653576" duration="12629000" />
       <workItem from="1617124600441" duration="193000" />
       <workItem from="1617193472522" duration="4508000" />
+      <workItem from="1617275250086" duration="1474000" />
     </task>
     <servers />
   </component>
@@ -184,7 +167,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Gift.js</url>
           <line>90</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
