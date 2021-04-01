@@ -40,7 +40,55 @@ export default (props) => {
                 }
 
                 {props.contact &&
-                <span className={"text"}>Contact Us</span>
+                    <span className={"text"}>Contact Us</span>
+                }
+
+                {props.return &&
+                    <div style={{display: 'flex'}}>
+                        <span className={"text"}>Account</span>
+                        <div className={"lineVertical"}></div>
+                        <span className={"text"}>Product Returns</span>
+                    </div>
+                }
+
+                {props.map &&
+                    <span className={"text"}>Site Map</span>
+                }
+
+                {props.gift &&
+                    <div style={{display: 'flex'}}>
+                        <span className={"text"}>Account</span>
+                        <div className={"lineVertical"}></div>
+                        <span className={"text"}>Gift Certificate</span>
+                    </div>
+                }
+
+                {props.affiliate &&
+                    <div style={{display: 'flex'}}>
+                        <span className={"text"}>Account</span>
+                        <div className={"lineVertical"}></div>
+                        <span className={"text"}>Login</span>
+                    </div>
+                }
+
+                {props.newAffiliate &&
+                    <div style={{display: 'flex'}}>
+                        <span className={"text"}>Account</span>
+                        <div className={"lineVertical"}></div>
+                        <span className={"text"}>Affiliate Register</span>
+                    </div>
+                }
+
+                {props.allProducts &&
+                    <div style={{display: 'flex'}}>
+                        <span className={"text"}>{props.category}</span>
+                        <div className={"lineVertical"}></div>
+                        <span className={"text"}>{props.subCategory}</span>
+                    </div>
+                }
+
+                {props.product &&
+                    <span className={"text"}>{props.name}</span>
                 }
             </div>
         </div>

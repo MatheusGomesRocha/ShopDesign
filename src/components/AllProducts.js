@@ -29,6 +29,7 @@ import Icon3 from "../svg/heart";
 import Icon4 from "../svg/adjust";
 import ListIcon from '../svg/list';
 import GridIcon from '../svg/menu-grid';
+import {Link} from "react-router-dom";
 
 export default () => {
     let array = [
@@ -393,7 +394,7 @@ export default () => {
 
     return (
         <div className={"allProducts"}>
-            <PathComponent AllProducts={true}/>
+            <PathComponent allProducts={true} category={category} subCategory={subCategory}/>
 
             <div className={"mainDiv"}>
 
@@ -672,10 +673,12 @@ export default () => {
                                             </div>
                                         </div>
 
-                                        <div className={"itemText"}>
-                                            <span className={"name"}>{item.name}</span>
-                                            <span className={"price"}>R$ {item.price}</span>
-                                        </div>
+                                        <Link to={"/Product"} style={{textDecoration: 'none', color: '#000'}}>
+                                            <div className={"itemText"}>
+                                                <span className={"name"}>{item.name}</span>
+                                                <span className={"price"}>R$ {item.price}</span>
+                                            </div>
+                                        </Link>
                                     </div>
                             ))}
                         </>

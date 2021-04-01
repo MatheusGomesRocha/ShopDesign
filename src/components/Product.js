@@ -15,6 +15,7 @@ import Img from '../img/img1.png';
 
 import Dialog from "@material-ui/core/Dialog";
 import SuccessMessage from "../sideComponents/SuccessMessage";
+import PathComponent from '../sideComponents/Path';
 
 let arrayFeatures = [
     {id: 1, text: 'Processor Qualcomm® MSM 7201A™ 528 MHz'},
@@ -36,7 +37,7 @@ export default () => {
     const [quantidade, setQuantidade] = useState(1);
     const [openMessage, setOpenMessage] = useState(false);
     const [btnPressed, setBtnPressed] = useState(false);
-    const [name, setName] = useState('');
+    const [name, setName] = useState('Crepe Checkered Salwar Suit Material (Unstitched)');
 
     const [isReview, setIsReview] = useState(false);
 
@@ -224,35 +225,37 @@ export default () => {
 
     return (
         <div className={"product"}>
+            <PathComponent product={true} name={name} />
 
-            <ProductInfoComponent />
+            <div className={"mainDiv"}>
+                <ProductInfoComponent />
 
-            <div className={"review"}>
-                {isReview == false ?    /* Se isReview for FALSE, retorna a tela de features do produto (infos) */
-                    <div className={"productFeatures"}>
+                <div className={"review"}>
+                    {isReview == false ?    /* Se isReview for FALSE, retorna a tela de features do produto (infos) */
+                        <div className={"productFeatures"}>
 
-                        <div className={"top"}>
-                            <div onClick={() => setIsReview(false)}
-                                 style={{
-                                     color: isReview ? '#000' : '#CD553F',
-                                     borderBottom: isReview ? '3px solid transparent' : '3px solid #CD553F'
-                                 }}
-                                 className={"btnChange"}
-                            >
-                                Description
+                            <div className={"top"}>
+                                <div onClick={() => setIsReview(false)}
+                                     style={{
+                                         color: isReview ? '#000' : '#CD553F',
+                                         borderBottom: isReview ? '3px solid transparent' : '3px solid #CD553F'
+                                     }}
+                                     className={"btnChange"}
+                                >
+                                    Description
+                                </div>
+                                <div onClick={() => setIsReview(true)}
+                                     style={{
+                                         color: isReview ? '#CD553F' : '#000',
+                                         borderBottom: isReview ? '3px solid #CD553F' : '3px solid transparent'
+                                     }}
+                                     className={"btnChange"}
+                                >
+                                    Reviews (0)
+                                </div>
                             </div>
-                            <div onClick={() => setIsReview(true)}
-                                 style={{
-                                     color: isReview ? '#CD553F' : '#000',
-                                     borderBottom: isReview ? '3px solid #CD553F' : '3px solid transparent'
-                                 }}
-                                 className={"btnChange"}
-                            >
-                                Reviews (0)
-                            </div>
-                        </div>
 
-                        <div className={"descriptionDiv"}>
+                            <div className={"descriptionDiv"}>
                             <span className={"description"}>
                                 HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high
                                 definition clarity for a mobile experience you never thought possible. Seductively sleek, the HTC
@@ -261,98 +264,101 @@ export default () => {
                                 all delivered on a breathtakingly crisp 3.8" WVGA touchscreen - you can take control of your mobile
                                 world with the HTC Touch HD.
                             </span>
-                        </div>
-
-                        <div className={"featuresDiv"}>
-                            <span className={"title"}>Features</span>
-                            <div className={"featuresText"}>
-                                {arrayFeatures.map((item, k) => (
-                                    <div className={"featuresRow"}>
-                                        <div className={"smallBall"}></div>
-                                        <span style={{fontSize: 18}}>{item.text}</span>
-                                    </div>
-                                ))}
                             </div>
-                        </div>
-                    </div>
 
-                    :  /* Se isReview for TRUE, retorna a tela com o formulário para adicionar uma review ao produto */
-
-                    <div className={"reviewForm"}>
-                        <div className={"top"}>
-                            <div onClick={() => setIsReview(false)}
-                                 style={{
-                                     color: isReview ? '#000' : '#CD553F',
-                                     borderBottom: isReview ? '3px solid transparent' : '3px solid #CD553F'
-                                 }}
-                                 className={"btnChange"}
-                            >
-                                Description
-                            </div>
-                            <div onClick={() => setIsReview(true)}
-                                 style={{
-                                     color: isReview ? '#CD553F' : '#000',
-                                     borderBottom: isReview ? '3px solid #CD553F' : '3px solid transparent'
-                                 }}
-                                 className={"btnChange"}
-                            >
-                                Reviews (0)
+                            <div className={"featuresDiv"}>
+                                <span className={"title"}>Features</span>
+                                <div className={"featuresText"}>
+                                    {arrayFeatures.map((item, k) => (
+                                        <div className={"featuresRow"}>
+                                            <div className={"smallBall"}></div>
+                                            <span style={{fontSize: 18}}>{item.text}</span>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 
-                        <div className={"divTop"}>
-                            There are no reviews for this product.
-                        </div>
+                        :  /* Se isReview for TRUE, retorna a tela com o formulário para adicionar uma review ao produto */
 
-                        <span className={"title"}>Write a Review</span>
-
-                        <div className={"divInput"}>
-                            <label className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span> Your
-                                Name</label>
-                            <input type={"text"} className={"input"}/>
-                        </div>
-
-                        <div className={"divInput"}>
-                            <label className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span> Your Review</label>
-                            <textarea className={"bigInput"}/>
-                        </div>
-
-                        <div className={"rating"}>
-                            <span><span style={{color: 'red', marginRight: 5}}>*</span> Rating</span>
-                            <div onMouseOver={() => handleOverRating(1)} onMouseOut={() => handleOverRating(0)}>
-                                <StarFullIcon width={"20px"} height={"20px"} fill={star1 ? '#cd553f' : '#ccc'}/>
+                        <div className={"reviewForm"}>
+                            <div className={"top"}>
+                                <div onClick={() => setIsReview(false)}
+                                     style={{
+                                         color: isReview ? '#000' : '#CD553F',
+                                         borderBottom: isReview ? '3px solid transparent' : '3px solid #CD553F'
+                                     }}
+                                     className={"btnChange"}
+                                >
+                                    Description
+                                </div>
+                                <div onClick={() => setIsReview(true)}
+                                     style={{
+                                         color: isReview ? '#CD553F' : '#000',
+                                         borderBottom: isReview ? '3px solid #CD553F' : '3px solid transparent'
+                                     }}
+                                     className={"btnChange"}
+                                >
+                                    Reviews (0)
+                                </div>
                             </div>
 
-                            <div onMouseOver={() => handleOverRating(2)} onMouseOut={() => handleOverRating(0)}>
-                                <StarFullIcon width={"20px"} height={"20px"} fill={star2 ? '#cd553f' : '#ccc'}/>
+                            <div className={"divTop"}>
+                                There are no reviews for this product.
                             </div>
 
-                            <div onMouseOver={() => handleOverRating(3)} onMouseOut={() => handleOverRating(0)}>
-                                <StarFullIcon width={"20px"} height={"20px"} fill={star3 ? '#cd553f' : '#ccc'}/>
+                            <span className={"title"}>Write a Review</span>
+
+                            <div className={"divInput"}>
+                                <label className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span> Your
+                                    Name</label>
+                                <input type={"text"} className={"input"}/>
                             </div>
 
-                            <div onMouseOver={() => handleOverRating(4)} onMouseOut={() => handleOverRating(0)}>
-                                <StarFullIcon width={"20px"} height={"20px"} fill={star4 ? '#cd553f' : '#ccc'}/>
+                            <div className={"divInput"}>
+                                <label className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span> Your Review</label>
+                                <textarea className={"bigInput"}/>
                             </div>
 
-                            <div onMouseOver={() => handleOverRating(5)} onMouseOut={() => handleOverRating(0)}>
-                                <StarFullIcon width={"20px"} height={"20px"} fill={star5 ? '#cd553f' : '#ccc'}/>
+                            <div className={"rating"}>
+                                <span><span style={{color: 'red', marginRight: 5}}>*</span> Rating</span>
+                                <div onMouseOver={() => handleOverRating(1)} onMouseOut={() => handleOverRating(0)}>
+                                    <StarFullIcon width={"20px"} height={"20px"} fill={star1 ? '#cd553f' : '#ccc'}/>
+                                </div>
+
+                                <div onMouseOver={() => handleOverRating(2)} onMouseOut={() => handleOverRating(0)}>
+                                    <StarFullIcon width={"20px"} height={"20px"} fill={star2 ? '#cd553f' : '#ccc'}/>
+                                </div>
+
+                                <div onMouseOver={() => handleOverRating(3)} onMouseOut={() => handleOverRating(0)}>
+                                    <StarFullIcon width={"20px"} height={"20px"} fill={star3 ? '#cd553f' : '#ccc'}/>
+                                </div>
+
+                                <div onMouseOver={() => handleOverRating(4)} onMouseOut={() => handleOverRating(0)}>
+                                    <StarFullIcon width={"20px"} height={"20px"} fill={star4 ? '#cd553f' : '#ccc'}/>
+                                </div>
+
+                                <div onMouseOver={() => handleOverRating(5)} onMouseOut={() => handleOverRating(0)}>
+                                    <StarFullIcon width={"20px"} height={"20px"} fill={star5 ? '#cd553f' : '#ccc'}/>
+                                </div>
+                            </div>
+
+                            <span className={"title"}>Captcha</span>
+
+                            <div style={{margin: 20, width: 'auto'}} className={"line"}></div>
+
+                            <div className={"divInput"}>
+                                <span><span style={{color: 'red', marginRight: 5}}>*</span>Enter the code in the box</span>
+                                <input type={"text"} className={"input"}/>
                             </div>
                         </div>
 
-                        <span className={"title"}>Captcha</span>
+                    }
 
-                        <div style={{margin: 20, width: 'auto'}} className={"line"}></div>
-
-                        <div className={"divInput"}>
-                            <span><span style={{color: 'red', marginRight: 5}}>*</span>Enter the code in the box</span>
-                            <input type={"text"} className={"input"}/>
-                        </div>
-                    </div>
-
-                }
-
+                </div>
             </div>
+
+
         </div>
     )
 }
