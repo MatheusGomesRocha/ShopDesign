@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/svg/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg/menu-grid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AllProducts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AllProducts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AllProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AllProducts.js" afterDir="false" />
@@ -104,7 +106,7 @@
       <workItem from="1617108653576" duration="12629000" />
       <workItem from="1617124600441" duration="193000" />
       <workItem from="1617193472522" duration="4508000" />
-      <workItem from="1617275250086" duration="8706000" />
+      <workItem from="1617275250086" duration="16512000" />
     </task>
     <servers />
   </component>
@@ -167,9 +169,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/AllProducts.js</url>
-          <line>387</line>
+          <line>33</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

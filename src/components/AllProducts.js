@@ -27,6 +27,8 @@ import Icon1 from "../svg/shopping-cart";
 import Icon2 from "../svg/open-window";
 import Icon3 from "../svg/heart";
 import Icon4 from "../svg/adjust";
+import ListIcon from '../svg/list';
+import GridIcon from '../svg/menu-grid';
 
 export default () => {
     let array = [
@@ -35,15 +37,18 @@ export default () => {
             category: 'Headgear',
             subCategory1: 'Haute Couture',
             subCategory2: 'Knee Clothing',
-            subCategory3: 'Printers'
+            subCategory3: 'Printers',
+            quantity: '11'
         },
-        {id: 2, category: 'Mens Wear', subCategory1: 'Skirts', subCategory2: 'Womens Wear'},
-        {id: 3, category: 'Ice Skates', subCategory1: 'PC', subCategory2: 'Aprons'},
-        {id: 4, category: 'Dungarees'},
-        {id: 5, category: 'Jodhpur Pants'},
-        {id: 6, category: 'Stirrup Pants'},
-        {id: 7, category: 'Footwear'},
-        {id: 8, category: 'Punk Pants'},
+        {
+            id: 2, category: 'Mens Wear', subCategory1: 'Skirts', subCategory2: 'Womens Wear', quantity: '11'
+        },
+        {id: 3, category: 'Ice Skates', subCategory1: 'PC', subCategory2: 'Aprons', quantity: '8'},
+        {id: 4, category: 'Dungarees', quantity: '8'},
+        {id: 5, category: 'Jodhpur Pants', quantity: '8'},
+        {id: 6, category: 'Stirrup Pants', quantity: '8'},
+        {id: 7, category: 'Footwear', quantity: '8'},
+        {id: 8, category: 'Punk Pants', quantity: '8'},
     ];
 
     let arrayDefault = [
@@ -54,7 +59,7 @@ export default () => {
             img: img1,
             sale: true,
             name: 'Printed Women Kurti (Multicolor)',
-            price: '602,00'
+            price: '602,00',
         },
         {
             id: 2,
@@ -328,6 +333,16 @@ export default () => {
         },
     ];
 
+    let arrayCategory = [
+        {id: 1, category: 'Headgear', subCategory: 'Haute Couture', quantity: '11'},
+        {id: 2, category: 'Headgear', subCategory: 'Knee Clothing', quantity: '3'},
+        {id: 3, category: 'Headgear', subCategory: 'Printers', quantity: '5'},
+        {id: 4, category: 'Mens Wear', subCategory: 'Skirts', quantity: '7'},
+        {id: 5, category: 'Mens Wear', subCategory: 'Womens Wear', quantity: '18'},
+        {id: 6, category: 'Ice Skates', subCategory: 'PC', quantity: '11'},
+        {id: 7, category: 'Ice Skates', subCategory: 'Aprons', quantity: '9'},
+    ]
+
     const [category, setCategory] = useState('Headgear');
     const [subCategory, setSubCategory] = useState();
 
@@ -344,6 +359,8 @@ export default () => {
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
     const [img, setImg] = useState('');
+
+    const [showProductsOn, setShowProductsOn] = useState('Grid');
 
     const handleClickOpen = (name, price, img) => {
         setOpen(true);
@@ -380,7 +397,7 @@ export default () => {
 
             <div className={"mainDiv"}>
 
-                <div className={"sideCategory"}>
+                <div className={"side"}>
                     <div className={"topDiv"}>
                         <span className={"categoryTitle"}>Category</span>
                     </div>
@@ -391,9 +408,9 @@ export default () => {
                                 <div onClick={() => handleCategory(item.category)} className={"categoryDiv"}>
                                     <span
                                         style={{
-                                            color: item.category == category ? '#CD553F' : '#000'
+                                            color: item.category == category && '#CD553F'
                                         }}
-                                        className={"text"}>{item.category}</span>
+                                        className={"text"}>{item.category} ({item.quantity})</span>
                                 </div>
 
                                 <div className={"subCategory"}
@@ -404,17 +421,17 @@ export default () => {
                                              className={"subCategoryItem"}>
                                             <span
                                                 style={{
-                                                    color: item.subCategory1 == subCategory ? '#CD553F' : '#000'
+                                                    color: item.subCategory1 == subCategory && '#CD553F'
                                                 }}
-                                                className={"subCategoryText"}>- {item.subCategory1}</span>
+                                                className={"subCategoryText"}>- {item.subCategory1} ({item.quantity})</span>
                                         </div>
                                         <div onClick={() => setSubCategory(item.subCategory2)}
                                              className={"subCategoryItem"}>
                                             <span
                                                 style={{
-                                                    color: item.subCategory2 == subCategory ? '#CD553F' : '#000'
+                                                    color: item.subCategory2 == subCategory && '#CD553F'
                                                 }}
-                                                className={"subCategoryText"}>- {item.subCategory2}</span>
+                                                className={"subCategoryText"}>- {item.subCategory2} ({item.quantity})</span>
                                         </div>
 
                                         {item.subCategory3 &&
@@ -422,9 +439,9 @@ export default () => {
                                              className={"subCategoryItem"}>
                                             <span
                                                 style={{
-                                                    color: item.subCategory3 == subCategory ? '#CD553F' : '#000'
+                                                    color: item.subCategory3 == subCategory && '#CD553F'
                                                 }}
-                                                className={"subCategoryText"}>- {item.subCategory3}</span>
+                                                className={"subCategoryText"}>- {item.subCategory3} ({item.quantity})</span>
                                         </div>
                                         }
                                     </>
@@ -437,157 +454,234 @@ export default () => {
 
                 </div>
 
+                <div className={"side"}>
+                    <div className={"topInfo"}>
+                        <span className={"topCategory"}>{category}</span>
+                        <span className={"topInfoCategory"}>
+                            Shop Laptop Feature Only The Best Laptop Deals On The Market. By Comparing Laptop
+                            Deals From The Likes Of PC World, Comet, Dixons, The Link And Carphone Warehouse,
+                            Shop Laptop Has The Most Comprehensive Selection Of Laptops On The Internet. At
+                            Shop Laptop, We Pride Ourselves On Offering Customers The Very Best Laptop Deals.
+                            From Refurbished Laptops To Netbooks, Shop Laptop Ensures That Every Laptop -
+                            In Every Colour, Style, Size And Technical Spec - Is Featured On The Site At The
+                            Lowest Possible Price.
+                        </span>
+                    </div>
 
-                <div className={"arrayProducts"}>
-                    <>
-                        {arrayDefault.map((item, k) => (
-                            category == item.category &&
+                    {/*      */}
+
+                    <div className={"refineSearch"}>
+                        <span className={"refineSearchTitle"}>Refine Search</span>
+
+                        <div style={{display: 'flex'}}>
+                            {arrayCategory.map((item, k) => (
+                                category == item.category &&
+                                <div className={"refineSearchItem"} onClick={() => setSubCategory(item.subCategory)}>
+                                    <span
+                                        className={"refineSearchSubCategory"}>{item.subCategory} ({item.quantity})</span>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div className={"rowOptions"}>
+                            <div className={"optionsIcon"}>
+                                <Tooltip arrow title="List" placement="top">
+                                    <div onClick={() => setShowProductsOn('List')}>
+                                        <ListIcon fill={showProductsOn == 'List' ? '#CD553F' : '#ccc'}/>
+                                    </div>
+                                </Tooltip>
+
+                                <Tooltip arrow title="Grid" placement="top">
+                                    <div style={{marginLeft: 15}} onClick={() => setShowProductsOn('Grid')}>
+                                        <GridIcon fill={showProductsOn == 'Grid' ? '#CD553F' : '#ccc'}/>
+                                    </div>
+                                </Tooltip>
+                            </div>
+
+                            <span className={"text"}>Product Compare (0)</span>
+
+                            <div className={"sortAndShowDiv"}>
+                                <span className={"label"}>Sort By: </span>
+
+                                <select className={"select"}>
+                                    <option>Default</option>
+                                    <option>Name (A-Z)</option>
+                                    <option>Name (Z-A)</option>
+                                    <option>Price (Low > High)</option>
+                                    <option>Price (High > Low)</option>
+                                    <option>Rating (Highest)</option>
+                                    <option>Rating (Lowest)</option>
+                                    <option>Model (A-A)</option>
+                                    <option>Model (Z-A)</option>
+                                </select>
+
+                                <span className={"label"}>Show: </span>
+
+                                <select className={"select"}>
+                                    <option>15</option>
+                                    <option>25</option>
+                                    <option>50</option>
+                                    <option>75</option>
+                                    <option>100</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    {/*      */}
+
+                    <div className={"arrayProducts"}>
+                        <>
+                            {arrayDefault.map((item, k) => (
+                                category == item.category &&
                                 subCategory != null ?
                                     subCategory == item.subCategory &&
-                                        <div key={k} className={"itemDiv"}>
-                                            <Dialog maxWidth={"100%"} onClose={handleClose} open={open}>
-                                                <Modal name={name} price={price} img={img}/>
-                                            </Dialog>
+                                    <div key={k} className={"itemDiv"}>
+                                        <Dialog maxWidth={"100%"} onClose={handleClose} open={open}>
+                                            <Modal name={name} price={price} img={img}/>
+                                        </Dialog>
 
-                                            <Dialog
-                                                open={openMessage}
-                                                onClose={() => setOpenMessage(false)}
-                                                aria-labelledby="alert-dialog-title"
-                                                aria-describedby="alert-dialog-description"
-                                            >
-                                                <SuccessMessage name={name} btnPressed={btnPressed}/>
-                                            </Dialog>
+                                        <Dialog
+                                            open={openMessage}
+                                            onClose={() => setOpenMessage(false)}
+                                            aria-labelledby="alert-dialog-title"
+                                            aria-describedby="alert-dialog-description"
+                                        >
+                                            <SuccessMessage name={name} btnPressed={btnPressed}/>
+                                        </Dialog>
 
-                                            <div className={"itemImg"}>
-                                                <div style={{display: item.sale ? 'flex' : 'none'}}
-                                                     className={"saleText"}>Sale!
-                                                </div>
-                                                <img src={item.img} className={"img"}/>
-                                                <div className={"rowBtnHidden"}>
-
-                                                    <Tooltip arrow title="Add to cart" placement="top">
-                                                        <div onMouseOver={() => setHover1(true)}
-                                                             onMouseOut={() => setHover1(false)}
-                                                             className={"btnHidden"}
-                                                             onClick={() => handleClickOpenMessage(item.name, 'cart')}
-                                                        >
-                                                            <Icon1 fill={hover1 ? '#fff' : '#000'}/>
-                                                        </div>
-                                                    </Tooltip>
-
-                                                    <Tooltip arrow title="Quickview" placement="top">
-                                                        <div onMouseOver={() => setHover2(true)}
-                                                             onMouseOut={() => setHover2(false)}
-                                                             className={"btnHidden"}
-                                                             onClick={() => handleClickOpen(item.name, item.price, item.img)}
-                                                        >
-                                                            <Icon2 fill={hover2 ? '#fff' : '#000'}/>
-                                                        </div>
-                                                    </Tooltip>
-
-                                                    <Tooltip arrow title="Wish List" placement="top">
-                                                        <div onMouseOver={() => setHover3(true)}
-                                                             onMouseOut={() => setHover3(false)}
-                                                             className={"btnHidden"}
-                                                             onClick={() => handleClickOpenMessage(item.name, 'wish')}
-                                                        >
-                                                            <Icon3 fill={hover3 ? '#fff' : '#000'}/>
-                                                        </div>
-                                                    </Tooltip>
-
-                                                    <Tooltip arrow title="Compare this Product" placement="top">
-                                                        <div onMouseOver={() => setHover4(true)}
-                                                             onMouseOut={() => setHover4(false)}
-                                                             className={"btnHidden"}
-                                                             onClick={() => handleClickOpenMessage(item.name, 'compare')}
-                                                        >
-                                                            <Icon4 fill={hover4 ? '#fff' : '#000'}/>
-                                                        </div>
-                                                    </Tooltip>
-                                                </div>
+                                        <div className={"itemImg"}>
+                                            <div style={{display: item.sale ? 'flex' : 'none'}}
+                                                 className={"saleText"}>Sale!
                                             </div>
+                                            <img src={item.img} className={"img"}/>
+                                            <div className={"rowBtnHidden"}>
 
-                                            <div className={"itemText"}>
-                                                <span className={"name"}>{item.name}</span>
-                                                <span className={"price"}>R$ {item.price}</span>
+                                                <Tooltip arrow title="Add to cart" placement="top">
+                                                    <div onMouseOver={() => setHover1(true)}
+                                                         onMouseOut={() => setHover1(false)}
+                                                         className={"btnHidden"}
+                                                         onClick={() => handleClickOpenMessage(item.name, 'cart')}
+                                                    >
+                                                        <Icon1 fill={hover1 ? '#fff' : '#000'}/>
+                                                    </div>
+                                                </Tooltip>
+
+                                                <Tooltip arrow title="Quickview" placement="top">
+                                                    <div onMouseOver={() => setHover2(true)}
+                                                         onMouseOut={() => setHover2(false)}
+                                                         className={"btnHidden"}
+                                                         onClick={() => handleClickOpen(item.name, item.price, item.img)}
+                                                    >
+                                                        <Icon2 fill={hover2 ? '#fff' : '#000'}/>
+                                                    </div>
+                                                </Tooltip>
+
+                                                <Tooltip arrow title="Wish List" placement="top">
+                                                    <div onMouseOver={() => setHover3(true)}
+                                                         onMouseOut={() => setHover3(false)}
+                                                         className={"btnHidden"}
+                                                         onClick={() => handleClickOpenMessage(item.name, 'wish')}
+                                                    >
+                                                        <Icon3 fill={hover3 ? '#fff' : '#000'}/>
+                                                    </div>
+                                                </Tooltip>
+
+                                                <Tooltip arrow title="Compare this Product" placement="top">
+                                                    <div onMouseOver={() => setHover4(true)}
+                                                         onMouseOut={() => setHover4(false)}
+                                                         className={"btnHidden"}
+                                                         onClick={() => handleClickOpenMessage(item.name, 'compare')}
+                                                    >
+                                                        <Icon4 fill={hover4 ? '#fff' : '#000'}/>
+                                                    </div>
+                                                </Tooltip>
                                             </div>
                                         </div>
 
-                                        :
+                                        <div className={"itemText"}>
+                                            <span className={"name"}>{item.name}</span>
+                                            <span className={"price"}>R$ {item.price}</span>
+                                        </div>
+                                    </div>
 
-                                        category == item.category &&
-                                            <div key={k} className={"itemDiv"}>
-                                                <Dialog maxWidth={"100%"} onClose={handleClose} open={open}>
-                                                    <Modal name={name} price={price} img={img}/>
-                                                </Dialog>
+                                    :
 
-                                                <Dialog
-                                                    open={openMessage}
-                                                    onClose={() => setOpenMessage(false)}
-                                                    aria-labelledby="alert-dialog-title"
-                                                    aria-describedby="alert-dialog-description"
-                                                >
-                                                    <SuccessMessage name={name} btnPressed={btnPressed}/>
-                                                </Dialog>
+                                    category == item.category &&
+                                    <div key={k} className={"itemDiv"}>
+                                        <Dialog maxWidth={"100%"} onClose={handleClose} open={open}>
+                                            <Modal name={name} price={price} img={img}/>
+                                        </Dialog>
 
-                                                <div className={"itemImg"}>
-                                                    <div style={{display: item.sale ? 'flex' : 'none'}}
-                                                         className={"saleText"}>Sale!
-                                                    </div>
-                                                    <img src={item.img} className={"img"}/>
-                                                    <div className={"rowBtnHidden"}>
+                                        <Dialog
+                                            open={openMessage}
+                                            onClose={() => setOpenMessage(false)}
+                                            aria-labelledby="alert-dialog-title"
+                                            aria-describedby="alert-dialog-description"
+                                        >
+                                            <SuccessMessage name={name} btnPressed={btnPressed}/>
+                                        </Dialog>
 
-                                                        <Tooltip arrow title="Add to cart" placement="top">
-                                                            <div onMouseOver={() => setHover1(true)}
-                                                                 onMouseOut={() => setHover1(false)}
-                                                                 className={"btnHidden"}
-                                                                 onClick={() => handleClickOpenMessage(item.name, 'cart')}
-                                                            >
-                                                                <Icon1 fill={hover1 ? '#fff' : '#000'}/>
-                                                            </div>
-                                                        </Tooltip>
-
-                                                        <Tooltip arrow title="Quickview" placement="top">
-                                                            <div onMouseOver={() => setHover2(true)}
-                                                                 onMouseOut={() => setHover2(false)}
-                                                                 className={"btnHidden"}
-                                                                 onClick={() => handleClickOpen(item.name, item.price, item.img)}
-                                                            >
-                                                                <Icon2 fill={hover2 ? '#fff' : '#000'}/>
-                                                            </div>
-                                                        </Tooltip>
-
-                                                        <Tooltip arrow title="Wish List" placement="top">
-                                                            <div onMouseOver={() => setHover3(true)}
-                                                                 onMouseOut={() => setHover3(false)}
-                                                                 className={"btnHidden"}
-                                                                 onClick={() => handleClickOpenMessage(item.name, 'wish')}
-                                                            >
-                                                                <Icon3 fill={hover3 ? '#fff' : '#000'}/>
-                                                            </div>
-                                                        </Tooltip>
-
-                                                        <Tooltip arrow title="Compare this Product" placement="top">
-                                                            <div onMouseOver={() => setHover4(true)}
-                                                                 onMouseOut={() => setHover4(false)}
-                                                                 className={"btnHidden"}
-                                                                 onClick={() => handleClickOpenMessage(item.name, 'compare')}
-                                                            >
-                                                                <Icon4 fill={hover4 ? '#fff' : '#000'}/>
-                                                            </div>
-                                                        </Tooltip>
-                                                    </div>
-                                                </div>
-
-                                                <div className={"itemText"}>
-                                                    <span className={"name"}>{item.name}</span>
-                                                    <span className={"price"}>R$ {item.price}</span>
-                                                </div>
+                                        <div className={"itemImg"}>
+                                            <div style={{display: item.sale ? 'flex' : 'none'}}
+                                                 className={"saleText"}>Sale!
                                             </div>
-                        ))}
-                    </>
+                                            <img src={item.img} className={"img"}/>
+                                            <div className={"rowBtnHidden"}>
+
+                                                <Tooltip arrow title="Add to cart" placement="top">
+                                                    <div onMouseOver={() => setHover1(true)}
+                                                         onMouseOut={() => setHover1(false)}
+                                                         className={"btnHidden"}
+                                                         onClick={() => handleClickOpenMessage(item.name, 'cart')}
+                                                    >
+                                                        <Icon1 fill={hover1 ? '#fff' : '#000'}/>
+                                                    </div>
+                                                </Tooltip>
+
+                                                <Tooltip arrow title="Quickview" placement="top">
+                                                    <div onMouseOver={() => setHover2(true)}
+                                                         onMouseOut={() => setHover2(false)}
+                                                         className={"btnHidden"}
+                                                         onClick={() => handleClickOpen(item.name, item.price, item.img)}
+                                                    >
+                                                        <Icon2 fill={hover2 ? '#fff' : '#000'}/>
+                                                    </div>
+                                                </Tooltip>
+
+                                                <Tooltip arrow title="Wish List" placement="top">
+                                                    <div onMouseOver={() => setHover3(true)}
+                                                         onMouseOut={() => setHover3(false)}
+                                                         className={"btnHidden"}
+                                                         onClick={() => handleClickOpenMessage(item.name, 'wish')}
+                                                    >
+                                                        <Icon3 fill={hover3 ? '#fff' : '#000'}/>
+                                                    </div>
+                                                </Tooltip>
+
+                                                <Tooltip arrow title="Compare this Product" placement="top">
+                                                    <div onMouseOver={() => setHover4(true)}
+                                                         onMouseOut={() => setHover4(false)}
+                                                         className={"btnHidden"}
+                                                         onClick={() => handleClickOpenMessage(item.name, 'compare')}
+                                                    >
+                                                        <Icon4 fill={hover4 ? '#fff' : '#000'}/>
+                                                    </div>
+                                                </Tooltip>
+                                            </div>
+                                        </div>
+
+                                        <div className={"itemText"}>
+                                            <span className={"name"}>{item.name}</span>
+                                            <span className={"price"}>R$ {item.price}</span>
+                                        </div>
+                                    </div>
+                            ))}
+                        </>
 
 
+                    </div>
                 </div>
             </div>
         </div>
