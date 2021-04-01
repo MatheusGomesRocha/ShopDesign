@@ -1,3 +1,7 @@
+/**
+    TELA ONDE FICAM TODOS OS PRODUTOS PARA VISUALIZAÇÃO (ACESSADA PELOS BOTÕES NO COMPONENT CATEGORY)
+ */
+
 import './AllProducts.css';
 
 import React from 'react';

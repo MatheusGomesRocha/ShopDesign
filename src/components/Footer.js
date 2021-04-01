@@ -10,6 +10,10 @@ import InstaIcon from '../svg/instagram';
 import FaceIcon from '../svg/facebook';
 import TwitterIcon from '../svg/twitter';
 
+import HomeIcon from '../svg/home';
+import PhoneIcon from '../svg/phone';
+import EmailIcon from '../svg/email';
+
 import {Link} from 'react-router-dom';
 
 export default () => {
@@ -52,7 +56,8 @@ export default () => {
             link2: '123-456-789',
             link3: 'demo@demo.com',
             link4: null,
-            link5: null
+            link5: null,
+            contact: true,
         },
     ];
 
@@ -147,6 +152,25 @@ export default () => {
                             <Link to={"/Affiliate_program"} style={{marginTop: 15, textDecoration: 'none', color: '#000'}}>
                                 <span className={"link"}>{item.link5}</span>
                             </Link>
+                        </>
+                        }
+
+                        {item.contact &&
+                        <>
+                            <div style={{display: 'flex', alignItems: "center", marginTop: 20}}>
+                                <HomeIcon fill={"#CD553F"} width={"20px"} height={"20px"} />
+                                <span style={{marginLeft: 10, fontFamily: "arial", marginTop: 0, width: 250}} className={"link"}>{item.link1}</span>
+                            </div>
+
+                            <div style={{display: 'flex', alignItems: "center", marginTop: 20}}>
+                                <PhoneIcon fill={"#CD553F"} width={"20px"} height={"20px"} />
+                                <span style={{fontFamily: "arial", marginTop: 0}} className={"link"}>{item.link2}</span>
+                            </div>
+
+                            <div style={{display: 'flex', alignItems: "center", marginTop: 20}}>
+                                <EmailIcon />
+                                <span style={{marginLeft: 10, fontFamily: "arial", marginTop: 0}} className={"link"}>{item.link3}</span>
+                            </div>
                         </>
                         }
 
