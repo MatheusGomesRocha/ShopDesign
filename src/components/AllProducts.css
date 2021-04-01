@@ -58,8 +58,109 @@
 }
 
 
+/** 2 -- Div do array */
+.allProducts .arrayProducts {       /** Div father do array */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    grid-gap: 30px;
+}
+.allProducts .arrayProducts .itemDiv {      /** Div singular do item */
+    display: flex;
+    flex-direction: column;
+    animation: fadeItem 1s;
+    cursor: pointer;
+}
+.allProducts .arrayProducts .itemDiv .itemImg {     /** Div com Imagem e uns botões escondidos que mostrar ao dar um hover */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    position: relative;
+}
+.allProducts .arrayProducts .itemDiv .itemImg .saleText {       /** Texto para saber se o produto já está esgotado */
+    background-color: #CD553F;
+    color: #fff;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.allProducts .arrayProducts .itemDiv .img {         /** Imagem (em PNG) dentro da div */
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    transition: 500ms;
+}
+.allProducts .arrayProducts .itemDiv .itemImg .rowBtnHidden {       /** Div escondida com 4 botões */
+    display: none;
+    position: absolute;
+    bottom: 20px;
+}
+.allProducts .arrayProducts .itemDiv .itemImg .rowBtnHidden .btnHidden {        /** Botão dentro da div escondida */
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+}
+.allProducts .arrayProducts .itemDiv .itemText {        /** Div com textos (name e price) abaixo das imagens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.allProducts .arrayProducts .itemDiv .itemText .name {      /** Nome do produto */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 270px;
+    text-align: center;
+}
+.allProducts .arrayProducts .itemDiv .itemText .price {     /** Preço do produto */
+    font-size: 22px;
+    font-weight: bold;
+}
+/** -- 2 -- */
+
+
+
 .allProducts .mainDiv .sideCategory .mainCategory .itemCategory .categoryDiv:hover,
 .allProducts .mainDiv .sideCategory .mainCategory .itemCategory .subCategory .subCategoryItem:hover {
     color: #CD553F;
 }
 
+/** Hovers **/
+.allProducts .arrayProducts .itemDiv:hover .itemImg .img{   /** Efeito de zoom na imagem ao passar mouse em cima do ItemDiv */
+    transform: scale(1.1);
+}
+.allProducts .arrayProducts .itemDiv:hover .itemImg .rowBtnHidden{      /** Passar o mouse em cima do item do array, mostra a div escondida com os botões */
+    display: flex;
+    animation: fadeItem 500ms;
+}
+.allProducts .arrayProducts .itemDiv .itemImg .rowBtnHidden .btnHidden:hover {      /** Mudar cor do botão ao passar mouse em cima dos botões */
+    cursor: pointer;
+    background-color: #CD553F;
+}
+/** **/
+
+/** Animations **/
+@keyframes fadeItem {   /** Animação de fade ao trocar o filtro de items */
+    from{opacity: 0}
+    to{opacity: 1}
+}
+/** **/
