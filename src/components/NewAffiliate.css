@@ -1,35 +1,38 @@
-.newAffiliate {
+.newAffiliate {     /** Div Father **/
     padding: 50px;
     font-family: Candara;
 }
-.newAffiliate .mainDiv {
+
+/** 1 -- Main Div alinhada horizontalmente com a Div padrão com o form + sideComponent AccountSettings onde o usário
+    tem algumas opções para fazer com a conta (login, cadastro, recuperar senha, infos)
+ **/
+.newAffiliate .mainDiv {        /** Div Father */
     display: grid;
     grid-gap: 2%;
     grid-template-columns: 75% 23%;
 }
-.newAffiliate .mainDiv .side {
+.newAffiliate .mainDiv .side {      /** Div da esquerda */
     display: flex;
     flex-direction: column;
 }
-.newAffiliate .mainDiv .side .text {
+.newAffiliate .mainDiv .side .text {        /** Texto padrão da tela */
     font-size: 18px;
     margin-top: 5px;
 }
-
-.newAffiliate .mainDiv .side .divInput {
+.newAffiliate .mainDiv .side .divInput {        /** Div Main com os inputs */
     margin: 10px 0 25px 50px;
 }
-.newAffiliate .mainDiv .side .divInput .rowInput {
+.newAffiliate .mainDiv .side .divInput .rowInput {      /** Div com label e input alinhadas horizontalmente */
     display: flex;
     margin-top: 20px;
 }
-.newAffiliate .mainDiv .side .divInput .rowInput .label {
+.newAffiliate .mainDiv .side .divInput .rowInput .label {       /** Label */
     width: 200px;
     text-align: right;
     margin-top: 5px;
     font-size: 18px;
 }
-.newAffiliate .mainDiv .side .divInput .rowInput .input {
+.newAffiliate .mainDiv .side .divInput .rowInput .input {       /** Input */
     height: 40px;
     width: 100%;
     border: 1px solid #ddd;
@@ -38,23 +41,25 @@
     font-size: 18px;
     margin-left: 95px;
 }
-.newAffiliate .mainDiv .side .divInput .rowInput .radioInput {
+.newAffiliate .mainDiv .side .divInput .rowInput .radioInput {      /** Div com inputs type radio alinhados verticalmente */
     display: flex;
     flex-direction: column;
     margin-left: 30px;
 }
-.newAffiliate .mainDiv .side .divInput .rowInput .radio {
+.newAffiliate .mainDiv .side .divInput .rowInput .radio {       /** Input type radio */
     cursor: pointer;
     width: 15px;
     height: 15px;
 }
-.newAffiliate .mainDiv .side .divInput .rowInput .radioSpan {
+.newAffiliate .mainDiv .side .divInput .rowInput .radioSpan {       /** Texto do Input radio */
     margin-left: 10px;
     font-size: 18px;
 }
+/** -- 1 -- */
 
 
-
-.newAffiliate .mainDiv .side .divInput .rowInput .input:focus {
+/** Focus **/
+.newAffiliate .mainDiv .side .divInput .rowInput .input:focus {     /** Muda a cor da borda do input ao focar */
     border: 1px solid #CD553F;
 }
+/** **/

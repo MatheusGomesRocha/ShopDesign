@@ -23,7 +23,6 @@ export default () => {
                 <div className={"side"}>
                     <LineDivComponent title={"Our Location"} />
 
-
                     <div className={"info"}>
                         <HomeIcon mLeft={"0"} mRight={"10px"}/>
                         <span className={"infoText"}>Fashion Store Uffin Street Pufville India Surat - 395006</span>

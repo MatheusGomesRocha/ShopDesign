@@ -228,7 +228,56 @@ export default () => {
             <ProductInfoComponent />
 
             <div className={"review"}>
-                {isReview ?      /* Se isReview for TRUE, retorna a tela com o formulário para adicionar uma review ao produto */
+                {isReview == false ?    /* Se isReview for FALSE, retorna a tela de features do produto (infos) */
+                    <div className={"productFeatures"}>
+
+                        <div className={"top"}>
+                            <div onClick={() => setIsReview(false)}
+                                 style={{
+                                     color: isReview ? '#000' : '#CD553F',
+                                     borderBottom: isReview ? '3px solid transparent' : '3px solid #CD553F'
+                                 }}
+                                 className={"btnChange"}
+                            >
+                                Description
+                            </div>
+                            <div onClick={() => setIsReview(true)}
+                                 style={{
+                                     color: isReview ? '#CD553F' : '#000',
+                                     borderBottom: isReview ? '3px solid #CD553F' : '3px solid transparent'
+                                 }}
+                                 className={"btnChange"}
+                            >
+                                Reviews (0)
+                            </div>
+                        </div>
+
+                        <div className={"descriptionDiv"}>
+                            <span className={"description"}>
+                                HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high
+                                definition clarity for a mobile experience you never thought possible. Seductively sleek, the HTC
+                                Touch HD provides the next generation of mobile functionality, all at a simple touch. Fully
+                                integrated with Windows Mobile Professional 6.1, ultrafast 3.5G, GPS, 5MP camera, plus lots more -
+                                all delivered on a breathtakingly crisp 3.8" WVGA touchscreen - you can take control of your mobile
+                                world with the HTC Touch HD.
+                            </span>
+                        </div>
+
+                        <div className={"featuresDiv"}>
+                            <span className={"title"}>Features</span>
+                            <div className={"featuresText"}>
+                                {arrayFeatures.map((item, k) => (
+                                    <div className={"featuresRow"}>
+                                        <div className={"smallBall"}></div>
+                                        <span style={{fontSize: 18}}>{item.text}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    :  /* Se isReview for TRUE, retorna a tela com o formulário para adicionar uma review ao produto */
+
                     <div className={"reviewForm"}>
                         <div className={"top"}>
                             <div onClick={() => setIsReview(false)}
@@ -301,54 +350,6 @@ export default () => {
                         </div>
                     </div>
 
-                    :           /* Se isReview for FALSE, retorna a tela de features do produto (infos) */
-
-                    <div className={"productFeatures"}>
-
-                        <div className={"top"}>
-                            <div onClick={() => setIsReview(false)}
-                                 style={{
-                                     color: isReview ? '#000' : '#CD553F',
-                                     borderBottom: isReview ? '3px solid transparent' : '3px solid #CD553F'
-                                 }}
-                                 className={"btnChange"}
-                            >
-                                Description
-                            </div>
-                            <div onClick={() => setIsReview(true)}
-                                 style={{
-                                     color: isReview ? '#CD553F' : '#000',
-                                     borderBottom: isReview ? '3px solid #CD553F' : '3px solid transparent'
-                                 }}
-                                 className={"btnChange"}
-                            >
-                                Reviews (0)
-                            </div>
-                        </div>
-
-                        <div className={"descriptionDiv"}>
-                            <span className={"description"}>
-                                HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high
-                                definition clarity for a mobile experience you never thought possible. Seductively sleek, the HTC
-                                Touch HD provides the next generation of mobile functionality, all at a simple touch. Fully
-                                integrated with Windows Mobile Professional 6.1, ultrafast 3.5G, GPS, 5MP camera, plus lots more -
-                                all delivered on a breathtakingly crisp 3.8" WVGA touchscreen - you can take control of your mobile
-                                world with the HTC Touch HD.
-                            </span>
-                        </div>
-
-                        <div className={"featuresDiv"}>
-                            <span className={"title"}>Features</span>
-                            <div className={"featuresText"}>
-                                {arrayFeatures.map((item, k) => (
-                                    <div className={"featuresRow"}>
-                                        <div className={"smallBall"}></div>
-                                        <span>{item.text}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
                 }
 
             </div>

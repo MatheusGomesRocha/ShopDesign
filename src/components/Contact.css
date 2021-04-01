@@ -1,21 +1,8 @@
-.contact {
+.contact {      /** Div Father */
     padding: 50px;
     font-family: Candara;
 }
-.contact .titleLine {
-    margin: 15px 0;
-}
-.contact .titleLine .title {
-    font-size: 25px;
-}
-.contact .titleLine .line {
-    width: 100%;
-    height: 1px;
-    background-color: #ddd;
-    margin-top: 5px;
-}
-
-.contact .bigTitle {
+.contact .bigTitle {        /** Título grande fora da Main Div */
     display: flex;
     justify-content: center;
     margin-top: 25px;
@@ -23,36 +10,41 @@
     font-weight: bold;
 }
 
-.contact .mainDiv {
+
+/** 1 -- Div Main com infos e o form */
+.contact .mainDiv {     /** Div Father alinhada horizontalmente */
     display: grid;
     grid-template-columns: 30% 65%;
     grid-gap: 5%;
 }
-
-
-.contact .mainDiv .side {
+.contact .mainDiv .side {       /** Divs com infos e o form (2 Divs) */
     padding: 25px 0;
 }
 
-.contact .mainDiv .side .info {
+
+/** 1.1 --  Div dentro da primeira Div Side "Our Location" **/
+.contact .mainDiv .side .info {     /** Div para separar em blocos */
     display: flex;
     margin-top: 30px;
 }
-.contact .mainDiv .side .info .infoText {
+.contact .mainDiv .side .info .infoText {       /** Texto com as infos */
     width: 180px;
     font-size: 20px;
 }
+/** -- 1.1 -- */
 
-.contact .mainDiv .side .divInput {
+
+/** 1.2 -- Div dentro da segunda Div Side "Contact Form" **/
+.contact .mainDiv .side .divInput {     /** Div com label e input */
     display: flex;
     margin-top: 20px;
 }
-.contact .mainDiv .side .divInput .label {
+.contact .mainDiv .side .divInput .label {      /** Label */
     width: 200px;
     margin-top: 10px;
     font-size: 18px;
 }
-.contact .mainDiv .side .divInput .input {
+.contact .mainDiv .side .divInput .input {      /** Input */
     border: 1px solid #ddd;
     height: 40px;
     width: 100%;
@@ -60,7 +52,7 @@
     padding-left: 10px;
     font-size: 18px;
 }
-.contact .mainDiv .side .divInput .inputArea {
+.contact .mainDiv .side .divInput .inputArea {      /** TextArea (input grande) */
     border: 1px solid #ddd;
     height: 250px;
     width: 100%;
@@ -68,25 +60,25 @@
     padding: 10px;
     font-size: 18px;
 }
+/** -- 1.2 -- */
 
-.contact .captcha {
+
+/** 1.3 -- Div com Captcha para preenchimento */
+.contact .captcha {     /** Div Father */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-.contact .captcha .titleLine {
-    width: 50%;
-}
-.contact .captcha .divInput {
+.contact .captcha .divInput {       /** Div com input e label */
     display: flex;
     margin-top: 20px;
 }
-.contact .captcha .label {
+.contact .captcha .label {      /** Label */
     margin-right: 10px;
     font-size: 18px;
     text-align: right;
 }
-.contact .captcha .input {
+.contact .captcha .input {      /** Input */
     border: 1px solid #ddd;
     height: 40px;
     width: 100%;
@@ -94,15 +86,22 @@
     padding-left: 10px;
     font-size: 18px;
 }
-.contact .submitBtn {
+/** -- 1.4 -- */
+
+.contact .submitBtn {       /** Div para conseguir posicionar o botão Submit no final da tela horizontal */
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
     margin-top: 40px;
 }
+/** -- 1 -- */
 
-.contact .mainDiv .side .divInput input:focus, .contact .mainDiv .side .divInput textarea:focus, .contact .captcha .divInput input:focus {
+
+/** Focus **/
+.contact .mainDiv .side .divInput input:focus,              /** Muda cor da borda do input e textarea ao focar */
+.contact .mainDiv .side .divInput textarea:focus, .contact .captcha .divInput input:focus {
     border: 1px solid #CD553F;
     outline: none;
 }
+/** **/

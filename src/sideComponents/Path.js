@@ -13,14 +13,12 @@ export default (props) => {
                   onMouseOver={() => setHover(true)}
                   onMouseOut={() => setHover(false)}
             >
-
-
                 <HomeIcon mLeft={"30px"} fill={hover ? '#CD553F' : '#000'}/>
             </Link>
 
             <div className={"lineVertical"}></div>
 
-            <div className={"divTopText"}>
+            <div className={"divText"}>
                 {props.about &&
                     <span className={"text"}>Terms & Conditions</span>
                 }

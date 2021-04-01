@@ -104,7 +104,7 @@
 }
 /** -- 2 -- */
 
-/** Hovers */
+/** Hovers **/
 .trending .arrayDiv .itemDiv:hover .itemImg .img{   /** Efeito de zoom na imagem ao passar mouse em cima do ItemDiv */
     transform: scale(1.1);
 }
@@ -118,8 +118,9 @@
 }
 /** **/
 
-/** Animations */
+/** Animations **/
 @keyframes fadeItem {   /** Animação de fade ao trocar o filtro de items */
     from{opacity: 0}
     to{opacity: 1}
 }
+/** **/

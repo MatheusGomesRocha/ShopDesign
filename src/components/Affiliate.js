@@ -21,7 +21,6 @@ export default () => {
                 <div className={"side"}>
 
                     {/*       */}
-                    <div className={"topAndBottom"}>
                         <LineDivComponent bolder={"bold"} title={"Affiliate Program"}/>
 
                         <span className={"text"}>
@@ -34,7 +33,6 @@ export default () => {
                         <span className={"text"}>
                             For more information, visit our FAQ page or see our Affiliate terms & conditions.
                         </span>
-                    </div>
 
                     {/*       */}
 

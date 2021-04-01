@@ -1,47 +1,39 @@
-.login {
+.login {        /** Div Father */
     padding: 50px;
     font-family: Candara;
 }
 
-.login .loginChild {
+/** 1 -- Main Div */
+.login .loginChild {        /** Div Father */
     display: grid;
     grid-template-columns: auto 50%;
     grid-gap: 20px;
     margin-top: 25px;
 }
-.login .loginChild .right {
+
+/** 1.1 -- Divs Left e Right */
+.login .loginChild .right {     /** Div alinhada a direita */
     max-height: 60%;
 }
-.login .loginChild .left, .login .loginChild .right {
+.login .loginChild .left, .login .loginChild .right {       /** Divs esquerda e direita */
     display: flex;
     flex-direction: column;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
 }
-.login .loginChild .title {
-    font-size: 23px;
-    font-weight: bold;
-}
-.login .loginChild .lineHorizontal {
-    width: 100%;
-    height: 1px;
-    background-color: #ddd;
-    margin: 15px 0;
-}
-.login .loginChild .bold {
+.login .loginChild .bold {      /** Texto destacado em Negrito */
     font-weight: bold;
     font-size: 20px;
 }
-
-.login .loginChild .inputDiv {
+.login .loginChild .inputDiv {      /** Div com label e input alinhado verticalmente */
     margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
-.login .loginChild .label {
+.login .loginChild .label {     /** Label */
     font-size: 20px;
 }
-.login .loginChild .input {
+.login .loginChild .input {     /** Input */
     border: 1px solid #ddd;
     height: 40px;
     padding-left: 10px;
@@ -49,8 +41,7 @@
     font-size: 20px;
     transition: 250ms;
 }
-
-.login .loginChild .forgot {
+.login .loginChild .forgot {        /** Texto com link para ir para a tela ForgotPassword */
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -59,19 +50,22 @@
     cursor: pointer;
     transition: 250ms;
 }
-
-
-.login .loginChild .right .text {
+.login .loginChild .right .text {       /** Texto apenas da Div alinhada a direita */
     margin-top: 15px;
     font-size: 20px;
 }
+/** -- 1.1 -- **/
 
+/** -- 1 -- **/
 
-.login .loginChild .forgot:hover {
+/** Hovers **/
+.login .loginChild .forgot:hover {      /** Muda a cor do texto Forgotten Password ao passar mouse em cima */
     color: #CD553F;
 }
+/** **/
 
-.login .loginChild .input:focus {
+/** Focus **/
+.login .loginChild .input:focus {       /** Muda cor da borda do input ao focar */
     border: 1px solid #CD553F;
 }
-
+/** **/

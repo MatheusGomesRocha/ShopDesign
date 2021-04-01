@@ -1,22 +1,23 @@
-.return {
+.return {       /** Div Father */
     padding: 50px;
     font-family: Candara;
 }
 
-.return .mainDiv .divInput {
+/** 1 -- Div Main com os inputs para preencher e retornar o produto */
+.return .mainDiv .divInput {    /** Div com os inputs */
     margin: 20px 0 0 150px;
 }
-.return .mainDiv .divInput .rowInput {
+.return .mainDiv .divInput .rowInput {      /** Div com o label e o input alinhados horizontalmente */
     display: flex;
     margin-top: 20px;
 }
-.return .mainDiv .divInput .rowInput .label {
+.return .mainDiv .divInput .rowInput .label {       /** Label */
     width: 200px;
     text-align: right;
     margin: 5px 30px 0 0;
     font-size: 18px;
 }
-.return .mainDiv .divInput .rowInput .input, .return .mainDiv .divInput .rowInput .textarea {
+.return .mainDiv .divInput .rowInput .input, .return .mainDiv .divInput .rowInput .textarea {       /** Input e Textarea */
     height: 40px;
     width: 100%;
     border: 1px solid #ddd;
@@ -25,33 +26,37 @@
     font-size: 18px;
     margin-left: 50px;
 }
-.return .mainDiv .divInput .rowInput .radioInput {
-    display: flex;
-    flex-direction: column;
-}
-.return .mainDiv .divInput .rowInput .radio {
-    cursor: pointer;
-    width: 15px;
-    height: 15px;
-}
-.return .mainDiv .divInput .rowInput .radioSpan {
-    margin-left: 10px;
-    font-size: 18px;
-}
-.return .mainDiv .divInput .rowInput .textarea {
+.return .mainDiv .divInput .rowInput .textarea {        /** Textarea */
     height: 250px;
     padding-top: 10px;
     font-size: 20px;
 }
-
-.return .mainDiv .divBtn {
+.return .mainDiv .divInput .rowInput .radioInput {      /** Div com os inputs type radio alinhados verticalmente */
+    display: flex;
+    flex-direction: column;
+}
+.return .mainDiv .divInput .rowInput .radio {       /** Input type radio */
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+.return .mainDiv .divInput .rowInput .radioSpan {   /** Texto ao lado dos inputs type radio */
+    margin-left: 10px;
+    font-size: 18px;
+}
+.return .mainDiv .divBtn {      /** Div com os botões (Back e Continue) separados nas extremidades da tela */
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
+/** -- 1 -- */
 
-
-.return .mainDiv .divInput .rowInput .calendarIcon {
+/** 2 -- Calendar Botão e Calendário da biblioteca react-calendar */
+.btnCalendar {          /** Div com botão e o calendário escondido */
+    display: flex;
+    flex-direction: column;
+}
+.return .mainDiv .divInput .rowInput .calendarIcon {        /** Div como botão que possui o Icon Calendar */
     width: 60px;
     height: 41px;
     border: 1px solid #CD553F;
@@ -63,27 +68,29 @@
     transition: 250ms;
     position: relative;
 }
-.btnCalendar {
-    display: flex;
-    flex-direction: column;
-}
-.react-calendar {
+.react-calendar {       /** Biblioteca react-calendar */
     position: absolute;
     right: 50px;
 }
+/** -- 2 -- */
 
-
-
-.return .mainDiv .divInput .rowInput .calendarIcon:hover {
+/** Hovers **/
+.return .mainDiv .divInput .rowInput .calendarIcon:hover {      /** Muda a cor do botão do calendário ao passar mouse em cima */
     background-color: #000;
     border: 1px solid #000;
 }
+/** **/
 
-.return .mainDiv .divInput .rowInput .input:focus, .return .mainDiv .divInput .rowInput .textarea:focus {
+/** Focus **/
+.return .mainDiv .divInput .rowInput .input:focus,
+.return .mainDiv .divInput .rowInput .textarea:focus {      /** Muda a cor da borda dos inputs ao focar */
     border: 1px solid #CD553F;
     outline: none;
 }
+/** **/
 
-input::placeholder {
+/** Placeholder **/
+input::placeholder {        /** Cor do placeholder de todos os inputs */
     color: #bbb;
 }
+/** **/

@@ -1,22 +1,22 @@
-.side .smallBox {
+.side .smallBox {       /** Div Father */
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     border: 1px solid #ddd;
     padding: 20px;
 }
-.side .smallBox .title {
+.side .smallBox .title {        /** Div em formato de retângulo */
     font-weight: bold;
     font-size: 22px;
     margin-left: 10px;
 }
-.side .smallBox .link {
+.side .smallBox .link {     /** Textos como links */
     margin-top: 20px;
     font-size: 18px;
     cursor: pointer;
     transition: 250ms;
 }
 
-.affiliate .mainDiv .side .smallBox .link:hover {
+.affiliate .mainDiv .side .smallBox .link:hover {       /** Muda a cor da font ao passar mouse em cima */
     color: #CD553F;
 }

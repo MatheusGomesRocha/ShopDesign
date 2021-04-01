@@ -16,7 +16,7 @@ export default () => {
 
             <div className={"mainDiv"}>
                 <div className={"sideDiv"}>
-                    {/*     */}
+                    {/*  Acrescentei essa categoryDiv para separar e ficar mais visível o código */}
                     <div className={"categoryDiv"}>
 
                         {/*     */}

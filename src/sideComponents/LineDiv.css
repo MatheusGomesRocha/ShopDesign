@@ -1,10 +1,10 @@
-.titleLine {
+.titleLine {        /** Div Father */
     margin-top: 20px;
 }
-.titleLine .title {
+.titleLine .title {     /** Título */
     font-size: 25px;
 }
-.titleLine .line {
+.titleLine .line {      /** Linha abaixo do título */
     width: 100%;
     height: 1px;
     background-color: #ddd;

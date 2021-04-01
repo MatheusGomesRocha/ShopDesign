@@ -37,7 +37,7 @@
     height: 400px;
     width: 400px;
 }
-/** -- 1.1 -- */
+/** -- 1 -- */
 
 /** 2 -- Div direita */
 .product .productInfo .rightDiv {        /** Div Father */
@@ -144,9 +144,9 @@
     justify-content: center;
     transition: 250ms;
 }
-/** -- 1.2.4 -- */
+/** -- 2.4 -- */
 
-/** 1.2.5 -- Div com infos de Review */
+/** 2.5 -- Div com infos de Review abaixo dos botões de (Add cart, Favorite e Compare) */
 .product .productInfo .reviewRow {    /** Div Father */
     display: flex;
 }
@@ -165,23 +165,23 @@
     background-color: #000;
     margin-left: 15px;
 }
-/** -- 1.2.5 -- */
-/** -- 1.2 -- */
+/** -- 2.5 -- */
 
+/** -- 2 -- */
 
-.product .review {
+/** 3 -- Divs com infos e para fazer Review do produto */
+/** 3.1 -- Styles que se repetem nas duas Divs */
+.product .review {      /** Div Father */
     width: 90%;
     border: 1px solid #ddd;
     margin-bottom: 50px;
 }
-
 .product .review .top {     /** Essa div não usa nenhum css antes do .top pois serve pra dus divs Fathers diferentes */
     display: flex;
     align-items: center;
     height: 50px;
     border-bottom: 1px solid #ddd;
 }
-
 .product .review .top .btnChange { /** Essa div não usa nenhum css antes do .top pois serve pra dus divs Fathers diferentes */
     margin-left: 20px;
     height: 50px;
@@ -192,49 +192,45 @@
     transition: 250ms;
     font-size: 18px;
 }
+/* -- 3.1 -- **/
 
-.product .review .productFeatures .descriptionDiv {
+
+/** 3.2 -- Descrição do produto */
+.product .review .productFeatures .descriptionDiv {     /** Div Father */
     margin: 20px;
 }
-.product .review .productFeatures .descriptionDiv .description {
+.product .review .productFeatures .descriptionDiv .description {        /** Texto principal (a descrição) */
     font-size: 20px;
     line-height: 1.3;
 }
-
-.product .review .productFeatures .featuresDiv {
+.product .review .productFeatures .featuresDiv {        /** Div com um array de features do produto (características) */
     margin: 20px;
 }
-.product .review .productFeatures .featuresDiv .title {
+.product .review .productFeatures .featuresDiv .title {     /** Título (Features) */
     font-size: 22px;
     font-weight: bold;
 }
-
-.product .review .productFeatures .featuresDiv .featuresText {
+.product .review .productFeatures .featuresDiv .featuresText {      /** Item do array, mostrando cada feature */
     display: flex;
     flex-direction: column;
     margin: 10px 0 0 50px;
 }
-.product .review .productFeatures .featuresDiv .featuresText .featuresRow {
+.product .review .productFeatures .featuresDiv .featuresText .featuresRow {     /** Bola background preta e texto alinhadas horizontalmente */
     display: flex;
     align-items: center;
     margin-top: 5px;
 }
-.product .review .productFeatures .featuresDiv .featuresText .featuresRow .smallBall {
+.product .review .productFeatures .featuresDiv .featuresText .featuresRow .smallBall {      /** Bola com background preto */
     width: 5px;
     height: 5px;
     border-radius: 50%;
     background-color: #000;
     margin-right: 10px;
 }
-.product .review .productFeatures .featuresDiv .featuresText .featuresRow span {
-    font-size: 18px;
-}
+/** -- 3.2 -- */
 
-
-.product .review .reviewForm {
-}
-
-.product .review .reviewForm .divTop {
+/** 3.3 -- Form para realizar um review */
+.product .review .reviewForm .divTop {      /** Div do topo com um texto informando que não há Reviews */
     border: 1px solid #ddd;
     margin: 20px;
     height: 40px;
@@ -243,61 +239,51 @@
     padding-left: 10px;
     font-size: 18px;
 }
-
-.product .review .reviewForm .title {
+.product .review .reviewForm .title {       /** Título (Write a Review) */
     font-size: 25px;
     font-weight: bold;
     margin: 20px;
 }
-
-.product .review .reviewForm .divInput {
+.product .review .reviewForm .divInput {        /** Div com label e input */
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
-.product .review .reviewForm .divInput .label {
+.product .review .reviewForm .divInput .label {     /** Label */
     font-size: 18px;
     display: flex;
     align-items: center;
+    transition: 250ms;
 }
-.product .review .reviewForm .divInput .input {
+.product .review .reviewForm .divInput .input, .product .review .reviewForm .divInput .bigInput {     /** Input */
     border: 1px solid #ddd;
     height: 40px;
     margin-top: 10px;
     font-size: 18px;
     padding-left: 10px;
+    transition: 250ms;
 }
-.product .review .reviewForm .divInput .bigInput {
-    border: 1px solid #ddd;
-    margin-top: 10px;
-    font-size: 18px;
+.product .review .reviewForm .divInput .bigInput {      /** Textarea */
     padding: 10px;
     height: 150px;
 }
-
-.product .review .reviewForm .rating {
+.product .review .reviewForm .rating {      /** Div com as estrelas para dar uma nota ao produto */
     display: flex;
     align-items: center;
     height: 60px;
     margin-left: 20px;
 }
-
-.product .review .reviewForm .rating span {
+.product .review .reviewForm .rating span {     /** Texto (Rating */
     margin-right: 20px;
     font-size: 18px;
 }
-.product .review .reviewForm .rating div {
+.product .review .reviewForm .rating div {      /** Div de cada estrela */
     cursor: pointer;
     margin-right: 5px;
 }
+/** -- 3.3 -- */
 
-
-
-
-.product .review .reviewForm .divInput .input:focus, .product .review .reviewForm .divInput .bigInput:focus {
-    border: 1px solid #CD553F;
-    outline: #CD553F;
-}
+/** -- 3 -- */
 
 /** Hovers */
 .product .productInfo .rightDiv .bottomDiv .largeBtn:hover, .product .rightDiv .bottomDiv .smallBtn:hover {     /** Botões grande e pequeno ficam pretos */
@@ -313,3 +299,11 @@
 }
 /** **/
 
+
+/** Focus **/
+.product .review .reviewForm .divInput .input:focus,
+.product .review .reviewForm .divInput .bigInput:focus {      /** Muda a cor da borda do input ao focar */
+    outline: 0;
+    border: 1px solid #CD553F;
+}
+/** **/

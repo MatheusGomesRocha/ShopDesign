@@ -141,10 +141,10 @@
 /** -- 1.2.4 -- */
 /** -- 1.2 -- */
 
-/** Hovers */
+/** Hovers **/
 .modal .rightDiv .bottomDiv .largeBtn:hover, .modal .rightDiv .bottomDiv .smallBtn:hover {      /** Botões ficam pretos*/
     background-color: #000;
     cursor: pointer;
 }
-
+/** **/
 

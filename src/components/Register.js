@@ -94,7 +94,7 @@ export default () => {
 
                 </div>
 
-                <div className={"finishing"}>
+                <div className={"submitDiv"}>
                     <span className={"text"}>I have read and agree to the <strong>Privacy Policy</strong></span>
                     <input className={"checkbox"} type={"checkbox"} />
                     <DefaultBtnComponent mTop={"15px"} width={"120px"} height={"40px"} title={"Continue"}/>

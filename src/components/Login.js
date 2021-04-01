@@ -9,19 +9,16 @@ import React from "react";
 import {Link} from "react-router-dom";
 import PathComponent from "../sideComponents/Path";
 import DefaultBtnComponent from "../sideComponents/DefaultBtn";
-
+import LineDivComponent from '../sideComponents/LineDiv';
 
 export default () => {
-
-
     return (
         <div className={"login"}>
             <PathComponent login={true}/>
 
             <div className={"loginChild"}>
                 <div className={"left"}>
-                    <span className={"title"}>Returning Customer</span>
-                    <div className={"lineHorizontal"}></div>
+                    <LineDivComponent bolder={"bold"} title={"Returning Customer"} />
 
                     <span className={"bold"}>I am a returning customer</span>
 
@@ -35,14 +32,15 @@ export default () => {
                         <input placeholder={"Password"} className={"input"}/>
                     </div>
 
-                    <span className={"forgot"}>Forgotten Password</span>
+                    <Link to={"/Forgot_password"} style={{textDecoration: 'none'}}>
+                        <span className={"forgot"}>Forgotten Password</span>
+                    </Link>
 
                     <DefaultBtnComponent mTop={"30px"} width={"120px"} height={"40px"} title={"Login"}/>
                 </div>
 
                 <div className={"right"}>
-                    <span className={"title"}>New Customer</span>
-                    <div className={"lineHorizontal"}></div>
+                    <LineDivComponent title={"New Customer"} bolder={"bold"}/>
 
                     <span className={"bold"}>Register Account</span>
 

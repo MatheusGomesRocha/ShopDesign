@@ -1,31 +1,30 @@
-.register {
+.register {     /** Div Father */
     padding: 50px;
     font-family: Candara;
 }
 
-.register .form {
+/** 1 -- Form para cadastro */
+.register .form {       /** Div Father */
     margin-top: 25px;
 }
-
-.register .form .text {
+.register .form .text {     /** Texto padrão dentro do Form */
     font-size: 18px;
 }
-
-.register .form .divInput {
+.register .form .divInput {     /** Div com os inputs */
     margin: 20px 0 0 70px;
 }
-.register .form .divInput .rowInput {
+.register .form .divInput .rowInput {       /** Div com label e input alinhada horizontalmente */
     width: 100%;
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
-.register .form .divInput .rowInput .label {
+.register .form .divInput .rowInput .label {        /** Label */
     width: 170px;
     font-size: 18px;
     text-align: right;
 }
-.register .form .divInput .rowInput .input {
+.register .form .divInput .rowInput .input {        /** Input */
     flex: 1;
     width: 100%;
     height: 40px;
@@ -35,26 +34,27 @@
     font-size: 18px;
     transition: 250ms;
 }
-.register .form .divInput .rowInput .inputRadio {
+.register .form .divInput .rowInput .inputRadio {       /** Input type Radio */
     margin: 0 10px 0 20px;
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
-
-.register .form .finishing {
+.register .form .submitDiv {        /** Div com botão e checkbox para concordar com os termos */
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-top: 40px;
 }
-.register .form .finishing .checkbox {
+.register .form .submitDiv .checkbox {      /** Input type checkbox */
     width: 20px;
     height: 20px;
     margin: 0 20px 0 10px;
 }
+/** -- 1 -- */
 
-
-.register .form .divInput .rowInput .input:focus {
+/** Focus **/
+.register .form .divInput .rowInput .input:focus {      /** Muda a cor da borda do input ao focar */
     border: 1px solid #CD553F;
 }
+/** **/

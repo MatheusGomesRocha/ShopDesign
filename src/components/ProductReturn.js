@@ -68,7 +68,8 @@ export default () => {
                         <span className={"label"}><span style={{color: 'red', marginRight: 5}}>*</span>Order Date</span>
                         <input defaultValue={date} style={{width: '95%'}} type={"text"} className={"input"} placeholder={"Order Date"}/>
                         <div className={"btnCalendar"}>
-                            <div onClick={viewCalendar ? () => setViewCalendar(false) : () => setViewCalendar(true)} className={"calendarIcon"}>
+                            <div onClick={viewCalendar ? () => setViewCalendar(false) : () => setViewCalendar(true)}
+                                 className={"calendarIcon"}>
                                 <CalendarIcon />
                             </div>
                             <div style={{display: viewCalendar ? 'flex' : 'none'}} className={"calendar"}>
