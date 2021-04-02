@@ -6,6 +6,8 @@ import Map from "./components/Map";
 export default () => {
     return (
         <div>
+            <Header callHeader={true} />
+
             <Map />
 
             <Footer/>

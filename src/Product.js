@@ -6,6 +6,8 @@ import ProductComponent from './components/Product';
 export default () => {
     return (
         <div>
+            <Header callHeader={true} />
+
             <ProductComponent />
 
             <Footer/>

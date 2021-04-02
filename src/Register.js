@@ -6,6 +6,8 @@ import Register from "./components/Register";
 export default () => {
     return (
         <div>
+            <Header callHeader={true} />
+
             <Register />
 
             <Footer/>

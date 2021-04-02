@@ -90,6 +90,14 @@ export default (props) => {
                 {props.product &&
                     <span className={"text"}>{props.name}</span>
                 }
+
+                {props.forgotPassword &&
+                <div style={{display: 'flex'}}>
+                    <span className={"text"}>Account</span>
+                    <div className={"lineVertical"}></div>
+                    <span className={"text"}>Forgot Password</span>
+                </div>
+                }
             </div>
         </div>
     )

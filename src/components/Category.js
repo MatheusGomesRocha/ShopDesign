@@ -27,14 +27,14 @@ export default () => {
     const [hoverItem8, setHoverItem8] = useState(false);
 
     let array = [
-        {id: 1, text: 'jodhpur pants', Icon: LampIcon, hover: hoverItem, setHover: setHoverItem},
-        {id: 2, text: 'mens wear', Icon: ShirtIcon, hover: hoverItem2, setHover: setHoverItem2},
-        {id: 3, text: 'ice skates', Icon: ShoeIcon, hover: hoverItem3, setHover: setHoverItem3},
-        {id: 4, text: 'dungarees', Icon: CameraIcon, hover: hoverItem4, setHover: setHoverItem4},
-        {id: 5, text: 'jodhpur pants', Icon: GlassIcon, hover: hoverItem5, setHover: setHoverItem5},
-        {id: 6, text: 'stirrup pants', Icon: CouchIcon, hover: hoverItem6, setHover: setHoverItem6},
-        {id: 7, text: 'footwear', Icon: BagIcon, hover: hoverItem7, setHover: setHoverItem7},
-        {id: 8, text: 'punk pants', Icon: WatchIcon, hover: hoverItem8, setHover: setHoverItem8},
+        {id: 1, text: 'Clothes', Icon: LampIcon, hover: hoverItem, setHover: setHoverItem},
+        {id: 2, text: 'Accessories', Icon: ShirtIcon, hover: hoverItem2, setHover: setHoverItem2},
+        {id: 3, text: 'Computers', Icon: ShoeIcon, hover: hoverItem3, setHover: setHoverItem3},
+        {id: 4, text: 'Cleaning Tools', Icon: CameraIcon, hover: hoverItem4, setHover: setHoverItem4},
+        {id: 5, text: 'Workout Tools', Icon: GlassIcon, hover: hoverItem5, setHover: setHoverItem5},
+        {id: 6, text: 'Purses', Icon: CouchIcon, hover: hoverItem6, setHover: setHoverItem6},
+        {id: 7, text: 'Shoes', Icon: BagIcon, hover: hoverItem7, setHover: setHoverItem7},
+        {id: 8, text: 'Makeup', Icon: WatchIcon, hover: hoverItem8, setHover: setHoverItem8},
     ]
 
     return (

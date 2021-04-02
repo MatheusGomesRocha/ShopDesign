@@ -6,6 +6,8 @@ import Gift from "./components/Gift";
 export default () => {
     return (
         <div>
+            <Header callHeader={true} />
+
             <Gift />
 
             <Footer/>

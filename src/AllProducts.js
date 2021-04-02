@@ -6,6 +6,8 @@ import AllProducts from "./components/AllProducts";
 export default () => {
     return (
         <div>
+            <Header callHeader={true} />
+
             <AllProducts />
 
             <Footer/>

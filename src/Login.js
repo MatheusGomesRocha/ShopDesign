@@ -6,6 +6,8 @@ import Login from "./components/Login";
 export default () => {
     return (
         <div>
+            <Header callHeader={true} />
+
             <Login />
 
             <Footer/>

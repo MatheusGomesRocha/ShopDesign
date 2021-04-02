@@ -6,6 +6,8 @@ import NewAffiliate from "./components/NewAffiliate";
 export default () => {
     return (
         <div>
+            <Header callHeader={true} />
+
             <NewAffiliate />
 
             <Footer/>

@@ -35,28 +35,28 @@ export default () => {
     let array = [
         {
             id: 1,
-            category: 'Headgear',
-            subCategory1: 'Haute Couture',
-            subCategory2: 'Knee Clothing',
-            subCategory3: 'Printers',
+            category: 'Clothes',
+            subCategory1: 'Shirts',
+            subCategory2: 'Pants',
+            subCategory3: 'Sweatshirts',
             quantity: '11'
         },
         {
-            id: 2, category: 'Mens Wear', subCategory1: 'Skirts', subCategory2: 'Womens Wear', quantity: '11'
+            id: 2, category: 'Accessories', subCategory1: 'Hats', subCategory2: 'Earrings', quantity: '11'
         },
-        {id: 3, category: 'Ice Skates', subCategory1: 'PC', subCategory2: 'Aprons', quantity: '8'},
-        {id: 4, category: 'Dungarees', quantity: '8'},
-        {id: 5, category: 'Jodhpur Pants', quantity: '8'},
-        {id: 6, category: 'Stirrup Pants', quantity: '8'},
-        {id: 7, category: 'Footwear', quantity: '8'},
-        {id: 8, category: 'Punk Pants', quantity: '8'},
+        {id: 3, category: 'Computers', subCategory1: 'Hardware', subCategory2: 'Notebooks', quantity: '8'},
+        {id: 4, category: 'Shoes', quantity: '8'},
+        {id: 5, category: 'Workout', quantity: '8'},
+        {id: 6, category: 'Cleaning Tools', quantity: '8'},
+        {id: 7, category: 'Womens Wear', quantity: '8'},
+        {id: 8, category: 'Mens Wear', quantity: '8'},
     ];
 
     let arrayDefault = [
         {
             id: 1,
-            category: 'Headgear',
-            subCategory: 'Knee Clothing',
+            category: 'Clothes',
+            subCategory: 'Shirts',
             img: img1,
             sale: true,
             name: 'Printed Women Kurti (Multicolor)',
@@ -64,16 +64,16 @@ export default () => {
         },
         {
             id: 2,
-            category: 'Headgear',
-            subCategory: 'Haute Couture',
+            category: 'Clothes',
+            subCategory: 'Shirts',
             img: img2,
             name: 'Crepe Checkered Salwar Suit Material (Unstitched)',
             price: '120,99'
         },
         {
             id: 3,
-            category: 'Headgear',
-            subCategory: 'Knee Clothing',
+            category: 'Clothes',
+            subCategory: 'Shirts',
             img: img3,
             sale: true,
             name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material',
@@ -81,8 +81,8 @@ export default () => {
         },
         {
             id: 4,
-            category: 'Headgear',
-            subCategory: 'Printers',
+            category: 'Pants',
+            subCategory: 'Sweatshirts',
             img: img4,
             sale: true,
             name: 'Embroidered Satin Blend Stitched Anarkali',
@@ -90,16 +90,16 @@ export default () => {
         },
         {
             id: 5,
-            category: 'Headgear',
-            subCategory: 'Printers',
+            category: 'Clothes',
+            subCategory: 'Pants',
             img: img5,
             name: 'Canvas Slip On Sneakers For Women',
             price: '231,50'
         },
         {
             id: 6,
-            category: 'Headgear',
-            subCategory: 'Haute Couture',
+            category: 'Clothes',
+            subCategory: 'Sweatshirts',
             img: img6,
             name: 'Date Unique New Analog Watch - For Men',
             price: '80,00'
@@ -107,24 +107,24 @@ export default () => {
 
         {
             id: 8,
-            category: 'Mens Wear',
-            subCategory: 'Skirts',
+            category: 'Accessories',
+            subCategory: 'Hats',
             img: img2,
             name: 'Applique Satin Blend Semi Stitched Anarkali Gown',
             price: '348,12'
         },
         {
             id: 4,
-            category: 'Mens Wear',
-            subCategory: 'Womens Wear',
+            category: 'Accessories',
+            subCategory: 'Hats',
             img: img7,
             name: 'Embroidered Satin Blend Stitched Anarkali',
             price: '170,99'
         },
         {
             id: 7,
-            category: 'Mens Wear',
-            subCategory: 'Skirts',
+            category: 'Accessories',
+            subCategory: 'Earrings',
             img: img13,
             sale: true,
             name: 'Embroidered Orange Women Dupatta',
@@ -132,8 +132,8 @@ export default () => {
         },
         {
             id: 2,
-            category: 'Mens Wear',
-            subCategory: 'Womens Wear',
+            category: 'Accessories',
+            subCategory: 'Hats',
             img: img12,
             sale: true,
             name: 'Crepe Checkered Salwar Suit Material (Unstitched)',
@@ -141,16 +141,16 @@ export default () => {
         },
         {
             id: 1,
-            category: 'Mens Wear',
-            subCategory: 'Skirts',
+            category: 'Accessories',
+            subCategory: 'Earrings',
             img: img5,
             name: 'Printed Women Kurti (Multicolor)',
             price: '602,00'
         },
         {
             id: 3,
-            category: 'Mens Wear',
-            subCategory: 'Skirts',
+            category: 'Accessories',
+            subCategory: 'Earrings',
             img: img10,
             sale: true,
             name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material',
@@ -158,7 +158,7 @@ export default () => {
         },
         {
             id: 3,
-            category: 'Dungarees',
+            category: 'Workout',
             img: img1,
             sale: true,
             name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material',
@@ -166,7 +166,7 @@ export default () => {
         },
         {
             id: 1,
-            category: 'Dungarees',
+            category: 'Workout',
             img: img8,
             sale: true,
             name: 'Printed Women Kurti (Multicolor)',
@@ -174,7 +174,7 @@ export default () => {
         },
         {
             id: 5,
-            category: 'Dungarees',
+            category: 'Workout',
             img: img4,
             sale: true,
             name: 'Canvas Slip On Sneakers For Women',
@@ -182,8 +182,8 @@ export default () => {
         },
         {
             id: 3,
-            category: 'Ice Skates',
-            subCategory: 'PC',
+            category: 'Computers',
+            subCategory: 'Hardware',
             img: img1,
             sale: true,
             name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material',
@@ -191,8 +191,8 @@ export default () => {
         },
         {
             id: 1,
-            category: 'Ice Skates',
-            subCategory: 'PC',
+            category: 'Computers',
+            subCategory: 'Hardware',
             img: img8,
             sale: true,
             name: 'Printed Women Kurti (Multicolor)',
@@ -200,8 +200,8 @@ export default () => {
         },
         {
             id: 5,
-            category: 'Ice Skates',
-            subCategory: 'Aprons',
+            category: 'Computers',
+            subCategory: 'Notebooks',
             img: img4,
             sale: true,
             name: 'Canvas Slip On Sneakers For Women',
@@ -209,16 +209,16 @@ export default () => {
         },
         {
             id: 8,
-            category: 'Ice Skates',
-            subCategory: 'PC',
+            category: 'Computers',
+            subCategory: 'Hardware',
             img: img5,
             name: 'Applique Satin Blend Semi Stitched Anarkali Gown',
             price: '348,12'
         },
         {
             id: 2,
-            category: 'Ice Skates',
-            subCategory: 'Aprons',
+            category: 'Computers',
+            subCategory: 'Notebooks',
             img: img11,
             sale: true,
             name: 'Crepe Checkered Salwar Suit Material (Unstitched)',
@@ -226,15 +226,15 @@ export default () => {
         },
         {
             id: 4,
-            category: 'Ice Skates',
-            subCategory: 'Aprons',
+            category: 'Computers',
+            subCategory: 'Notebooks',
             img: img9,
             name: 'Embroidered Satin Blend Stitched Anarkali',
             price: '170,99'
         },
         {
             id: 1,
-            category: 'Jodhpur Pants',
+            category: 'Cleaning Tools',
             img: img1,
             sale: true,
             name: 'Printed Women Kurti (Multicolor)',
@@ -242,14 +242,14 @@ export default () => {
         },
         {
             id: 2,
-            category: 'Jodhpur Pants',
+            category: 'Cleaning Tools',
             img: img2,
             name: 'Crepe Checkered Salwar Suit Material (Unstitched)',
             price: '120,99'
         },
         {
             id: 3,
-            category: 'Stirrup Pants',
+            category: 'Womens Wear',
             img: img1,
             sale: true,
             name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material',
@@ -257,7 +257,7 @@ export default () => {
         },
         {
             id: 1,
-            category: 'Stirrup Pants',
+            category: 'Womens Wear',
             img: img8,
             sale: true,
             name: 'Printed Women Kurti (Multicolor)',
@@ -265,7 +265,7 @@ export default () => {
         },
         {
             id: 5,
-            category: 'Stirrup Pants',
+            category: 'Womens Wear',
             img: img4,
             sale: true,
             name: 'Canvas Slip On Sneakers For Women',
@@ -273,7 +273,7 @@ export default () => {
         },
         {
             id: 3,
-            category: 'Stirrup Pants',
+            category: 'Womens Wear',
             img: img1,
             sale: true,
             name: 'Net Embroidered Gown/Anarkali Kurta & Bottom Material',
@@ -281,7 +281,7 @@ export default () => {
         },
         {
             id: 1,
-            category: 'Footwear',
+            category: 'Mens Wear',
             img: img8,
             sale: true,
             name: 'Printed Women Kurti (Multicolor)',
@@ -289,7 +289,7 @@ export default () => {
         },
         {
             id: 5,
-            category: 'Footwear',
+            category: 'Mens Wear',
             img: img4,
             sale: true,
             name: 'Canvas Slip On Sneakers For Women',
@@ -297,14 +297,14 @@ export default () => {
         },
         {
             id: 8,
-            category: 'Footwear',
+            category: 'Mens Wear',
             img: img5,
             name: 'Applique Satin Blend Semi Stitched Anarkali Gown',
             price: '348,12'
         },
         {
             id: 2,
-            category: 'Footwear',
+            category: 'Mens Wear',
             img: img11,
             sale: true,
             name: 'Crepe Checkered Salwar Suit Material (Unstitched)',
@@ -312,14 +312,14 @@ export default () => {
         },
         {
             id: 4,
-            category: 'Footwear',
+            category: 'Mens Wear',
             img: img9,
             name: 'Embroidered Satin Blend Stitched Anarkali',
             price: '170,99'
         },
         {
             id: 1,
-            category: 'Punk Pants',
+            category: 'Mens Wear',
             img: img1,
             sale: true,
             name: 'Printed Women Kurti (Multicolor)',
@@ -327,7 +327,7 @@ export default () => {
         },
         {
             id: 2,
-            category: 'Punk Pants',
+            category: 'Mens Wear',
             img: img2,
             name: 'Crepe Checkered Salwar Suit Material (Unstitched)',
             price: '120,99'
@@ -335,16 +335,16 @@ export default () => {
     ];
 
     let arrayCategory = [
-        {id: 1, category: 'Headgear', subCategory: 'Haute Couture', quantity: '11'},
-        {id: 2, category: 'Headgear', subCategory: 'Knee Clothing', quantity: '3'},
-        {id: 3, category: 'Headgear', subCategory: 'Printers', quantity: '5'},
-        {id: 4, category: 'Mens Wear', subCategory: 'Skirts', quantity: '7'},
-        {id: 5, category: 'Mens Wear', subCategory: 'Womens Wear', quantity: '18'},
-        {id: 6, category: 'Ice Skates', subCategory: 'PC', quantity: '11'},
-        {id: 7, category: 'Ice Skates', subCategory: 'Aprons', quantity: '9'},
+        {id: 1, category: 'Clothes', subCategory: 'Shirts', quantity: '11'},
+        {id: 2, category: 'Clothes', subCategory: 'Pants', quantity: '3'},
+        {id: 3, category: 'Clothes', subCategory: 'Sweatshirts', quantity: '5'},
+        {id: 4, category: 'Accessories', subCategory: 'Hats', quantity: '7'},
+        {id: 5, category: 'Accessories', subCategory: 'Earrings', quantity: '18'},
+        {id: 6, category: 'Computers', subCategory: 'Hardware', quantity: '11'},
+        {id: 7, category: 'Computers', subCategory: 'Notebook', quantity: '9'},
     ]
 
-    const [category, setCategory] = useState('Headgear');
+    const [category, setCategory] = useState('Clothes');
     const [subCategory, setSubCategory] = useState();
 
     const [open, setOpen] = useState(false);

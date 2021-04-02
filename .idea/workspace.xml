@@ -3,9 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Category.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Affiliate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affiliate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AllProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AllProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ForgotPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ForgotPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gift.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gift.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewAffiliate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewAffiliate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductReturn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductReturn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AllProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AllProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sideComponents/AccountSettings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/AccountSettings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sideComponents/Path.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/Path.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +121,7 @@
       <workItem from="1617124600441" duration="193000" />
       <workItem from="1617193472522" duration="4508000" />
       <workItem from="1617275250086" duration="17474000" />
-      <workItem from="1617361929089" duration="10406000" />
+      <workItem from="1617361929089" duration="12598000" />
     </task>
     <servers />
   </component>
@@ -163,19 +178,14 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/AllProducts.js</url>
-          <line>34</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Header.js</url>
-          <line>238</line>
+          <line>243</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Header.js</url>
-          <line>165</line>
+          <line>167</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
@@ -187,9 +197,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Header.js</url>
-          <line>82</line>
+          <line>84</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/AllProducts.js</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/AllProducts.js</url>
+          <line>336</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

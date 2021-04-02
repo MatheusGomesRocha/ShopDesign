@@ -7,6 +7,8 @@ import AboutComponent from './components/About';
 export default () => {
     return (
         <div>
+            <Header callHeader={true} />
+
             <AboutComponent />
 
             <Footer/>

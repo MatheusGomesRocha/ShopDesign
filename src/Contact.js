@@ -6,6 +6,8 @@ import Contact from "./components/Contact";
 export default () => {
     return (
         <div>
+            <Header callHeader={true} />
+
             <Contact />
 
             <Footer/>

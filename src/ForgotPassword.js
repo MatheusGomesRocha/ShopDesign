@@ -7,6 +7,8 @@ import ForgotPassword from "./components/ForgotPassword";
 export default () => {
     return (
         <div>
+            <Header callHeader={true} />
+
             <ForgotPassword />
 
             <Footer/>
