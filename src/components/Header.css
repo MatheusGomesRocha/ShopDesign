@@ -16,38 +16,50 @@
     display: flex;
     justify-content: space-between;
 }
+.header .headerTopHidden {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    animation: growHeight 1s;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    border-bottom: 2px solid #ccc;
+}
 
-.header .headerTop .headerTopTitle {        /** Div com o título do HeaderTop */
+/** Não inserimos a class .headerTop ou .headerTopHidden para economizar linha porque o CSS funciona para as duas */
+.header .headerTopTitle {        /** Div com o título do HeaderTop */
     display: flex;
     align-items: center;
     margin-left: 50px;
     height: 80px;
 }
-.header .headerTop .headerTopTitle .headerTitle {       /** Texto título do HeaderTop */
+.header .headerTopTitle .headerTitle {       /** Texto título do HeaderTop */
     font-weight: bold;
     font-size: 25px;
 }
 
 /** 1.1 -- Header Top na esquerda */
-.header .headerTop .headerTopLeft {     /** Div Father */
+.header .headerTopLeft {     /** Div Father */
     display: flex;
     height: 80px;
     align-items: center;
     justify-content: center;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv {      /** Div com os links */
+.header .headerTopLeft .headerLinkDiv {      /** Div com os links */
     display: flex;
     flex-direction: column;
     margin-left: 15px;
     height: 80px;
     justify-content: center;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv .headerLink {      /** Os links */
+.header .headerTopLeft .headerLinkDiv .headerLink {      /** Os links */
     height: 20px;
     transition: 250ms;
     cursor: pointer;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink {       /** SubLink que fica escondido, só aparece ao passar o mouse em cima do link respectivo */
+.header .headerTopLeft .headerLinkDiv .headerSubLink {       /** SubLink que fica escondido, só aparece ao passar o mouse em cima do link respectivo */
     min-width: 150px;
     padding: 25px;
     background-color: #fff;
@@ -60,15 +72,15 @@
     z-index: 999;
     animation: fade 750ms;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide {        /** Divs para separar os SubLinks */
+.header .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide {        /** Divs para separar os SubLinks */
     display: flex;
     flex-direction: column;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideTitle {        /* Título dos SubLinks */
+.header .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideTitle {        /* Título dos SubLinks */
     font-size: 22px;
     font-weight: bold;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideLink {     /** Links do subLinks */
+.header .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideLink {     /** Links do subLinks */
     margin-top: 10px;
     font-size: 18px;
     cursor: pointer;
@@ -79,12 +91,12 @@
 
 
 /** 1.2 -- Header Top na direita */
-.header .headerTop .headerTopRight {        /** Div Father */
+.header .headerTopRight {        /** Div Father */
     display: flex;
     align-items: center;
     margin-right: 20px;
 }
-.header .headerTop .headerTopRight .headerTopRightLink {        /** Div com os links */
+.header .headerTopRight .headerTopRightLink {        /** Div com os links à direita */
     width: 55px;
     height: 40px;
     border-radius: 5px;
@@ -93,7 +105,7 @@
     justify-content: center;
     transition: 500ms;
 }
-.header .headerTop .headerTopRight .headerTopRightLink .badge {     /** Badge em cima do icon de cesta de compras */
+.header .headerTopRight .headerTopRightLink .badge {     /** Badge em cima do icon de cesta de compras */
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -121,10 +133,10 @@
 .header .btnCarousel {      /** Div com 2 botões para mudar Carousel */
     position: absolute;
     top: 530px;
-    right: 55%;
-    width: 10%;
+    left: 500px;
+    width: 70px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 30% 30%;
     grid-gap: 20px;
     justify-content: center;
 }
@@ -199,17 +211,17 @@
 /** -- 2 -- */
 
 /** Hovers */
-.header .headerTop .headerTopLeft .headerLinkDiv:hover .headerLink {        /** Links do HeaderTop da esquerda */
+.header .headerTopLeft .headerLinkDiv:hover .headerLink {        /** Links do HeaderTop da esquerda */
     border-bottom: 1px solid #CD553F;
     color: #CD553F;
 }
-.header .headerTop .headerTopRight .headerTopRightLink:hover {      /** Icons da direita recebem um background-color ao passar mouse em cima */
+.header .headerTopRight .headerTopRightLink:hover {      /** Icons da direita recebem um background-color ao passar mouse em cima */
     cursor: pointer;
     background-color: #ddd;
 }
 
 .menuItem:hover,    /** Color do texto dentro dos menus dropdowns e nos subLinks*/
-.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideLink:hover {
+.header .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideLink:hover {
     color: #CD553F;
 }
 .header .btnCarousel .ball:hover {      /** Bola com button do Carousel */
@@ -218,6 +230,11 @@
 /** */
 
 /** Animations */
+
+@keyframes growHeight {
+    from{height: 0; opacity: 0}
+    to{height: 80px; opacity: 1}
+}
 
 /** Animação BottomText **/
 @keyframes fadeToRight {
