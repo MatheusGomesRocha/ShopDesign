@@ -1,6 +1,6 @@
 /**
-    COMPONENT HEADER (TOP E BOTTOM FICA NA TELA HOME, NAS TELAS RESTANTES, CHAMO APENAS O TOP)
-    É O PRIMEIRO COMPONENT DA TELA COM O TOP FIXADO AO SCROLLAR
+ COMPONENT HEADER (TOP E BOTTOM FICA NA TELA HOME, NAS TELAS RESTANTES, CHAMO APENAS O TOP)
+ É O PRIMEIRO COMPONENT DA TELA COM O TOP FIXADO AO SCROLLAR
  */
 
 import './Header.css';
@@ -25,7 +25,10 @@ export default () => {
     const [hoverLink4, setHoverLink4] = useState(false)
     const [hoverLink5, setHoverLink5] = useState(false)
 
-
+    const [showSubLink1, setShowSubLink1] = useState(false);
+    const [showSubLink2, setShowSubLink2] = useState(false);
+    const [showSubLink3, setShowSubLink3] = useState(false);
+    const [showSubLink4, setShowSubLink4] = useState(false);
 
     useEffect(() => {
         setTimeout(() => {
@@ -52,28 +55,141 @@ export default () => {
     return (
         <div className={"header"}>
             <div className={"headerTop"}>
+                <div className={"headerTopTitle"}>
+                    <span className={"headerTitle"}>FEVINO</span>
+                </div>
+
+
                 <div className={"headerTopLeft"}>
 
-                    <div className={"headerLinkDiv"}>
-                        <a className={"headerLink"}>Headgear</a>
+                    <div onMouseOver={() => setShowSubLink1(true)}
+                         onMouseOut={() => setShowSubLink1(false)}
+                         className={"headerLinkDiv"}>
+                        <a className={"headerLink"}>Clothes</a>
+
+                        <div
+                            onMouseOver={() => setShowSubLink1(true)}
+                            onMouseOut={() => setShowSubLink1(false)}
+                            style={{display: showSubLink1 ? 'flex' : 'none'}}
+                            className={"headerSubLink"}
+                        >
+                            <div className={"headerSubLinkSide"}>
+                                <span className={"headerSubLinkSideTitle"}>Men's Wear (9)</span>
+
+                                <span className={"headerSubLinkSideLink"}>Basic Shirts (5)</span>
+                                <span className={"headerSubLinkSideLink"}>Sweatshirt (3)</span>
+                                <span className={"headerSubLinkSideLink"}>Pants (3)</span>
+                            </div>
+
+                            <div className={"headerSubLinkSide"} style={{marginLeft: 50}}>
+                                <span className={"headerSubLinkSideTitle"}>Women's Wear (4)</span>
+
+                                <span className={"headerSubLinkSideLink"}>Skirts (14)</span>
+                                <span className={"headerSubLinkSideLink"}>Dresses (7)</span>
+                                <span className={"headerSubLinkSideLink"}>Basic Shirts (17)</span>
+                            </div>
+
+                            <div className={"headerSubLinkSide"} style={{marginLeft: 50}}>
+                                <span className={"headerSubLinkSideTitle"}>Unisex (14)</span>
+
+                                <span className={"headerSubLinkSideLink"}>Shirts (14)</span>
+                                <span className={"headerSubLinkSideLink"}>Pants (7)</span>
+                                <span className={"headerSubLinkSideLink"}>T-Shirts (17)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div onMouseOver={() => setShowSubLink2(true)}
+                         onMouseOut={() => setShowSubLink2(false)}
+                         className={"headerLinkDiv"}>
+                        <a className={"headerLink"}>Acessories</a>
+
+                        <div
+                            onMouseOver={() => setShowSubLink2(true)}
+                            onMouseOut={() => setShowSubLink2(false)}
+                            style={{display: showSubLink2 ? 'flex' : 'none'}}
+                            className={"headerSubLink"}
+                        >
+                            <div className={"headerSubLinkSide"}>
+                                <span className={"headerSubLinkSideTitle"}>Hats (45)</span>
+
+                                <span className={"headerSubLinkSideLink"}>Cowboy (5)</span>
+                                <span className={"headerSubLinkSideLink"}>Safari (3)</span>
+                                <span className={"headerSubLinkSideLink"}>Top Hat (3)</span>
+                            </div>
+
+                            <div className={"headerSubLinkSide"} style={{marginLeft: 50}}>
+                                <span className={"headerSubLinkSideTitle"}>Bracelets (34)</span>
+
+                                <span className={"headerSubLinkSideLink"}>Gold (14)</span>
+                                <span className={"headerSubLinkSideLink"}>Silver (7)</span>
+                                <span className={"headerSubLinkSideLink"}>Diamond (12)</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div onMouseOver={() => setShowSubLink3(true)}
+                         onMouseOut={() => setShowSubLink3(false)}
+                         className={"headerLinkDiv"}>
+                        <a className={"headerLink"}>Computer</a>
+
+                        <div
+                            onMouseOver={() => setShowSubLink3(true)}
+                            onMouseOut={() => setShowSubLink3(false)}
+                            style={{display: showSubLink3 ? 'flex' : 'none'}}
+                            className={"headerSubLink"}
+                        >
+                            <div className={"headerSubLinkSide"}>
+                                <span className={"headerSubLinkSideTitle"}>Hardware (45)</span>
+
+                                <span className={"headerSubLinkSideLink"}>Memory RAM (5)</span>
+                                <span className={"headerSubLinkSideLink"}>SSD (3)</span>
+                            </div>
+
+                            <div className={"headerSubLinkSide"} style={{marginLeft: 50}}>
+                                <span className={"headerSubLinkSideTitle"}>Notebooks (34)</span>
+
+                                <span className={"headerSubLinkSideLink"}>Positivo (14)</span>
+                                <span className={"headerSubLinkSideLink"}>Samsung (7)</span>
+                            </div>
+
+                        </div>
                     </div>
 
                     <div className={"headerLinkDiv"}>
-                        <a className={"headerLink"}>Mens Wear</a>
+                        <a className={"headerLink"}>Cleaning Tools</a>
                     </div>
 
                     <div className={"headerLinkDiv"}>
-                        <a className={"headerLink"}>Ice Skates</a>
+                        <a className={"headerLink"}>Workout Tools</a>
                     </div>
 
-                    <div className={"headerLinkDiv"}>
-                        <a className={"headerLink"}>Dungarees</a>
-                    </div>
-
-                    <div className={"headerLinkDiv"}>
+                    <div onMouseOver={() => setShowSubLink4(true)}
+                         onMouseOut={() => setShowSubLink4(false)}
+                         className={"headerLinkDiv"}>
                         <a className={"headerLink"}>More</a>
+
+                        <div
+                            onMouseOver={() => setShowSubLink4(true)}
+                            onMouseOut={() => setShowSubLink4(false)}
+                            style={{display: showSubLink4 ? 'flex' : 'none'}}
+                            className={"headerSubLink"}
+                        >
+                            <div className={"headerSubLinkSide"}>
+                                <span className={"headerSubLinkSideTitle"}>More (45)</span>
+
+                                <span className={"headerSubLinkSideLink"}>Purses (23)</span>
+                                <span className={"headerSubLinkSideLink"}>Shoes (75)</span>
+                                <span className={"headerSubLinkSideLink"}>Makeup (14)</span>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+
+
+                {/* TOP RIGHT */}
 
                 <div className={"headerTopRight"}>
                     {/*Link 1*/}
@@ -83,7 +199,7 @@ export default () => {
                                 aria-controls="simple-menu" aria-haspopup="true"
                                 onClick={handleClick}
                         >
-                            <UserIcon fill={hoverLink1 ? '#CD553F' : '#000'}/>
+                            <UserIcon fill={hoverLink1 ? '#CD553F' : '#000'} width={"25px"} height={"25px"}/>
                         </Button>
                         <Menu
                             id="simple-menu"
@@ -99,7 +215,7 @@ export default () => {
                                       onMouseOver={() => setHoverLink2(true)}
                                       onMouseOut={() => setHoverLink2(false)}
                             >
-                                <UserIcon fill={hoverLink2 ? '#CD553F' : '#000'} width={"20px"} height={"20px"}/>
+                                <UserIcon fill={hoverLink2 ? '#CD553F' : '#000'} width={"15px"} height={"15px"}/>
                                 <span style={{marginLeft: 10}}>Register</span>
                             </MenuItem>
 
@@ -109,7 +225,7 @@ export default () => {
                                       onMouseOver={() => setHoverLink2(true)}
                                       onMouseOut={() => setHoverLink2(false)}
                             >
-                                <UserIcon fill={hoverLink2 ? '#CD553F' : '#000'} width={"20px"} height={"20px"}/>
+                                <UserIcon fill={hoverLink2 ? '#CD553F' : '#000'} width={"15px"} height={"15px"}/>
                                 <span style={{marginLeft: 10}}>Login</span>
                             </MenuItem>
 
@@ -119,29 +235,32 @@ export default () => {
                                       onMouseOver={() => setHoverLink2(true)}
                                       onMouseOut={() => setHoverLink2(false)}
                             >
-                                <UserIcon fill={hoverLink2 ? '#CD553F' : '#000'} width={"20px"} height={"20px"}/>
+                                <UserIcon fill={hoverLink2 ? '#CD553F' : '#000'} width={"15px"} height={"15px"}/>
                                 <span style={{marginLeft: 10}}>Compare</span>
                             </MenuItem>
 
                         </Menu>
                     </div>
 
+
                     {/*Link 2*/}
                     <div className={"headerTopRightLink"}
                          onMouseOver={() => setHoverLink3(true)}
                          onMouseOut={() => setHoverLink3(false)}
                     >
-                        <HeartIcon fill={hoverLink3 ? '#CD553F' : '#000'}/>
+                        <HeartIcon fill={hoverLink3 ? '#CD553F' : '#000'} width={"25px"} height={"25px"}/>
                     </div>
+
 
                     {/*Link 3*/}
                     <div className={"headerTopRightLink"}
                          onMouseOver={() => setHoverLink4(true)}
                          onMouseOut={() => setHoverLink4(false)}
                     >
-                        <BasketIcon fill={hoverLink4 ? '#CD553F' : '#000'}/>
+                        <BasketIcon fill={hoverLink4 ? '#CD553F' : '#000'} width={"25px"} height={"25px"}/>
                         <div className={"badge"}>0</div>
                     </div>
+
 
                     {/*Link 4*/}
                     <div className={"headerTopRightLink"}>
@@ -150,7 +269,7 @@ export default () => {
                                 aria-controls="simple-menu" aria-haspopup="true"
                                 onClick={handleClick2}
                         >
-                            <MenuCircleIcon fill={hoverLink5 ? '#CD553F' : '#000'}/>
+                            <MenuCircleIcon fill={hoverLink5 ? '#CD553F' : '#000'} width={"25px"} height={"25px"}/>
                         </Button>
                         <Menu
                             id="simple-menu"
@@ -181,8 +300,6 @@ export default () => {
                     </div>
 
                 </div>
-
-
             </div>
 
             <div className={"headerBottom"}>

@@ -16,22 +16,70 @@
     display: flex;
     justify-content: space-between;
 }
+
+.header .headerTop .headerTopTitle {        /** Div com o título do HeaderTop */
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    height: 80px;
+}
+.header .headerTop .headerTopTitle .headerTitle {       /** Texto título do HeaderTop */
+    font-weight: bold;
+    font-size: 25px;
+}
+
 /** 1.1 -- Header Top na esquerda */
 .header .headerTop .headerTopLeft {     /** Div Father */
     display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
 }
 .header .headerTop .headerTopLeft .headerLinkDiv {      /** Div com os links */
     display: flex;
+    flex-direction: column;
     margin-left: 15px;
     height: 80px;
-    align-items: center;
+    justify-content: center;
 }
 .header .headerTop .headerTopLeft .headerLinkDiv .headerLink {      /** Os links */
     height: 20px;
     transition: 250ms;
-
+    cursor: pointer;
 }
+.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink {
+    min-width: 150px;
+    padding: 25px;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    top: 80px;
+    border-bottom: 5px solid #CD553F;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 999;
+    animation: fade 750ms;
+}
+.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide {
+    display: flex;
+    flex-direction: column;
+}
+.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideTitle {
+    font-size: 22px;
+    font-weight: bold;
+}
+.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideLink {
+    margin-top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+
 /** -- 1.1 -- */
+
+
+
 /** 1.2 -- Header Top na direita */
 .header .headerTop .headerTopRight {        /** Div Father */
     display: flex;
@@ -39,9 +87,8 @@
     margin-right: 20px;
 }
 .header .headerTop .headerTopRight .headerTopRightLink {        /** Div com os links */
-    margin-left: 5px;
-    width: 65px;
-    height: 45px;
+    width: 55px;
+    height: 40px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -94,6 +141,8 @@
     justify-content: center;
     transition: 500ms;
 }
+
+
 /** 2.1 -- Div à esquerda (onde contém os textos com o botão) */
 /** Algumas css repetidos com classes diferentes porque são 1 para cada item do Carousel */
 .header .left {     /** Div Father  */
@@ -152,16 +201,17 @@
 /** -- 2 -- */
 
 /** Hovers */
-.header .headerTop .headerTopLeft .headerLinkDiv .headerLink:hover {        /** Links do HeaderTop da esquerda */
-    cursor: pointer;
+.header .headerTop .headerTopLeft .headerLinkDiv:hover .headerLink {        /** Links do HeaderTop da esquerda */
     border-bottom: 1px solid #CD553F;
     color: #CD553F;
 }
-.header .headerTop .headerTopRight .headerTopRightLink:hover {      /** Icons da direita recebem um background-color ao passar mouse em cima
+.header .headerTop .headerTopRight .headerTopRightLink:hover {      /** Icons da direita recebem um background-color ao passar mouse em cima */
     cursor: pointer;
     background-color: #ddd;
 }
-.menuItem:hover {       /** Color do texto dentro dos menus dropdowns */
+
+.menuItem:hover,    /** Color do texto dentro dos menus dropdowns e nos subLinks*/
+.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideLink:hover {
     color: #CD553F;
 }
 .header .btnCarousel .ball:hover {      /** Bola com button do Carousel */

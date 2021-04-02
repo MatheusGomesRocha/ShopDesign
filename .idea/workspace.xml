@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7031aa2a-f73d-4b53-bfe8-d337a6d1b86f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AllProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AllProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sideComponents/Path.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponents/Path.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/heart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/heart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/menu-circle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/menu-circle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/shopping-basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/shopping-basket.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +107,8 @@
       <workItem from="1617108653576" duration="12629000" />
       <workItem from="1617124600441" duration="193000" />
       <workItem from="1617193472522" duration="4508000" />
-      <workItem from="1617275250086" duration="17438000" />
+      <workItem from="1617275250086" duration="17474000" />
+      <workItem from="1617361929089" duration="5662000" />
     </task>
     <servers />
   </component>
@@ -165,8 +167,19 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/AllProducts.js</url>
           <line>34</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Header.js</url>
+          <line>193</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Header.js</url>
+          <line>133</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
