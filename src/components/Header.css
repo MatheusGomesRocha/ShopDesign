@@ -47,7 +47,7 @@
     transition: 250ms;
     cursor: pointer;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink {
+.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink {       /** SubLink que fica escondido, só aparece ao passar o mouse em cima do link respectivo */
     min-width: 150px;
     padding: 25px;
     background-color: #fff;
@@ -60,22 +60,20 @@
     z-index: 999;
     animation: fade 750ms;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide {
+.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide {        /** Divs para separar os SubLinks */
     display: flex;
     flex-direction: column;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideTitle {
+.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideTitle {        /* Título dos SubLinks */
     font-size: 22px;
     font-weight: bold;
 }
-.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideLink {
+.header .headerTop .headerTopLeft .headerLinkDiv .headerSubLink .headerSubLinkSide .headerSubLinkSideLink {     /** Links do subLinks */
     margin-top: 10px;
     font-size: 18px;
     cursor: pointer;
     transition: 250ms;
 }
-
-
 /** -- 1.1 -- */
 
 
